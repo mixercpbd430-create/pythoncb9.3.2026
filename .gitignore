@@ -1,0 +1,30 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.log
+
+# PDF files
+*.pdf
+
+# Text/notes files not part of the project
+*.txt
+*.md
+!README.md
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Extracted files
+extract_pdf.py
+
+# New folder (temp)
+New folder/

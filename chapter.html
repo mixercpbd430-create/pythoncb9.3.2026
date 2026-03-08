@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giáo trình lập trình Python - Nội dung chương">
+    <title>Giáo Trình Python</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle sidebar">☰</button>
+        <a href="index.html" class="navbar__brand">
+            <span class="logo-icon">Py</span>
+            <span>Giáo Trình Python</span>
+        </a>
+        <div class="navbar__nav">
+            <a href="index.html" class="navbar__link">Trang chủ</a>
+        </div>
+    </nav>
+
+    <!-- Chapter Layout -->
+    <div class="chapter-layout">
+        <!-- Sidebar Overlay (mobile) -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__title">📖 Mục lục</div>
+            <ul class="sidebar__list" id="sidebarList">
+                <!-- Rendered by JavaScript -->
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="chapter-content" id="chapterContent">
+            <!-- Chapter Header -->
+            <header class="chapter-content__header">
+                <div class="chapter-content__badge" id="chapterBadge"></div>
+                <h1 class="chapter-content__title" id="chapterTitle"></h1>
+                <p class="chapter-content__desc" id="chapterDesc"></p>
+            </header>
+
+            <!-- Theory -->
+            <section class="theory-section" id="theorySection">
+                <h2 class="section-title">
+                    <span class="section-title__icon section-title__icon--theory">📘</span>
+                    Lý thuyết
+                </h2>
+                <div class="content-body" id="theoryContent">
+                    <!-- Rendered by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Exercises -->
+            <section class="exercises-section" id="exercisesSection">
+                <h2 class="section-title">
+                    <span class="section-title__icon section-title__icon--exercise">✏️</span>
+                    Bài tập ví dụ
+                </h2>
+                <div id="exercisesContent">
+                    <!-- Rendered by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Notes -->
+            <section class="notes-section" id="notesSection">
+                <h2 class="section-title">
+                    <span class="section-title__icon section-title__icon--notes">📝</span>
+                    Ghi chú bài học
+                </h2>
+                <p class="notes-section__desc">Ghi chú lại những điểm quan trọng để tham khảo sau này. Mỗi lần lưu sẽ
+                    ghi nhận thời gian ghi chú.</p>
+
+                <!-- Input area -->
+                <div class="notes-input">
+                    <textarea class="notes-section__textarea" id="notesTextarea"
+                        placeholder="Nhập ghi chú mới tại đây..."></textarea>
+                    <div class="notes-section__actions">
+                        <button class="notes-section__btn notes-section__btn--save" id="notesSaveBtn">
+                            <span class="notes-btn__icon">💾</span> Thêm ghi chú
+                        </button>
+                        <button class="notes-section__btn notes-section__btn--clear" id="notesClearAllBtn">
+                            <span class="notes-btn__icon">🗑️</span> Xóa tất cả
+                        </button>
+                        <span class="notes-section__status" id="notesStatus"></span>
+                    </div>
+                </div>
+
+                <!-- Saved notes list -->
+                <div class="notes-list" id="notesList">
+                    <!-- Rendered by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <nav class="chapter-nav" id="chapterNav">
+                <!-- Rendered by JavaScript -->
+            </nav>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Giáo Trình Lập Trình Python. Được xây dựng với ❤️ để phục vụ việc học tập.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script src="js/chapters/chapter1.js"></script>
+    <script src="js/chapters/chapter2.js"></script>
+    <script src="js/chapters/chapter3.js"></script>
+    <script src="js/chapters/chapter4.js"></script>
+    <script src="js/chapters/chapter5.js"></script>
+    <script src="js/chapters/chapter6.js"></script>
+    <script src="js/chapters/chapter7.js"></script>
+    <script src="js/chapters/chapter8.js"></script>
+    <script src="js/chapters/chapter9.js"></script>
+    <script src="js/chapters/chapter10.js"></script>
+    <script src="js/chapters/chapter11.js"></script>
+    <script src="js/chapters/chapter12.js"></script>
+    <script src="js/chapters/chapter13.js"></script>
+    <script src="js/chapters/chapter14.js"></script>
+    <script src="js/chapters/chapter15.js"></script>
+    <script src="js/chapters/chapter16.js"></script>
+    <script src="js/chapters/chapter17.js"></script>
+    <script src="js/chapters/chapter18.js"></script>
+    <script src="js/chapters/chapter19.js"></script>
+    <script src="js/chapters/chapter20.js"></script>
+    <script src="js/chapters/chapter20b.js"></script>
+    <script src="js/chapters/chapter21.js"></script>
+    <script src="js/chapters/chapter22.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
