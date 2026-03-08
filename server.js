@@ -133,6 +133,11 @@ app.delete('/api/notes/chapter/:chapterId', async (req, res) => {
     }
 });
 
+// Health check (required by Render)
+app.get('/healthz', (req, res) => {
+    res.status(200).json({ status: 'ok' });
+});
+
 // Catch-all: serve index.html for root
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
