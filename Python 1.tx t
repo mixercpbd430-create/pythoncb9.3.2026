@@ -1,0 +1,5265 @@
+Python
+Học Python là ngôn ngữ lập trình tương lai, kết hợp trí tuệ nhân tạo mà cả thế giới phải sử dụng.
+Python Là Gì? Các Bước Tự Học Lập Trình Python
+Python là gì?
+Python là một ngôn ngữ lập trình bậc cao (lập tình bật cao là ngôn ngữ dễ sử dụng), mã nguồn mở và đa nền tảng. Python được Guido van Rossum giới thiệu vào năm 1991 và đã trải qua 3 giai đoạn phát triển khác nhau tương ứng với các version, mới nhất hiện nay là Python version 3x.
+
+Ứng dụng của Python
+
+Python là ngôn ngữ được ứng dụng đa dạng trong các lĩnh vực.
+
+    Thiết kế Web và App Web với các Framework của Python: Django và Flask là 2 framework phổ biến hiện nay dành cho các lập trình viên Python để tạo ra các website.
+    Tool tự động hóa: các ứng dụng như từ điển, crawl dữ liệu từ website, tool giúp tự động hóa công việc được các lập trình viên ưu tiên lựa chọn Python để viết nhờ tốc độ code nhanh của nó.
+    Khoa học máy tính: Trong Python có rất nhiều thư viện quan trọng phục vụ cho ngành khoa học máy tính như: OpenCV cho xử lý ảnh và machine learning, Scipy và Numpys cho lĩnh vực toán học, đại số tuyến tính, Pandas cho việc phân tích dữ liệu, …
+    Làm game: Pygame là một bộ module Python cross-platform được thiết kế để viết game trên cả máy tính và các thiết bị di động Android, IOS...
+ 
+
+ Danh sách bài viết về Python:
+
+Tìm kiếm...
+📌 [Tất cả]
+1 Cài và code Python trong vòng 10 phút
+2 Tài liệu Python (PDF) miễn phí
+3 Phần mềm lập trình python mà coder nên dùng
+4 Cú pháp Python
+5 Comment trong Python
+6 Cách in ra màn hình python
+7 Một số ký tự đặc biệt trong Python
+8 Làm việc với chuỗi trong Python
+9 Hàm print trong python
+10 Nguyên lý cấp phát bộ nhớ cho biến trong Python
+11 Biến và kiểu dữ liệu trong Python
+12 Ép kiểu dữ liệu trong Python
+13 Kiểu ngày trong Python
+14 Hàm input trong python
+15 Mệnh đề so sánh trong Python
+16 Biểu thức trong Python
+17 Câu lệnh if trong Python
+18 Vòng lặp Python
+19 Một số hàm toán học trong python
+20 Các hàm xử lý chuỗi trong Python
+21 Hàm trong Python
+22 Phân biệt hai kiểu hàm trong python để hiểu bản chất
+23 Mảng trong Python
+24 Dictionary trong Python
+25 Quản lý file và thư mục trong Python
+26 Lập trình hướng đối tượng trong Python
+27 Quản lý lỗi trong Python
+28 Trí tuệ nhân tạo với Python
+29 Lập trình Web với Python
+30 Hồi quy tuyến tính trong Python là gì ?
+31 Số thực và số nguyên trong Python
+32 Sai lệch số thực trong Python
+33 Khi nào dùng from datetime import datetime , khi nào import datetime trong python
+34 So sánh del và pop() trong biển kiểu danh sách Python
+35 Tạo ứng dụng nhận diện khuôn mặt bằng Python
+36 Tạo ứng dụng Chatbot bằng Python
+37 Tuples và Sets trong Python
+38 Mẹo học Python hiệu quả
+39 Xử lý ngoại lệ (Exception Handling) trong Python
+40 Khóa học Python miễn phí
+41 MicroPython là gì ?
+42 Cấu hình IIS với python
+43 Pseudocode - Thuật toán mã giả trong Python
+Cài và code Python trong vòng 10 phút
+ Tài liệu Python (PDF) miễn phí
+Để cài đặt Visual Studio Code (VS Code) và sử dụng Python, bạn có thể làm theo các bước chi tiết sau:
+Tải và cài đặt Visual Studio Code
+Cài đặt Python
+Cài đặt tiện ích mở rộng Python trong VS Code
+Cài đặt môi trường làm việc
+Tạo một tệp Python đầu tiên
+Chạy mã Python
+Video hướng dẫn cài và code Python
+
+1. Tải và cài đặt Visual Studio Code
+    Truy cập trang web chính thức: https://code.visualstudio.com/.
+    Nhấn Download và chọn phiên bản phù hợp với hệ điều hành của bạn (Windows, macOS, Linux).
+    Sau khi tải xong, chạy tệp cài đặt và làm theo hướng dẫn để hoàn tất.
+
+
+2. Cài đặt Python
+    Truy cập trang web: https://www.python.org/downloads/.
+    Tải phiên bản Python mới nhất phù hợp với hệ điều hành của bạn.
+    Lưu ý quan trọng: Khi cài đặt, hãy tích vào ô Add Python to PATH, sau đó nhấn Install Now.
+    Kiểm tra cài đặt Python:
+        Mở Command Prompt (hoặc Terminal trên macOS/Linux).
+        Gõ lệnh:
+
+        python --version
+
+        Nếu Python được cài đặt đúng, phiên bản Python sẽ hiển thị.
+
+
+3. Cài đặt tiện ích mở rộng Python trong VS Code
+    Mở VS Code.
+    Nhấn vào biểu tượng Extensions (hình vuông nhỏ bên trái, hoặc nhấn Ctrl+Shift+X).
+    Tìm từ khóa Python và chọn tiện ích mở rộng của Microsoft (Python extension).
+    Nhấn Install để cài đặt.
+
+
+4. Cài đặt môi trường làm việc
+    Mở Command Palette (nhấn Ctrl+Shift+P).
+    Tìm Python: Select Interpreter.
+    Chọn phiên bản Python bạn đã cài đặt.
+
+
+5. Tạo một tệp Python đầu tiên
+    Trong VS Code, nhấn Ctrl+N để tạo tệp mới.
+    Nhấn Ctrl+S và lưu tệp với phần mở rộng .py, ví dụ: hello.py.
+    Gõ mã Python sau:
+
+    print("Hello, Python!")
+
+
+6. Chạy mã Python
+    Mở tệp Python bạn vừa tạo.
+    Nhấn Ctrl+ (nút Play ở góc trên phải), hoặc:
+        Nhấn Ctrl+Shift+P > gõ Run Python File in Terminal > chọn.
+    VS Code sẽ mở Terminal và hiển thị kết quả.
+
+
+7. Video hướng dẫn cài và code Python
+Tài liệu Python (PDF) miễn phí
+ Phần mềm lập trình python mà coder nên dùng
+Download tại liều Python (PDF), nên tải bởi lý do Python là một ngôn ngữ lập trình đa năng, mạnh mẽ và dễ học, được sử dụng rộng rãi trong nhiều lĩnh vực khác nhau, từ phát triển web, khoa học dữ liệu, trí tuệ nhân tạo (AI) đến tự động hóa và nhiều hơn nữa
+Download tài liệu PDF Python miễn phí
+Video hướng dẫn tải PDF Python miễn phí
+Link download tài liệu Python (PDF) miễn phí
+Khóa học Python FREE
+Khóa học Python cơ bản
+Video học Python miễn phí
+
+Download tài liệu PDF Python miễn phí
+Mục lục
+I Các câu lệnh Python cơ bản 7
+
+Chương 1. Hướng dẫn cài đặt Python và Pycharm 9
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2 Cài đặt Python trên Windows . . . . . . . . . . . . . . . . . . . . . . . . 11
+3 Giao diện lập trình Python GUI . . . . . . . . . . . . . . . . . . . . . . . 12
+4 Cài đặt PyCharm trên Window . . . . . . . . . . . . . . . . . . . . . . . . 14
+5 Hướng dẫn setup và chạy chương trình với PyCharm . . . . . . . . . . 18
+6 Chương trình đầu tiên trên PyCharm . . . . . . . . . . . . . . . . . . . . 22
+7 Một số thao tác khác trên PyCharm . . . . . . . . . . . . . . . . . . . . . 23
+8 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+Chương 2. Hiển thị kết quả trên Python 27
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+2 Hiển thị nhiều thông tin . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+3 Hiển thị với kí tự phân cách . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+4 Hiển thị với kí tự kết thúc . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+5 Hiển thị với số thập phân . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+6 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+
+Chương 3. Nhập dữ liệu và Kiểu dữ liệu 31
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+2 Câu lệnh nhập dữ liệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+3 Kiểu số nguyên trên Python . . . . . . . . . . . . . . . . . . . . . . . . . 32
+3.1 Khai báo một biến kiểu số nguyên . . . . . . . . . . . . . . . . . 32
+3.2 Nhập số nguyên từ bàn phím . . . . . . . . . . . . . . . . . . . . 33
+3.3 Các phép toán trên số nguyên . . . . . . . . . . . . . . . . . . . 33
+4 Kiểu số thực trên Python . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+4.1 Khai báo một biến kiểu số thực . . . . . . . . . . . . . . . . . . . 34
+4.2 Nhập số thực từ bàn phím . . . . . . . . . . . . . . . . . . . . . . 34
+4.3 Các phép toán trên số thực . . . . . . . . . . . . . . . . . . . . . 34
+5 Xử lý lỗi nhập liệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+6 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+
+Chương 4. Câu lệnh điều kiện IF 39
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+2 Câu lệnh if . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+Hướng dẫn lập trình Python cơ bản Trang 3
+3 Câu lệnh if else . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+4 Câu lệnh if elif else . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+5 Câu lệnh lồng nhau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+6 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+7 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+
+Chương 5. Mảng một chiều - Cấu trúc lặp FOR 49
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+2 Khai báo và truy xuất mảng một chiều . . . . . . . . . . . . . . . . . . . 50
+3 Cấu trúc lặp for . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+4 Nhập mảng từ bàn phím . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+5 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+6 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+
+Chương 6. Mảng nhiều chiều - FOR lồng nhau 57
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+2 Thêm một file Python . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+3 Khai báo và truy xuất mảng nhiều chiều . . . . . . . . . . . . . . . . . . 59
+4 Duyệt mảng nhiều chiều . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+5 Nhập mảng nhiều chiều từ bàn phím . . . . . . . . . . . . . . . . . . . 61
+6 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+7 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+
+Chương 7. Cấu trúc lặp while 67
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+2 Cú pháp vòng lặp while . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+2.1 Câu lệnh break và continue trong vòng lặp while . . . . . . . 69
+2.1.1 Câu lệnh break . . . . . . . . . . . . . . . . . . . . . . . 69
+2.1.2 Câu lệnh continue . . . . . . . . . . . . . . . . . . . . . 69
+2.2 Sử dụng while trên một dòng . . . . . . . . . . . . . . . . . . . . 69
+3 Cú pháp vòng lặp while-else . . . . . . . . . . . . . . . . . . . . . . . . . 69
+4 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+5 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+
+Chương 8. Các thao tác trên FILE 75
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+2 Ghi dữ liệu ra File . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+3 Đọc dữ liệu từ File . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+4 Đọc mảng 1 chiều từ File . . . . . . . . . . . . . . . . . . . . . . . . . . . 78
+5 Đọc mảng nhiều chiều từ File . . . . . . . . . . . . . . . . . . . . . . . . 79
+6 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+7 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+
+Chương 9. Hàm và lời gọi hàm 85
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+2 Định nghĩa hàm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+3 Gọi Hàm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+3.1 Đối Số Mặc Định . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+3.2 Giá Trị Trả Về . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+3.3 Câu lệnh pass . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+Trang 4 The Dariu Foundation
+4 Viết hàm để tính giai thừa . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+4.1 Viết hàm sử dụng vòng lặp for . . . . . . . . . . . . . . . . . . . 89
+4.2 Viết hàm sử dụng đệ quy . . . . . . . . . . . . . . . . . . . . . . . 89
+5 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+6 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+
+Chương 10. Cấu trúc dữ liệu nâng cao trên Python 95
+1 Giới thiệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+2 Chuỗi (string) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+2.1 Nối chuỗi, thay đổi hoặc xóa chuỗi . . . . . . . . . . . . . . . . 96
+2.2 Phương thức dùng với biến kiểu chuỗi . . . . . . . . . . . . . . 97
+3 Cấu trúc dữ liệu Tuple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+3.1 Khởi tạo và truy xuất các phần tử trong Tuple . . . . . . . . . . 97
+3.2 Các thao tác với Tuple . . . . . . . . . . . . . . . . . . . . . . . . 98
+3.3 Khi nào sử dụng Tuple . . . . . . . . . . . . . . . . . . . . . . . . 98
+4 Cấu trúc dữ liệu tập hợp (Set) . . . . . . . . . . . . . . . . . . . . . . . . 99
+4.1 Khởi tạo và truy xuất các phần tử trong tập hợp . . . . . . . . . 99
+4.2 Thay đổi tập hợp . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+4.3 Các phép toán trong tập hợp . . . . . . . . . . . . . . . . . . . . 100
+4.3.1 Phép hợp (Union) . . . . . . . . . . . . . . . . . . . . . 100
+4.3.2 Phép giao (Intersection) . . . . . . . . . . . . . . . . . 100
+4.3.3 Phép hiệu (Difference) . . . . . . . . . . . . . . . . . . 100
+4.3.4 Hiệu đối xứng của hai tập hợp (Symmetric difference)101
+4.4 Khi nào sử dụng tập hợp . . . . . . . . . . . . . . . . . . . . . . . 101
+5 Cấu trúc dữ liệu từ điển (Dictionary) . . . . . . . . . . . . . . . . . . . . 101
+5.1 Khởi tạo và truy xuất các phần tử trong từ điển . . . . . . . . . 101
+5.2 Thêm và cập nhật phần tử trong từ điển . . . . . . . . . . . . . 102
+5.3 Xóa phần tử khỏi từ điển . . . . . . . . . . . . . . . . . . . . . . . 102
+5.4 Một số phương thức hay dùng trong từ điển . . . . . . . . . . . 103
+5.5 Khi nào sử dụng từ điển . . . . . . . . . . . . . . . . . . . . . . . 103
+6 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+7 Câu hỏi ôn tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+II Dự án ứng dụng 107
+
+Chương 11. Trợ lý ảo trên Python - Văn bản thành Giọng nói 109
+Chương 12. Trợ lý ảo trên Python - Nhận diện giọng nói 115
+Chương 13. Trợ lý ảo trên Python - Xây dựng trí thông minh 121
+Chương 14. Lập trình giao diện trên Python 125
+Chương 15. Tạo hàm xử lý cho nút nhấn 131
+Chương 16. Xử lý lỗi trên giao diện 135
+Phần mềm lập trình python mà coder nên dùng
+ Tài liệu Python (PDF) miễn phí
+ Cú pháp Python
+Có nhiều phần mềm để code python, nhưng phần mềm lập trình python mà coder nên dùng là gì ?
+Các phần mềm phổ biến nhất để chỉnh sửa và phát triển Python hiện nay bao gồm:
+PyCharm
+Visual Studio Code (VS Code)
+Jupyter Notebook
+Spyder
+Thonny
+Code Python Online
+
+Các phần mềm phổ biến nhất để chỉnh sửa và phát triển Python hiện nay bao gồm:
+phần mềm lập trình python mà coder nên biết
+
+
+1. PyCharm
+ Là IDE (Môi trường phát triển tích hợp) dành riêng cho Python do JetBrains phát triển. PyCharm có cả phiên bản miễn phí (Community) và phiên bản trả phí (Professional), cung cấp các tính năng như kiểm tra cú pháp, gợi ý mã, và tích hợp sẵn công cụ quản lý thư viện.
+
+ Link download phần mềm PyCharm
+
+
+2. Visual Studio Code (VS Code)
+Là trình soạn thảo mã nguồn mở của Microsoft, hỗ trợ nhiều ngôn ngữ lập trình, trong đó có Python. Với tiện ích mở rộng Python (Python extension), VS Code hỗ trợ gợi ý mã, gỡ lỗi, quản lý thư viện, và tích hợp với nhiều công cụ Python khác.
+
+ Link download phần mềm VS Code
+
+
+3. Jupyter Notebook
+Chủ yếu dành cho phát triển và kiểm thử mã Python cho khoa học dữ liệu và học máy. Jupyter Notebook cho phép thực thi mã theo từng khối và hiển thị trực quan kết quả, rất phù hợp cho các công việc về phân tích dữ liệu.
+
+
+4. Spyder
+Được phát triển dành riêng cho khoa học dữ liệu và phân tích, Spyder tích hợp nhiều thư viện dữ liệu như NumPy, Pandas, và Matplotlib. Giao diện của Spyder khá giống với RStudio, dễ dùng cho các nhà khoa học dữ liệu.
+
+ 
+
+5.IDLE
+Là IDE mặc định khi cài đặt Python, phù hợp cho người mới bắt đầu. IDLE rất nhẹ, dễ sử dụng, và hỗ trợ một số tính năng cơ bản như gỡ lỗi và kiểm tra cú pháp.
+
+
+6. Thonny
+Một IDE nhẹ và thân thiện với người mới học, Thonny được thiết kế đặc biệt để học lập trình Python cơ bản với giao diện đơn giản và dễ dùng.
+
+
+7. Code Python Online
+Code Python không cần cài phần mềm
+Cú pháp Python
+ Phần mềm lập trình python mà coder nên dùng
+ Comment trong Python
+Cú pháp Python
+Cú pháp Python (Python syntax) đề cập đến các quy tắc cấu trúc của ngôn ngữ lập trình Python. Dưới đây là một số yếu tố cơ bản của cú pháp Python
+
+1. Biến và Kiểu dữ liệu
+    Khởi tạo biến: Không cần khai báo kiểu dữ liệu, Python tự động nhận diện kiểu.
+
+x = 10      # Kiểu int
+name = "John" # Kiểu string
+is_valid = True  # Kiểu bool
+
+2. Câu lệnh điều kiện
+    if, elif, else
+
+x = 10
+if x > 0:
+    print("x là số dương")
+elif x == 0:
+    print("x là 0")
+else:
+    print("x là số âm")
+
+3. Vòng lặp
+    for loop: Dùng để lặp qua một đối tượng iterable (list, tuple, string, v.v.)
+
+for i in range(5):  # Lặp qua 0, 1, 2, 3, 4
+    print(i)
+
+    while loop: Lặp khi điều kiện là True.
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+4. Hàm (Function)
+    Định nghĩa hàm:
+
+def greet(name):
+    return "Hello " + name
+
+    Gọi hàm:
+
+result = greet("Alice")
+print(result)
+
+5. Danh sách (List), Tuple, Dictionary
+    Danh sách (List):
+
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+print(fruits)
+
+    Tuple: Không thể thay đổi sau khi khởi tạo.
+
+point = (1, 2)
+print(point)
+
+    Dictionary:
+
+person = {"name": "Alice", "age": 30}
+print(person["name"])
+
+6. Xử lý ngoại lệ
+    Try, except:
+
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Không thể chia cho 0!")
+
+7. Câu lệnh nhập/xuất
+    Input:
+
+name = input("Nhập tên của bạn: ")
+print("Chào", name)
+
+    Print:
+
+print("Chào bạn!")
+
+8. Câu lệnh return trong hàm
+def add(a, b):
+    return a + b
+result = add(5, 3)
+print(result)  # In ra 8
+
+9. Indentation (Thụt lề)
+    Python sử dụng thụt lề (indentation) thay vì dấu ngoặc nhọn {} để xác định phạm vi của khối mã. Ví dụ:
+
+if True:
+    print("Đây là một khối mã trong if")
+
+Đây chỉ là một số cú pháp cơ bản. Python có rất nhiều tính năng và cấu trúc khác nhau để làm việc với các dữ liệu phức tạp hơn.
+Comment trong Python
+ Cú pháp Python
+ Cách in ra màn hình python
+Trong Python, bạn có thể sử dụng comment (chú thích) để giải thích mã hoặc tắt các dòng mã không cần thiết mà không ảnh hưởng đến chương trình.
+Comment dòng đơn trong Python
+Comment nhiều dòng trong Python
+Phím tắt comment Python
+
+1. Comment dòng đơn trong Python
+Comment dòng đơn bắt đầu bằng dấu #. Tất cả những gì sau dấu # trên dòng đó sẽ bị Python bỏ qua.
+
+Ví dụ:
+
+# Đây là một comment dòng đơn
+print("Hello, World!")  # Đây cũng là một comment
+
+
+2. Comment nhiều dòng trong Python
+Python không có cú pháp chính thức cho comment nhiều dòng, nhưng bạn có thể sử dụng chuỗi đa dòng (triple quotes) ''' hoặc """ để thực hiện việc này. Mặc dù chuỗi này thường được dùng cho docstring (chú thích hàm, lớp, module), nhưng bạn cũng có thể dùng chúng như comment.
+
+Ví dụ:
+
+'''
+Đây là một comment nhiều dòng.
+Python sẽ bỏ qua tất cả những dòng trong dấu ba dấu nháy đơn.
+'''
+print("Hello, World!")
+
+"""
+Đây cũng là một comment nhiều dòng.
+Bạn có thể sử dụng dấu ba dấu nháy kép để làm điều này.
+"""
+print("Hello again!")
+
+Một cách khác là bạn có thể viết các comment trên từng dòng bằng cách sử dụng dấu #:
+
+# Đây là comment dòng 1
+# Đây là comment dòng 2
+# Đây là comment dòng 3
+
+
+3. Phím tắt (phím nóng) Comment nhanh trong một số phần mềm soạn thảo code
+Trong Python, bạn có thể sử dụng các phím tắt trong các môi trường phát triển (IDE) như VS Code, PyCharm, hoặc IDLE để thêm hoặc bỏ comment nhanh chóng. Dưới đây là một số phím tắt phổ biến cho comment trong một số IDE
+
+(1) Phím tắt comment VS Code
+    Comment dòng đơn:
+        Windows/Linux: Ctrl + /
+        Mac: Cmd + /
+    Comment nhiều dòng (Chọn nhiều dòng mã và comment):
+        Windows/Linux: Shift + Alt + A
+        Mac: Shift + Option + A
+
+(2) Phím tắt comment trong PyCharm
+    Comment dòng đơn:
+        Windows/Linux: Ctrl + /
+        Mac: Cmd + /
+    Comment nhiều dòng (Chọn nhiều dòng mã và comment):
+        Windows/Linux: Ctrl + Shift + /
+        Mac: Cmd + Shift + /
+
+(3) Phím tắt comment trong IDLE
+    Comment dòng đơn:
+        Windows/Linux/Mac: Ctrl + 1
+Cách in ra màn hình python
+ Comment trong Python
+ Một số ký tự đặc biệt trong Python
+Để in ra màn hình trong Python, bạn sử dụng hàm print Đây là cách đơn giản để hiển thị nội dung hoặc giá trị lên màn hình.
+Cú pháp in ra màn hình đơn giản
+In ra 1 chuỗi
+In ra 1 biến
+In ra dạng kết hợp
+Cú pháp mở rộng hàm print trong python
+Video thực hành về hàm print python
+Trong Python, để in ra màn hình, bạn sử dụng hàm print(). Đây là cú pháp cơ bản của hàm print
+
+Cú pháp cơ bản, cách in ra màn hình (print())
+
+
+1. Cú pháp in ra màn hình đơn giản
+
+In ra 1 chuỗi
+print("Nội dung cần in")
+
+Ví dụ đơn giản:
+
+print("Xin chào bạn đến với web lập trình iif.vn")
+
+Kết quả sẽ là:
+
+Xin chào bạn đến với web lập trình iif.vn
+
+
+In ra 1 biến
+print(tên_biến)
+
+Ví dụ đơn giản:
+
+str="Đào tạo lập trình iif"
+print(str)
+
+Kết quả sẽ là:
+
+Đào tạo lập trình iif
+
+Ví dụ sau sẽ lỗi:
+
+str=Đào tạo lập trình iif
+print(str)
+Nguyên nhân: giá trị của biểu kiểu chữ phải để trong dấu ngoặc kép, tức là str="Đào tạo lập trình iif"
+
+
+In ra dạng kết hợp
+print("Nội dung" + tên_biến)
+
+Ví dụ đơn giản:
+
+str="Đào tạo lập trình iif"
+print("Xin chào:" & str)
+
+Kết quả sẽ là:
+
+Xin chào:Đào tạo lập trình iif
+
+ 
+
+
+2. Cú pháp mở rộng hàm print trong python
+    Bạn có thể in nhiều đối tượng cùng lúc, các đối tượng sẽ được nối với nhau bằng một dấu cách mặc định.
+
+print("Lập trình", "C#", "Python")
+
+Kết quả sẽ là:
+
+Lập trình C# Python
+
+Bạn có thể thay đổi dấu phân cách giữa các đối tượng bằng cách sử dụng tham số sep
+
+Tham số sep bên các ngôn ngữ như c#, java không có nhưng python đã tạo ra được code này là 1 điều tuyệt với.
+
+print("PhP", "C#", "Python", sep="-")
+
+Kết quả:
+
+PhP-C#-Python
+
+Nếu bạn muốn kết thúc dòng in ra với một ký tự khác (ví dụ: dấu phẩy hoặc dấu chấm) thay vì dấu xuống dòng mặc định, bạn có thể sử dụng tham số end:
+
+print("Chào", end=" ")
+print("bạn!")
+
+Kết quả:
+
+Chào bạn!
+
+
+3. Video thực hành về hàm print python
+Một số ký tự đặc biệt trong Python
+ Cách in ra màn hình python
+ Làm việc với chuỗi trong Python
+Hướng dãn chi tiết một số ký tự đặc biệt trong Python
+
+1️⃣ Ký tự escape: \n
+Xuống dòng (tương tự nhấn Enter)
+
+ print("Hello\nWorld") 
+2️⃣ Ký tự escape: \t
+Tab ngang tạo khoảng trắng rộng
+
+ print("A\tB\tC") 
+3️⃣ Ký tự escape: \\
+In dấu \ trong chuỗi
+
+ print("C:\\Windows") 
+4️⃣ Ký tự escape: \"
+In dấu " trong chuỗi dùng ngoặc kép
+
+ print("He said: \"Hello\"") 
+5️⃣ Ký tự escape: \'
+In dấu ' trong chuỗi dùng ngoặc đơn
+
+ print('It\'s OK') 
+6️⃣ Ký tự escape: \r
+Trở về đầu dòng và ghi đè ký tự
+
+ print("ABC\rD") 
+7️⃣ Ký tự escape: \b
+Xóa ký tự phía trước (Backspace)
+
+ print("Helloo\b") 
+8️⃣ Ký tự escape: \f
+Form feed — xuống trang mới (ít dùng)
+
+ print("Hello\fWorld") 
+9️⃣ Ký tự escape: \a
+Chuông cảnh báo (beep) nếu hệ thống hỗ trợ
+
+ print("\a") 
+🔟 Ký tự escape: \v
+Tab dọc — rất ít dùng
+
+ print("Text\vHere") 
+Làm việc với chuỗi trong Python
+ Một số ký tự đặc biệt trong Python
+ Hàm print trong python
+Khi làm việc với chuỗi (strings) trong Python, bạn có thể thực hiện nhiều thao tác khác nhau như nối chuỗi, cắt chuỗi, tìm kiếm chuỗi, thay thế chuỗi, v.v.
+Khai báo chuỗi
+Nối chuỗi
+Cắt chuỗi (slicing)
+Tìm kiếm trong chuỗi
+Thay thế chuỗi
+Kiểm tra sự tồn tại của chuỗi con
+Chuyển đổi chữ hoa, chữ thường
+Xóa khoảng trắng thừa
+Đếm số lần xuất hiện của một chuỗi con
+Kiểm tra chuỗi bắt đầu hay kết thúc bằng một chuỗi khác
+Dưới đây là một số thao tác cơ bản mà bạn có thể thực hiện với chuỗi trong Python
+
+
+1. Khai báo chuỗi
+# Khai báo chuỗi
+my_string = "Hello, World!"
+
+
+2. Nối chuỗi
+Bạn có thể nối chuỗi bằng cách sử dụng dấu +.
+
+string1 = "Hello"
+string2 = "World"
+result = string1 + " " + string2  # Kết quả: "Hello World"
+
+
+3. Cắt chuỗi (slicing)
+Bạn có thể cắt chuỗi bằng cách chỉ định chỉ số của phần bạn muốn lấy.
+
+my_string = "Hello, World!"
+substring = my_string[0:5]  # Lấy "Hello"
+
+
+4. Tìm kiếm trong chuỗi
+Sử dụng phương thức find() hoặc index() để tìm vị trí của một phần tử trong chuỗi.
+
+my_string = "Hello, World!"
+position = my_string.find("World")  # Kết quả: 7
+
+
+5. Thay thế chuỗi
+Bạn có thể thay thế một phần của chuỗi bằng phương thức replace().
+
+my_string = "Hello, World!"
+new_string = my_string.replace("World", "Python")  # Kết quả: "Hello, Python!"
+
+
+6. Kiểm tra sự tồn tại của chuỗi con
+Bạn có thể kiểm tra xem một chuỗi con có tồn tại trong chuỗi không bằng toán tử in.
+
+my_string = "Hello, World!"
+result = "World" in my_string  # Kết quả: True
+
+
+7. Chuyển đổi chữ hoa, chữ thường
+    lower() để chuyển tất cả các ký tự thành chữ thường.
+    upper() để chuyển tất cả các ký tự thành chữ hoa.
+
+my_string = "Hello, World!"
+print(my_string.lower())  # Kết quả: "hello, world!"
+print(my_string.upper())  # Kết quả: "HELLO, WORLD!"
+
+
+8. Xóa khoảng trắng thừa
+Phương thức strip() loại bỏ khoảng trắng ở đầu và cuối chuỗi.
+
+my_string = "   Hello, World!   "
+new_string = my_string.strip()  # Kết quả: "Hello, World!"
+
+
+9. Đếm số lần xuất hiện của một chuỗi con
+Phương thức count() cho phép đếm số lần xuất hiện của chuỗi con trong chuỗi gốc.
+
+my_string = "Hello, Hello, Hello!"
+count = my_string.count("Hello")  # Kết quả: 3
+
+
+10. Kiểm tra chuỗi bắt đầu hay kết thúc bằng một chuỗi khác
+    startswith(): kiểm tra xem chuỗi có bắt đầu bằng chuỗi con không.
+    endswith(): kiểm tra xem chuỗi có kết thúc bằng chuỗi con không.
+
+my_string = "Hello, World!"
+print(my_string.startswith("Hello"))  # Kết quả: True
+print(my_string.endswith("World!"))  # Kết quả: True
+Hàm print trong python
+ Làm việc với chuỗi trong Python
+ Nguyên lý cấp phát bộ nhớ cho biến trong Python
+print trong Python là một hàm thường xuyên sử dụng để in nội dung ra màn hình và nhiều tính năng hữu ích mà lập trình viên python cần biết.
+Hàm print trong python là gì
+Cú pháp hàm print trong python
+Print đơn giản
+Print giá trị từ biến
+Print giá trị từ biểu thức
+Print sử dụng f-string
+Print với tham số đầy đủ
+Giải thích các tham số trong hàm print Python
+sep
+end
+Một số ví dụ hàm print trong python
+Print chuỗi
+Print kết hợp với các ký tự đặc biệt
+Print nhiều đối tượng
+Thay đổi phân cách (sep)
+Thay đổi ký tự kết thúc (end)
+In vào tệp
+Trang trí dạng table với lệnh print
+Video thực hành hàm print python
+
+1. Hàm print trong python là gì
+Là hàm có chức năng in giá từ từ chuỗi / biến / biểu thức ra màn hình.
+
+Giải thích Hàm print trong python
+
+Hàm print() là một công cụ quan trọng trong Python để hiển thị thông tin ra màn hình, giúp lập trình viên kiểm tra, gỡ lỗi hoặc thông báo cho người dùng trong suốt quá trình lập trình.
+
+ 
+
+
+2. Cú pháp hàm print trong python
+
+Print đơn giản
+print("Nội dung")
+
+print("Nội dung 1","Nội dung 2") 
+
+
+Print giá trị từ biến
+so=100
+print(so)   -> in ra 100
+hoten="iif"
+print(hoten)   -> in ra chữ iif
+
+
+Print giá trị từ biểu thức
+print(5+2)  -> in ra số 7
+
+tong=2+7
+
+print(tong)  -> in ra số 9
+
+
+Print sử dụng f-string
+a=5
+b=2
+print(f"{a}+{b}={a+b}")  -> in ra số 5+2=7
+
+Khi chạy Python sẽ thay thế:
+
+{a} → 5 ,  {b} → 2 ,  {a+b} → 7
+
+
+Print với tham số đầy đủ
+  print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+
+3. Giải thích các tham số trong hàm print Python
+    *objects: Một hoặc nhiều đối tượng cần in. Có thể là chuỗi, số, danh sách, từ điển, v.v. Những đối tượng này sẽ được chuyển đổi thành chuỗi và in ra.
+
+
+    sep: Ký tự phân cách giữa các đối tượng (mặc định là một khoảng trắng ' ').
+
+print("A", "B", "C", sep="-")
+Kết quả: A-B-C
+ 
+
+
+    end: Chuỗi kết thúc sau khi in (mặc định là một dòng mới \n).
+
+print("Hello", end=" ")
+print("Python")
+print("1", "2", "3", sep=", ", end=".")
+Kết quả: 1, 2, 3.
+ 
+
+    file: Đầu ra, mặc định là sys.stdout, có thể thay đổi để ghi ra tệp.
+    flush: Nếu là True, sẽ buộc bộ đệm đầu ra được ghi ngay lập tức.
+
+
+4. Một số ví dụ hàm print trong python
+
+In chuỗi
+print("Hello, World!")
+
+In kết hợp với các ký tự đặc biệt
+Ký tự xuống dòng \n
+
+➡️ Dùng để xuống dòng mới.
+
+print("Xin chào\nPython")
+
+# Xin chào
+# Python
+Ký tự tab \t
+
+➡️ Tạo khoảng cách ngang (tab).
+
+print("Tên\tTuổi\tLớp")
+print("An\t15\t9A")
+
+In nhiều đối tượng
+x = 5
+y = 10
+print("x =", x, "y =", y)  # In ra: x = 5 y = 10
+Xem video thực hành python, sử dụng tham số print
+
+
+
+
+Thay đổi phân cách (sep)
+print("Hello", "World", sep="-")  # In ra: Hello-World
+
+
+Thay đổi ký tự kết thúc (end)
+print("Hello", end=" ")
+print("World!")  # In ra: Hello World!
+
+
+In vào tệp
+    with open("output.txt", "w") as file:
+        print("Hello, File!", file=file)
+
+
+Trang trí dạng table với lệnh print
+Thường kết hợp với biển kiểu List, định dạng hiển thị ra màn hình dạng bảng gồm dòng và cột trong python.
+
+Bạn xem 2 đoạn code dưới, đoạn code python nào thông mình hơn
+
+print("TT               Họ tên              Điểm")
+print("{:<15} {:20} {:<15}".format("TT","Họ tên","Điểm"))
+
+* Trả lời: đoạn thứ 2 ứng dụng nhiều trong thực tế hơn.
+
+Sau đây là ví dụ trang trí hiển thị dữ liệu dạng bảng với python:
+
+data = [
+    [101, "An", 8.5],
+    [102, "Hùng", 7.0],
+    [103, "Cường", 9.2]
+]
+# In tiêu đề
+print("{:<15} {:<20} {:<15}".format("Mã", "Tên", "Điểm"))
+print("-" * 40)
+
+# In dữ liệu
+for row in data:
+    print("{:<15} {:<20} {:<15}".format(row[0], row[1], row[2]))
+ 
+Bạn xem video về trang trí table với python khi làm phần mềm ứng dụng.
+
+
+ 
+
+5. Video thực hành hàm print
+Nguyên lý cấp phát bộ nhớ cho biến trong Python
+ Hàm print trong python
+ Biến và kiểu dữ liệu trong Python
+Lập trình viên hiểu rõ chi tiết về nguyên lý cấp phát bộ nhớ cho biến trong Python giúp lập trình ứng dụng với Python tốt hơn.
+Một số định nghĩa
+Hai loại bộ nhớ Stack, Heap trong hệ thống máy tính
+Quy trình cấp phát bộ nhớ
+* Nhiệm vụ cấp phát
+* Thứ tự cấp phát
+
+1. Một số định nghĩa
+a=5
+Khai báo biến: Python tự động tạo một vùng nhớ cho biến a để lưu trữ giá trị 5.
+
+Khai báo biến nghĩa là tạo một hộp để chứa thứ gì đó.
+Mỗi hộp có tên riêng để bạn biết mình bỏ gì vào.
+Chỉ khai báo thôi thì hộp vẫn trống, chưa có gì bên trong.
+
+Gán giá trị: Python nhận diện giá trị 5 là một số nguyên (int) và cấp phát bộ nhớ cho đối tượng số nguyên này. 
+
+Gán giá trị nghĩa là đặt thứ gì đó vào trong hộp.
+
+age = 10
+name = "Hoang"
+age = 10 → bỏ số 10 vào hộp tên age.
+name = "Hoang" → bỏ chữ “Hoang” vào hộp tên name.
+
+Giống như bạn có hộp tên age, bạn đặt vào đó quả táo màu 10 hoặc tên “Hoang”.
+
+
+2. Hai loại bộ nhớ Stack, Heap trong hệ thống máy tính
+Stack là bộ nhớ được sử dụng cho các biến cục bộ và tham số hàm. Nó được quản lý tự động, nhanh chóng nhưng có giới hạn về kích thước. Các biến trong stack có thể bị mất khi hàm kết thúc.
+
+Heap là bộ nhớ dành cho các đối tượng và dữ liệu động mà bạn muốn lưu trữ trong suốt vòng đời của chương trình. Nó linh hoạt hơn và có thể sử dụng nhiều bộ nhớ hơn, nhưng quản lý bộ nhớ phức tạp và chậm hơn stack.
+
+Về Stack và Heap
+
+Stack luôn lưu biến và tham chiếu (hoặc các tham số hàm).
+
+Heap lưu giá trị thực sự của các đối tượng (số, chuỗi, list, dict…).
+
+Nguyên lý cấp phát bộ nhớ cho biến trong Python
+
+
+3. Quy trình cấp phát bộ nhớ
+a=10
+print("a=",a)
+b=a
+print("b=",b)
+a=20
+print("a=",a)
+
+
+* Nhiệm vụ cấp phát
+Cấp phát bộ nhớ cho biến (Stack)
+
+Stack: a    b 
+
+Tạo đối tượng trong bộ nhớ (Heap)
+
+Heap:     10          20
+
+
+* Thứ tự cấp phát
+1️⃣ Bước 1: a = 10
+
+Python tạo một giá trị 10 trong Heap (bộ nhớ động).
+Biến a trên Stack lưu tham chiếu đến giá trị 10 trong Heap.
+
+Stack:   a → [tham chiếu đến 10]
+Heap:    10
+
+2️⃣ Bước 2: b = a
+
+Biến b trên Stack được tạo.
+b lấy tham chiếu của a, tức cùng trỏ tới giá trị 10 trong Heap.
+
+Stack:   a → [10]
+         b → [10]
+Heap:    10
+
+3️⃣ Bước 3: a = 20
+
+Python tạo giá trị 20 mới trong Heap.
+a trên Stack được cập nhật trỏ tới 20.
+b vẫn trỏ tới 10 trong Heap (không thay đổi).
+
+Stack:   a → [20]
+         b → [10]
+Heap:    10, 20
+
+Tóm lai quá trình cấp phát bộ nhớ
+
+Stack: lưu biến và tham chiếu.
+Heap: lưu giá trị thực sự.
+
+Khi gán b = a, chỉ copy tham chiếu, không copy giá trị.
+Khi đổi a = 20, Python tạo giá trị mới trong Heap và cập nhật a trên Stack, b vẫn giữ giá trị cũ.
+Biến và kiểu dữ liệu trong Python
+ Nguyên lý cấp phát bộ nhớ cho biến trong Python
+ Ép kiểu dữ liệu trong Python
+Trong Python, biến là một không gian lưu trữ có tên mà bạn có thể sử dụng để lưu trữ giá trị.
+Biến trong Python
+Quy tắt đặt tên biến trong Python
+Kiểu dữ liệu trong Python
+Kiểu dữ liệu số học (Numeric Types)
+Kiểu dữ liệu chuỗi (String)
+Kiểu dữ liệu boolean (Logical Types)
+Kiểu dữ liệu danh sách (List)
+Kiểu dữ liệu tuple
+Kiểu dữ liệu từ điển (Dictionary)
+Kiểu dữ liệu tập hợp (Set)
+Kiểu dữ liệu None
+Kiểm tra kiểu dữ liệu của một biến
+Một số phép toán phổ biến với kiểu dữ liệu
+Chia sẽ Kinh nghiêm về python
+Python là một ngôn ngữ LẬP TRÌNH mạnh mẽ với kiểu dữ liệu động, nghĩa là bạn không cần phải khai báo kiểu dữ liệu của biến khi khai báo. Python sẽ tự động nhận diện kiểu dữ liệu dựa trên giá trị gán cho biến.
+
+Biến và kiểu dữ liệu trong Python
+
+
+1. Biến trong Python
+Biến là gì ?
+
+Biến trong python là gì
+
+ Biến (variable) trong lập trình là một vùng nhớ được đặt tên để lưu trữ dữ liệu. Bạn có thể coi biến như một hộp chứa thông tin trong bộ nhớ máy tính, nơi bạn có thể lưu trữ và thay đổi giá trị theo nhu cầu của chương trình.
+
+   Biến được tạo ra khi bạn gán giá trị cho nó.
+    Bạn có thể đặt tên cho biến theo quy tắc sau:
+        Tên biến phải bắt đầu bằng chữ cái hoặc dấu gạch dưới (_).
+        Các ký tự còn lại có thể là chữ cái, số hoặc dấu gạch dưới.
+        Tên biến không được trùng với từ khóa trong Python (như if, else, True, False, v.v.).
+
+Ví dụ tạo biến python:
+
+x = 10        # Biến x lưu trữ số nguyên 10
+monhoc= "Python"  # Biến monhoc lưu trữ chuỗi "Python" 
+Sau khi tạo biến làm sao để in giá trị biến để xem:
+
+
+print(x)
+print(monhoc) 
+
+2. Quy tắc đặt tên trong Python
+    Tên phải bắt đầu bằng chữ cái hoặc dấu gạch dưới (_):
+        Các tên biến, hàm, lớp, v.v. phải bắt đầu bằng một chữ cái (a-z, A-Z) hoặc dấu gạch dưới (_).
+        Ví dụ hợp lệ: x, my_var, _hidden_var
+        Ví dụ không hợp lệ: 1var, @variable
+
+    Tên có thể chứa các chữ cái, số và dấu gạch dưới:
+        Sau ký tự đầu tiên, tên có thể chứa chữ cái (a-z, A-Z), số (0-9), và dấu gạch dưới (_).
+        Ví dụ hợp lệ: var_1, my_variable, totalAmount
+        Ví dụ không hợp lệ: var@, total#Amount
+
+    Không sử dụng từ khóa của Python:
+       Python có một số từ khóa đã được định nghĩa sẵn và không thể sử dụng làm tên biến, hàm, lớp, v.v.
+        Các từ khóa này bao gồm: False, None, True, and, as, assert, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield.
+        Ví dụ không hợp lệ: class = 10, if = 5
+
+    Tên phân biệt chữ hoa chữ thường:
+       Python là ngôn ngữ phân biệt chữ hoa chữ thường, tức là Variable và variable là hai tên khác nhau.
+        Ví dụ hợp lệ: myVar, myvar, MYVAR đều là các tên hợp lệ nhưng khác nhau.
+
+    Không sử dụng dấu cách
+       Python không cho phép sử dụng dấu cách trong tên biến. Thay vào đó, bạn có thể sử dụng dấu gạch dưới (_) để phân tách các từ.
+        Ví dụ hợp lệ: my_variable, total_amount
+        Ví dụ không hợp lệ: my variable, total amount
+
+
+3. Kiểu dữ liệu trong Python
+Python hỗ trợ nhiều kiểu dữ liệu, bao gồm các kiểu dữ liệu cơ bản và các kiểu dữ liệu phức tạp.
+
+
+3.1 Kiểu dữ liệu số học (Numeric Types)
+    int (Số nguyên): Đại diện cho các số nguyên không có phần thập phân.
+        Ví dụ: x = 5, y = -3, z = 1000
+    float (Số thực): Đại diện cho các số có phần thập phân.
+        Ví dụ: x = 3.14, y = -0.5, z = 2.0
+ 
+
+
+3.2 Kiểu dữ liệu chuỗi (String)
+    str: Đại diện cho một chuỗi ký tự. Có thể sử dụng dấu nháy đơn ' hoặc dấu nháy kép " để tạo chuỗi.
+
+        Ví dụ:
+
+        hoten= "Mr Nhật"
+        MonHocYeuThich= 'Python' 
+
+
+    Bạn có thể thao tác với chuỗi như nối, cắt, thay thế, tìm kiếm, v.v.
+        Nối chuỗi: str = "Mr Nhật" + " " + "Sở thích của tôi là lập trình"
+
+3.3 Kiểu dữ liệu boolean (Logical Types)
+    bool: Chỉ có hai giá trị: True và False. Thường được sử dụng trong các phép toán điều kiện.
+
+        Ví dụ kiểu boolean python:
+
+        is_active = True
+        is_deleted = False 
+
+3.4 Kiểu dữ liệu danh sách (List)
+    list: Là một tập hợp có thể thay đổi (mutable), có thể chứa nhiều giá trị khác nhau và có thể thay đổi trong quá trình chạy chương trình.
+
+        Ví dụ kiểu List trong python:
+
+        numbers = [1, 2, 3, 4, 5]
+        monhoc= ["C#", "Python", "Java"] 
+
+3.5 Kiểu dữ liệu tuple
+    tuple: Giống như danh sách, nhưng không thể thay đổi (immutable). Sau khi tạo tuple, bạn không thể thêm, sửa hoặc xóa phần tử.
+   Trong một số ngôn ngữ khác thì gọi là hằng số (const)
+
+        Ví dụ:
+
+        so = (10, 20)
+        days = ("Monday", "Tuesday", "Wednesday") 
+
+3.6 Kiểu dữ liệu từ điển (Dictionary)
+    dict: Lưu trữ dữ liệu dưới dạng các cặp khóa-giá trị. Mỗi khóa là duy nhất trong dictionary.
+
+        Ví dụ đơn giản:
+
+thongtin= {"Ten": "Nhật", "SoThich": "Lập trình", "NamKinhNghiem":12}
+print(thongtin["Ten"])  # Output: Nhật
+print(thongtin["SoThich"])   # Output: Lập trình
+print(thongtin["NamKinhNghiem"])  # Output: 12
+  Ví dụ nhiều phần từ:
+
+hocvien= [{"Ten": "Nhật", "MonHoc": "C#"},{"Ten": "Mỹ", "MonHoc": "Java"}]
+print(hocvien[0]["Ten"])  # Output: Nhật
+print(hocvien[0]["MonHoc"])   # Output: C#print(hocvien[1]["Ten"])  # Output: Mỹ
+print(hocvien[1]["MonHoc"])   # Output: Java
+
+3.7 Kiểu dữ liệu tập hợp (Set)
+Tập hợp (Set) trong Python là một kiểu dữ liệu đặc biệt dùng để lưu trữ một tập hợp các phần tử không trùng lặp. Các phần tử trong một tập hợp có thể là bất kỳ kiểu dữ liệu nào (số, chuỗi, v.v.), nhưng chúng phải là các đối tượng bất biến (immutable).
+
+Đặc điểm của Set trong python
+
+    Không có thứ tự (unordered): Các phần tử trong set không có thứ tự nhất định. Do đó, bạn không thể truy cập các phần tử trong set bằng chỉ số (index).
+    Không có phần tử trùng lặp: Set tự động loại bỏ các phần tử trùng lặp.
+    Thao tác nhanh: Set hỗ trợ các phép toán như hợp, giao, hiệu nhanh chóng.
+
+Ví dụ 1: Tạo Set từ một danh sách (List)
+
+
+my_set = {1, 2, 3, 4, 5}
+print(my_set)  # Output: {1, 2, 3, 4, 5}
+
+
+Ví dụ 2: Tạo Set từ một chuỗi (String)
+
+my_set = set("apple")
+print(my_set)  # Output: {'a', 'p', 'l', 'e'}
+Các thao tác với Set trong python
+
+    Thêm phần tử vào Set:
+
+Sử dụng phương thức add() để thêm một phần tử vào set.
+
+my_set.add(6)
+print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+    Xóa phần tử khỏi Set:
+
+Sử dụng phương thức remove() để xóa một phần tử. Nếu phần tử không có trong set, phương thức này sẽ gây ra lỗi.
+
+my_set.remove(3)
+print(my_set)  # Output: {1, 2, 4, 5, 6}
+
+Ngoài ra, bạn có thể dùng discard() để xóa phần tử mà không gây lỗi nếu phần tử không có trong set.
+
+my_set.discard(10)  # Không gây lỗi vì 10 không có trong set
+
+    Phép toán hợp (Union):
+
+Bạn có thể lấy hợp của hai set bằng toán tử | hoặc phương thức union().
+
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+union_set = set_a | set_b  # Hoặc set_a.union(set_b)
+print(union_set)  # Output: {1, 2, 3, 4, 5}
+
+    Phép toán giao (Intersection):
+
+Bạn có thể lấy giao của hai set bằng toán tử & hoặc phương thức intersection().
+
+intersection_set = set_a & set_b  # Hoặc set_a.intersection(set_b)
+print(intersection_set)  # Output: {3}
+
+    Phép toán hiệu (Difference):
+
+Lấy hiệu của hai set bằng toán tử - hoặc phương thức difference().
+
+difference_set = set_a - set_b  # Hoặc set_a.difference(set_b)
+print(difference_set)  # Output: {1, 2}
+
+    Phép toán bổ sung (Symmetric Difference):
+
+Lấy phần tử có trong một set mà không có trong set còn lại bằng toán tử ^ hoặc phương thức symmetric_difference().
+
+sym_diff_set = set_a ^ set_b  # Hoặc set_a.symmetric_difference(set_b)
+print(sym_diff_set)  # Output: {1, 2, 4, 5}
+
+Các phương thức hữu ích của Set:
+
+    len(set) – Trả về số lượng phần tử trong set.
+
+    in – Kiểm tra xem phần tử có tồn tại trong set hay không.
+
+print(2 in my_set)  # Output: True
+print(7 in my_set)  # Output: False
+
+clear() – Xóa tất cả các phần tử trong set.
+
+    my_set.clear()
+    print(my_set)  # Output: set()
+
+Ví dụ tổng hợp:
+
+
+# Tạo một set
+fruits = {"apple", "banana", "cherry"}
+
+# Thêm phần tử vào set
+fruits.add("orange")
+
+# Kiểm tra sự tồn tại của phần tử
+print("banana" in fruits)  # Output: True
+
+# Hợp hai set
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+union_set = set_a | set_b
+print(union_set)  # Output: {1, 2, 3, 4, 5} 
+
+3.8 Kiểu dữ liệu None
+    None: Là một giá trị đặc biệt trong Python, đại diện cho "không có giá trị" hoặc "không xác định".
+
+        Ví dụ:
+
+        a = None 
+
+4. Kiểm tra kiểu dữ liệu của một biến
+Bạn có thể kiểm tra kiểu dữ liệu của một biến bằng cách sử dụng hàm type().
+
+Ví dụ:
+
+x = 5
+print(type(x))  # Kết quả: <class 'int'>
+
+name = "John"
+print(type(name))  # Kết quả: <class 'str'>
+
+is_active = True
+print(type(is_active))  # Kết quả: <class 'bool'> 
+
+5. Một số phép toán phổ biến với kiểu dữ liệu
+    Phép toán số học: +, -, *, /, // (chia lấy phần nguyên), % (lấy phần dư), ** (lũy thừa)
+
+        Ví dụ:
+
+    x = 5
+    y = 2
+    print(x + y)  # 7
+    print(x / y)  # 2.5
+    print(x // y)  # 2
+    print(x % y)  # 1
+    print(x ** y)  # 25 
+
+
+Phép toán chuỗi:
+
+    Nối chuỗi: +
+    Lặp chuỗi: *
+    Cắt chuỗi: [start:end]
+    Ví dụ:
+
+        greeting = "Hello"
+        name = "John"
+        message = greeting + " " + name  # "Hello John"
+        print(message)
+
+        repeated = "Hi! " * 3  # "Hi! Hi! Hi! "
+        print(repeated) 
+
+6. Chia sẽ Kinh nghiêm về python
+    Python hỗ trợ nhiều kiểu dữ liệu cơ bản và cấu trúc dữ liệu khác nhau như int, float, str, list, tuple, dict, set, và None.
+    Biến trong Python không cần khai báo kiểu dữ liệu mà Python tự động xác định dựa trên giá trị gán cho biến.
+    Bạn có thể sử dụng các phép toán cơ bản để thao tác với các kiểu dữ liệu này, ví dụ: toán tử số học, chuỗi, và các thao tác trên danh sách, tuple, dictionary, v.v.
+Ép kiểu dữ liệu trong Python
+ Biến và kiểu dữ liệu trong Python
+ Kiểu ngày trong Python
+Trong Python, ép kiểu dữ liệu (type casting) là quá trình chuyển đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác.
+Tại sao phải ép kiểu dữ liệu
+Một số hàm ép kiểu trong Python
+Ví dụ về ép kiểu dữ liệu trong Python
+Chuyển đổi thành số nguyên (int)
+Chuyển đổi thành số thực (float)
+Chuyển đổi thành chuỗi (str)
+Chuyển đổi thành kiểu boolean (bool)
+Ví dụ thực tế về ép kiểu python
+Chia sẽ một số kinh nghiệm khi ép kiểu Python
+
+1. Tại sao phải ép kiểu dữ liệu trong Python
+Bạn hãy xem ví dụ sau, bạn sẽ hiểu vì sao lại cần ép kiểu dữ liệu
+
+a="7"
+b="10"
+print(a+b)
+Kết quả là 710 (đúng phải là 17)
+
+
+2. Một số hàm ép kiểu trong Python
+Bạn có thể ép kiểu dữ liệu trong Python bằng cách sử dụng các hàm có sẵn như int(), float(), str(), v.v.
+Các hàm ép kiểu cơ bản:
+
+    int(): Chuyển đổi giá trị thành kiểu số nguyên (integer).
+    float(): Chuyển đổi giá trị thành kiểu số thực (floating-point number).
+    str(): Chuyển đổi giá trị thành kiểu chuỗi (string).
+    bool(): Chuyển đổi giá trị thành kiểu boolean (True hoặc False).
+
+
+3. Ví dụ về ép kiểu dữ liệu trong Python
+
+Chuyển đổi thành số nguyên (int)
+x = "10"  # x là chuỗi
+x_int = int(x)  # Ép kiểu x thành số nguyên
+print(x_int)  # In ra: 10
+print(type(x_int))  # <class 'int'> 
+
+
+    Lưu ý: Nếu giá trị không phải là số hợp lệ (ví dụ: "abc"), Python sẽ báo lỗi khi ép kiểu.
+
+x = "abc"
+x_int = int(x)  # Sẽ báo lỗi: ValueError: invalid literal for int() with base 10: 'abc'
+
+Chuyển đổi thành số thực (float)
+x = "10.5"  # x là chuỗi
+x_float = float(x)  # Ép kiểu x thành số thực
+print(x_float)  # In ra: 10.5
+print(type(x_float))  # <class 'float'>
+
+
+    Lưu ý: Python sẽ chấp nhận chuỗi có dạng số thực để chuyển đổi thành kiểu float.
+
+Chuyển đổi thành chuỗi (str)
+x = 10  # x là số nguyên
+x_str = str(x)  # Ép kiểu x thành chuỗi
+print(x_str)  # In ra: '10'
+print(type(x_str))  # <class 'str'>
+
+    Lưu ý: Bạn có thể chuyển bất kỳ kiểu dữ liệu nào (số, boolean, danh sách, v.v.) thành chuỗi.
+
+
+Chuyển đổi thành kiểu boolean (bool)
+x = 1  # x là số nguyên
+x_bool = bool(x)  # Ép kiểu x thành boolean
+print(x_bool)  # In ra: True
+
+
+    Lưu ý: Mọi giá trị khác 0 đều chuyển thành True, và 0 sẽ chuyển thành False.
+
+x = 0
+x_bool = bool(x)  # Ép kiểu 0 thành False
+print(x_bool)  # In ra: False
+
+Ví dụ thực tế về ép kiểu python
+Giả sử bạn có một số giá trị và muốn chuyển đổi giữa các kiểu dữ liệu khác nhau:
+
+
+# Nhập từ người dùng
+user_input = input("Nhập một số: ")
+
+# Chuyển đổi từ chuỗi sang số nguyên và thực hiện phép toán
+user_input_int = int(user_input)
+user_input_float = float(user_input)
+
+print(f"Giá trị số nguyên: {user_input_int}")
+print(f"Giá trị số thực: {user_input_float}") 
+
+
+    Giải thích: Dữ liệu nhập vào từ người dùng luôn là chuỗi. Bạn có thể sử dụng int() hoặc float() để chuyển nó thành kiểu số nguyên hoặc số thực.
+
+4. Chia sẽ một số kinh nghiệm khi ép kiểu Python
+    Không phải lúc nào ép kiểu cũng thành công: Nếu giá trị không phù hợp với kiểu cần ép, Python sẽ ném ra lỗi. Ví dụ:
+
+    x = "abc"
+    x_int = int(x)  # Sẽ báo lỗi vì "abc" không thể chuyển thành số nguyên
+
+    Chuyển đổi kiểu giữa các kiểu dữ liệu: Bạn có thể chuyển đổi qua lại giữa các kiểu như int(), float(), và str(), nhưng cần đảm bảo rằng giá trị ban đầu là hợp lệ cho kiểu mà bạn muốn chuyển.
+
+Các bạn ghi nhớ những ý chính:
+
+    int(): Chuyển đổi thành số nguyên.
+    float(): Chuyển đổi thành số thực.
+    str(): Chuyển đổi thành chuỗi.
+    bool(): Chuyển đổi thành kiểu boolean (True hoặc False).
+
+Bạn có thể sử dụng các hàm này để thao tác với dữ liệu nhập vào từ người dùng, hoặc khi cần chuyển đổi giữa các kiểu dữ liệu trong chương trình.
+Kiểu ngày trong Python
+ Ép kiểu dữ liệu trong Python
+ Hàm input trong python
+Trong Python, kiểu dữ liệu ngày tháng năm (date) được xử lý chủ yếu bằng thư viện datetime. Thư viện này cung cấp các lớp giúp bạn làm việc với ngày tháng và giờ.
+Kiểu ngày trong Python là gì ?
+Tại sao sử dụng kiểu DateTime trong Python
+Một số định nghĩa cần nắm với DateTime python
+Các lớp trong datetime trong Python
+Lớp date
+Lớp time
+Lớp datetime
+Lớp timedelta
+** Sơ đồ lớp datetime
+Một số vụ ngày hay sử dụng trong Python
+Làm việc với kiểu date trong Python
+Lấy ngày hiện tại trong Python
+Làm việc với kiểu datetime
+Lấy thời gian hiện tại trong Python
+Tính toán với kiểu timedelta
+Ví dụ kết hợp các kiểu dữ liệu ngày và giờ
+strftime(format)
+strptime(date_string, format)
+
+1. Kiểu ngày trong Python là gì ?
+Là kiểu dữ liệu chứa nhiều thành phần, gồm ngày, tháng,năm, giờ, phút, giây
+
+Kiểu ngày trong Python
+
+
+2. Tại sao sử dụng kiểu DateTime trong Python
+Nếu tạo biến để lưu ngày tháng năm, một lập trình viên đã code
+
+ngay=20
+thang=10
+nam=2025
+Theo bạn ổn hay không ? vì sao ?
+
+Trả lời: không ổn, vì trong python đã hỗ trợ kiểu ngày, chuyên dùng để tính toán khoảng cách ngày, thống kê, tìm kiếm, nên làm như cách trên là một cách rời rạc.
+
+Code lại theo kiểu DateTime
+
+import datetime
+d = datetime.date(2025, 2, 18)
+print(d)
+print(d.year, d.month, d.day)
+
+3. Một số định nghĩa cần nắm với DateTime python
+import datetime
+d = datetime.date(2025, 2, 18)
+print(d)
+print(d.year, d.month, d.day)
+Với code trên, nhìn và hiểu từng dòng code
+
+import datetime : Nạp mô-đun datetime → dùng để làm việc với ngày và giờ
+datetime.date(...):  Gọi lớp date trong datetime để tạo một ngày cụ thể
+date(2025, 2, 18)  :  Tham số truyền vào: năm = 2025, tháng = 2, ngày = 18
+d.year :Lấy phần năm trong biến d
+d.month : Lấy phần tháng
+d.day : Lấy phần ngày
+
+
+4. Các lớp trong datetime trong Python
+    date: Đại diện cho ngày (ngày, tháng, năm).
+    time: Đại diện cho thời gian (giờ, phút, giây, micro giây).
+    datetime: Kết hợp cả ngày và thời gian (ngày, tháng, năm, giờ, phút, giây, micro giây).
+    timedelta: Đại diện cho sự khác biệt giữa hai ngày/giờ.
+
+Xem sơ đồ
+
+Sơ đồ như sau module datetime
+
+Module datetime
+      - Class: date
+            + Hàm 1, Hàm 2 .... n
+      - Class: time
+            + Hàm 1, Hàm 2 .... n
+      - Class: datetime
+            + Hàm 1, Hàm 2 .... n
+      - Class: timedelta
+            + Hàm 1, Hàm 2 .... n
+
+    Các hàm là chức năng ta cần dùng, ví dụ như lấy ngày hiện tại từ máy tính...
+
+from datetime import date
+today = date.today()
+print("Hôm nay là ", today)
+today() là hàm nằm trong class date thuộc module datetime
+
+
+Lớp date
+Dùng để làm việc với ngày (năm, tháng, ngày)
+
+import datetime
+d = datetime.date(2025, 2, 18)
+print(d)
+print(d.year, d.month, d.day)
+
+Lớp time
+Dùng để làm việc với giờ (giờ, phút, giây, mili-giây)
+
+import datetime
+t = datetime.time(14, 30, 15)
+print(t)
+print(t.hour, t.minute, t.second)
+
+Lớp datetime
+Kết hợp cả ngày + giờ
+
+import datetime
+dt = datetime.datetime(2025, 2, 18, 14, 30, 15)
+print(dt)
+Có nhiều chức năng hữu ích như lấy hiện tại:
+now = datetime.datetime.now()
+print(now)
+
+Lớp timedelta
+Dùng để tính khoảng thời gian, cộng trừ ngày giờ
+
+import datetime
+today = datetime.date.today()
+delta = datetime.timedelta(days=7)
+next_week = today + delta
+print("Tuần sau là:", next_week)
+
+datetime (module)
+│
+├── datetime (class)
+│ Thuộc tính:
+│ ├── year
+│ ├── month
+│ ├── day
+│ ├── hour
+│ ├── minute
+│ ├── second
+│ ├── microsecond
+│ └── tzinfo (múi giờ)
+│
+│ Phương thức chính:
+│ ├── now() → lấy ngày + giờ hiện tại (local)
+│ ├── today() → tương tự now(), không timezone
+│ ├── utcnow() → thời gian UTC
+│ ├── fromtimestamp() → từ timestamp → datetime
+│ ├── timestamp() → datetime → timestamp
+│ ├── combine(date, time)
+│ ├── strptime() → string ➜ datetime
+│ ├── strftime() → datetime ➜ string
+│ ├── replace() → thay đổi giá trị year/month/…
+│ └── isoformat() → dạng ISO 8601 (YYYY-MM-DDTHH:MM:SS)
+│
+├── date (class)
+│ Thuộc tính:
+│ ├── year
+│ ├── month
+│ └── day
+│
+│ Phương thức chính:
+│ ├── today() → ngày hôm nay
+│ ├── fromisoformat() → chuỗi ISO → date
+│ ├── isoformat() → date → chuỗi ISO
+│ ├── replace() → thay đổi năm/tháng/ngày
+│ ├── weekday() → Thứ: 0=Mon ... 6=Sun
+│ └── ctime() → Chuỗi thời gian dạng C
+│
+├── time (class)
+│ Thuộc tính:
+│ ├── hour
+│ ├── minute
+│ ├── second
+│ ├── microsecond
+│ └── tzinfo
+│
+│ Phương thức:
+│ ├── replace()
+│ ├── isoformat()
+│ └── asctime() (giống ctime nhưng cho time)
+│
+├── timedelta (class)
+│ Thuộc tính:
+│ ├── days
+│ ├── seconds
+│ └── microseconds
+│
+│ Dùng để:
+│ ├── Cộng trừ ngày/giờ
+│ └── Tính chênh lệch thời gian
+│
+├── tzinfo (class)
+│ Gốc cho múi giờ tuỳ chỉnh
+│
+└── timezone (class)
+Thuộc tính:
+├── UTC
+└── offset (độ lệch so với UTC)
+ 
+Phương thức:
+└── tzname() → tên múi giờ
+ 
+
+
+5. Một số vụ ngày hay sử dụng trong Python
+
+Làm việc với kiểu date trong Python
+        Để tạo một đối tượng date, bạn sử dụng lớp datetime.date(year, month, day).
+
+import datetime
+# Tạo một đối tượng date
+today = datetime.date(2025, 2, 18)
+print("Hôm nay là:", today)
+
+Lấy ngày hiện tại trong Python
+    Dùng phương thức today() để lấy ngày hiện tại.
+
+
+today = datetime.date.today()
+print("Ngày hôm nay:", today)
+
+Làm việc với kiểu datetime
+    Để tạo một đối tượng datetime, bạn sử dụng lớp datetime.datetime(year, month, day, hour, minute, second).
+
+import datetime
+now = datetime.datetime(2025, 2, 18, 14, 30, 0)
+print("Thời gian hiện tại là:", now)
+
+Lấy thời gian hiện tại trong Python
+    Dùng phương thức now() để lấy ngày và giờ hiện tại.
+
+now = datetime.datetime.now()
+print("Ngày và giờ hiện tại:", now)
+
+Tính toán với kiểu timedelta
+    timedelta được sử dụng để tính toán sự khác biệt giữa hai ngày hoặc thêm bớt ngày giờ.
+
+    import datetime
+    today = datetime.date.today()
+    one_day_later = today + datetime.timedelta(days=1)
+    print("Ngày mai:", one_day_later)
+
+Ví dụ kết hợp các kiểu dữ liệu ngày và giờ
+import datetime
+# Lấy ngày và giờ hiện tại
+now = datetime.datetime.now()
+
+# In ra ngày hiện tại
+print("Ngày hiện tại:", now.date())
+
+# In ra giờ hiện tại
+print("Giờ hiện tại:", now.time())
+
+# Thêm 10 ngày vào ngày hiện tại
+ten_days_later = now + datetime.timedelta(days=10)
+print("Ngày sau 10 ngày:", ten_days_later.date()) 
+
+strftime(format)
+    Định dạng ngày giờ theo một chuỗi mẫu.
+
+  strftime là viết tắt của "string format time". Đây là một hàm trong lập trình, đặc biệt là trong Python, dùng để chuyển đổi đối tượng thời gian (time object) thành chuỗi (string) theo định dạng mà người dùng yêu cầu.
+
+today = datetime.date.today()
+formatted_date = today.strftime("%d/%m/%Y")
+print("Ngày định dạng:", formatted_date)
+Cú pháp strftime trong Python được sử dụng để chuyển đổi một đối tượng datetime thành chuỗi với định dạng mà bạn chỉ định. Hàm strftime sử dụng các ký hiệu đặc biệt để định dạng ngày và giờ.
+
+Cú pháp chung của strftime là:
+datetime_object.strftime(format)
+
+Trong đó:
+
+    datetime_object là một đối tượng datetime hoặc date (tạo từ module datetime).
+    format là chuỗi định dạng mà bạn muốn sử dụng.
+
+Dưới đây là một số ký hiệu thường dùng trong strftime để định dạng ngày và giờ:
+Các ký hiệu định dạng phổ biến trong strftime:
+
+Đối với ngày tháng:
+
+    %Y: Năm đầy đủ (ví dụ: 2025)
+    %y: Hai chữ số cuối của năm (ví dụ: 25)
+    %m: Tháng (01 đến 12)
+    %d: Ngày trong tháng (01 đến 31)
+    %A: Tên đầy đủ của ngày trong tuần (ví dụ: Monday, Tuesday)
+    %a: Viết tắt của tên ngày trong tuần (ví dụ: Mon, Tue)
+    %B: Tên đầy đủ của tháng (ví dụ: January, February)
+    %b: Viết tắt của tên tháng (ví dụ: Jan, Feb)
+
+Đối với giờ, phút, giây:
+
+    %H: Giờ theo định dạng 24 giờ (00 đến 23)
+    %I: Giờ theo định dạng 12 giờ (01 đến 12)
+    %M: Phút (00 đến 59)
+    %S: Giây (00 đến 59)
+    %p: AM/PM (ví dụ: AM, PM)
+
+
+import datetime
+# Tạo một đối tượng datetime
+now = datetime.datetime.now()
+# Định dạng ngày giờ theo yêu cầu
+formatted_date = now.strftime("%A, %d %B %Y, %I:%M %p")
+# In kết quả
+print(formatted_date)
+
+strptime(date_string, format)
+  Chuyển đổi chuỗi thành đối tượng datetime theo định dạng cho trước.
+
+  strptime là viết tắt của "string parse time", là hàm dùng để chuyển đổi một chuỗi (string) thành đối tượng thời gian (time object) theo định dạng mà người dùng chỉ định.
+
+ Cú pháp strptime
+
+datetime.strptime(date_string, format)
+
+    date_string: Chuỗi chứa ngày tháng và thời gian cần chuyển đổi.
+    format: Định dạng ngày tháng, giờ mà chuỗi đầu vào có.
+
+Ví dụ:
+
+Giả sử bạn có chuỗi "2025-02-22 14:30:00", và bạn muốn chuyển nó thành một đối tượng datetime:
+
+
+from datetime import datetime
+
+date_string = "2025-02-22 14:30:00"
+format = "%Y-%m-%d %H:%M:%S"
+
+# Chuyển chuỗi thành đối tượng datetime
+date_object = datetime.strptime(date_string, format)
+
+print(date_object)
+
+
+Kết quả:
+
+2025-02-22 14:30:00
+ Trong ví dụ trên:
+
+    %Y là năm (4 chữ số)
+    %m là tháng (2 chữ số)
+    %d là ngày (2 chữ số)
+    %H là giờ (theo định dạng 24 giờ)
+    %M là phút
+    %S là giây
+Hàm input trong python
+ Kiểu ngày trong Python
+ Mệnh đề so sánh trong Python
+Khi phần mềm cần thông tin từ người dùng thì cần sử dụng hàm input để lấy dữ liệu từ bàn phím vào ứng dụng python
+Hàm input trong Python
+Cú pháp hàm input
+Ví dụ sử dụng hàm input
+Nhận dữ liệu từ người dùng
+Nhập một số và chuyển đổi kiểu dữ liệu
+Nhận nhiều giá trị và chuyển đổi
+Một số chia sẽ kinh nghiệm khi dùng hàm input python
+Một số chương trình về Python
+Môt số lỗi hay gặp khi dùng hàm input Python
+Cú pháp sai tham số truyền vào
+Cú pháp sai hàm input
+Chuyển kiểu dữ liệu khi tính toán
+
+1. Hàm input trong Python
+Hàm input() trong Python được sử dụng để nhận dữ liệu từ người dùng. Khi chương trình gặp hàm input(), nó sẽ dừng lại và chờ người dùng nhập vào dữ liệu từ bàn phím. Sau khi người dùng nhập xong và nhấn Enter, hàm input() sẽ trả về một chuỗi (string) chứa giá trị mà người dùng nhập.
+
+Hàm input trong python
+
+
+2. Cú pháp hàm input Python
+input(prompt)
+
+    prompt (tuỳ chọn): Là một chuỗi văn bản mà bạn muốn hiển thị cho người dùng trước khi họ nhập dữ liệu. Nếu không có prompt, hàm input() sẽ không hiển thị gì.
+
+Mẫu sử dụng:
+
+ biến_chữ = input("Nội dung thông báo")
+ biến_số_nguyên = int(input("Nội dung thông báo"))
+ biến_số_thập_phân = double(input("Nội dung thông báo"))
+
+
+3. Ví dụ sử dụng hàm input
+
+Nhận dữ liệu từ người dùng
+name = input("Nhập tên của bạn: ")
+print("Xin chào, " + name + "!")
+
+
+* Giải thích: Chương trình sẽ yêu cầu người dùng nhập tên, và sau đó in ra lời chào với tên mà người dùng đã nhập.
+
+Nhập một số và chuyển đổi kiểu dữ liệu
+Lưu ý: Mặc dù hàm input() luôn trả về giá trị kiểu chuỗi (string), bạn có thể chuyển đổi nó thành các kiểu dữ liệu khác như int, float nếu cần.
+
+
+age = input("Nhập tuổi của bạn: ")
+age = int(age)  # Chuyển chuỗi thành số nguyên
+print("Tuổi của bạn là:", age)
+
+Nhận nhiều giá trị và chuyển đổi
+Nếu bạn muốn nhận nhiều giá trị từ người dùng và chuyển đổi chúng thành kiểu dữ liệu thích hợp, có thể sử dụng phương pháp sau:
+
+
+x, y = input("Nhập hai số cách nhau bởi dấu cách: ").split()
+x = int(x)
+y = int(y)
+print("Tổng của hai số là:", x + y)
+
+
+    Giải thích: Người dùng nhập hai số cách nhau bởi dấu cách, sau đó chương trình sẽ tách chúng và chuyển đổi thành số nguyên để tính tổng.
+
+4. Một số chia sẽ kinh nghiệm khi dùng hàm input python
+    input() luôn trả về giá trị kiểu chuỗi (string), dù người dùng nhập vào gì đi nữa. Nếu bạn muốn số, bạn cần phải chuyển đổi nó với các hàm như int(), float(), v.v.
+    Hàm input() có thể giúp tạo các ứng dụng tương tác đơn giản.
+
+
+5. Một số chương trình về Python
+# Chương trình tính diện tích hình chữ nhật
+width = float(input("Nhập chiều rộng: "))
+height = float(input("Nhập chiều cao: "))
+area = width * height
+print(f"Diện tích hình chữ nhật là: {area}")
+
+
+    Giải thích: Người dùng nhập chiều rộng và chiều cao, sau đó chương trình tính diện tích của hình chữ nhật.
+
+6. Môt số lỗi hay gặp khi dùng hàm input Python
+
+Lỗi 01: Cú pháp sai tham số truyền vào
+ biến_chữ = input(Nội dung thông báo)
+
+  Thiếu dấu " ở 2 bên chữ "Nội dung thông báo"
+
+   SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+
+Lỗi 02: Cú pháp sai hàm input
+biến_chữ = input "Nội dung thông báo"
+
+Thiếu dấu (..) ở 2 bên ("Nội dung thông báo")
+SyntaxError: invalid syntax
+
+
+Lỗi 03: Chuyển kiểu dữ liệu khi tính toán
+so = input("Số:")
+print(so+10)
+
+TypeError: can only concatenate str (not "int") to str
+
+Sửa lại là: print(int(so)+10)
+Mệnh đề so sánh trong Python
+ Hàm input trong python
+ Biểu thức trong Python
+Trong Python, mệnh đề so sánh được sử dụng để so sánh các giá trị với nhau và trả về kết quả là True hoặc False.
+Mệnh đề so sánh là gì ?
+Các mệnh đề so sánh trong Python
+Equal (Bằng)
+Not equal (Khác)
+Greater than (Lớn hơn)
+Less than (Nhỏ hơn)
+Greater than or equal to (Lớn hơn hoặc bằng)
+Less than or equal to (Nhỏ hơn hoặc bằng)
+Các phép so sánh kết hợp
+Bảng các phép toán so sánh
+Các phép so sánh thường dùng trong Python bao gồm
+
+Mệnh đề so sánh trong Python
+
+
+1. Mệnh đề so sánh là gì
+👉 Mệnh đề so sánh là câu lệnh dùng các toán tử so sánh để so sánh giá trị.
+👉 Kết quả của mệnh đề so sánh luôn là: True / False
+
+Ví dụ:
+
+Bạn Nam cân nặng là 50 kg , bạn Mai cân nặng là 40 kg.
+
+Nếu ta nhìn thì biết bạn Nam nặng hơn bạn Mai
+
+Nhưng: để máy tính hiểu và xác định được ai nặng hơn thì ta cần mệnh đề so sánh.
+
+sosanh= (50>40)
+
+Nếu giá trị là True thì chính xác là bạn Nam nặng hơn mai. 
+
+
+2. Các mệnh đề so sánh trong Python
+
+Equal (Bằng)
+a == b
+
+Kiểm tra xem a có bằng b hay không.
+
+    Kết quả: True nếu a và b bằng nhau, ngược lại là False.
+
+
+Not equal (Khác)
+a != b
+
+Kiểm tra xem a có khác b hay không.
+
+    Kết quả: True nếu a khác b, ngược lại là False.
+
+
+Greater than (Lớn hơn)
+a > b
+
+Kiểm tra xem a có lớn hơn b hay không.
+
+    Kết quả: True nếu a lớn hơn b, ngược lại là False.
+
+
+Less than (Nhỏ hơn)
+a < b
+
+Kiểm tra xem a có nhỏ hơn b hay không.
+
+    Kết quả: True nếu a nhỏ hơn b, ngược lại là False.
+
+
+Greater than or equal to (Lớn hơn hoặc bằng)
+a >= b
+
+Kiểm tra xem a có lớn hơn hoặc bằng b hay không.
+
+    Kết quả: True nếu a lớn hơn hoặc bằng b, ngược lại là False.
+
+
+Less than or equal to (Nhỏ hơn hoặc bằng)
+    a <= b
+
+    Kiểm tra xem a có nhỏ hơn hoặc bằng b hay không.
+        Kết quả: True nếu a nhỏ hơn hoặc bằng b, ngược lại là False.
+
+Ví dụ:
+
+a = 5
+b = 10
+print(a == b)  # False vì 5 không bằng 10
+print(a != b)  # True vì 5 khác 10
+print(a > b)   # False vì 5 không lớn hơn 10
+print(a < b)   # True vì 5 nhỏ hơn 10
+print(a >= 5)  # True vì 5 lớn hơn hoặc bằng 5
+print(b <= 10) # True vì 10 nhỏ hơn hoặc bằng 10
+
+3. Các phép so sánh kết hợp
+Bạn cũng có thể kết hợp nhiều mệnh đề so sánh bằng cách sử dụng các phép toán logic như and, or:
+
+    and: Hai điều kiện phải đều đúng thì mới trả về True.
+    or: Chỉ cần một trong các điều kiện đúng thì trả về True.
+
+Ví dụ:
+
+x = 5
+y = 10
+z = 15
+
+print(x < y and y < z)  # True vì cả hai điều kiện đều đúng
+print(x > y or y < z)   # True vì điều kiện y < z là đúng 
+
+4. Bảng các phép toán 
+Phép toán	Mô tả	Ví dụ	Kết quả
+a == b	Kiểm tra a có bằng b không.	5 == 5	True
+a != b	Kiểm tra a có khác b không.	5 != 3	True
+a > b	Kiểm tra a có lớn hơn b không.	5 > 3	True
+a < b	Kiểm tra a có nhỏ hơn b không.	5 < 3	False
+a >= b	Kiểm tra a có lớn hơn hoặc bằng b không.	5 >= 5	True
+a <= b	Kiểm tra a có nhỏ hơn hoặc bằng b không.	5 <= 6	True
+a is b	Kiểm tra xem a và b có cùng một đối tượng không (so sánh vị trí bộ nhớ).	a is b	True hoặc False
+a is not b	Kiểm tra xem a và b không phải là cùng một đối tượng không.	a is not b	True hoặc False
+Biểu thức trong Python
+ Mệnh đề so sánh trong Python
+ Câu lệnh if trong Python
+Biểu thức (expression) trong Python, là nền tảng để giúp lập trình viên python vào lập trình các ứng dụng thực tế, hãy cùng mình tìm hiểu nhé.
+Biểu thức trong Python là gì?
+Các thành phần của biểu thức Python
+Các loại biểu thức trong Python
+a. Biểu thức toán học
+b. Biểu thức so sánh
+c. Biểu thức logic
+d. Biểu thức chuỗi
+e. Biểu thức với hàm
+Cách Python xử lý ưu tiên trong biểu thức
+a. Thứ tự ưu tiên của các toán tử
+b. Sử dụng dấu ngoặc để thay đổi thứ tự
+Biểu thức phức tạp
+Biểu thức trong điều kiện (if)
+
+1. Biểu thức trong Python là gì?
+Trong Python, biểu thức (expression) là bất kỳ đoạn mã nào có thể tính toán và trả về một giá trị. Mọi phép toán, so sánh, logic, hay hàm trong Python đều là biểu thức, miễn là chúng có thể được tính toán và cho kết quả.
+
+Biểu thức trong Python
+
+
+2. Các thành phần của biểu thức Python
+Biểu thức có thể bao gồm
+
+    Toán tử: Các phép toán cơ bản như cộng, trừ, nhân, chia, so sánh, logic, v.v.
+    Hằng số: Các giá trị cố định như số, chuỗi, giá trị Boolean.
+    Biến: Các giá trị thay đổi được.
+    Hàm: Các hàm trả về giá trị khi được gọi.
+
+
+3. Các loại biểu thức trong Python
+
+a. Biểu thức toán học
+Biểu thức này sử dụng các toán tử như cộng (+), trừ (-), nhân (*), chia (/), chia lấy phần nguyên (//), chia lấy phần dư (%), và lũy thừa (**).
+
+    Ví dụ:
+
+    3 + 5      # Kết quả là 8
+    10 - 2     # Kết quả là 8
+    4 * 7      # Kết quả là 28
+    9 / 3      # Kết quả là 3.0 (chia thực)
+    10 // 3    # Kết quả là 3 (chia lấy phần nguyên)
+    10 % 3     # Kết quả là 1 (chia lấy phần dư)
+    2 ** 3     # Kết quả là 8 (lũy thừa)
+
+b. Biểu thức so sánh
+Biểu thức so sánh trả về giá trị Boolean (True hoặc False) và sử dụng các toán tử như ==, !=, <, >, <=, >=.
+
+    Ví dụ:
+
+    3 == 3    # Kết quả là True
+    3 != 5    # Kết quả là True
+    5 > 3     # Kết quả là True
+    3 < 10    # Kết quả là True
+    3 <= 3    # Kết quả là True
+    5 >= 6    # Kết quả là False
+
+c. Biểu thức logic
+Biểu thức logic giúp kiểm tra các điều kiện, thường sử dụng các toán tử như and, or, và not.
+
+    Ví dụ:
+
+    True and False    # Kết quả là False
+    True or False     # Kết quả là True
+    not True          # Kết quả là False
+Thực tế:
+
+print(3==2 and 2==2)
+print(2>1 and 3>2)
+print(2>1 and 1==2)
+print(1==1 or 1==2)
+print(2>1 or 3>2)
+print(2<1 or 3<2)
+ 
+
+
+d. Biểu thức chuỗi
+Biểu thức chuỗi cho phép nối chuỗi với nhau, hay lấy các phần của chuỗi bằng các toán tử như + (nối chuỗi), * (nhân chuỗi).
+
+    Ví dụ:
+
+    "Hello" + " " + "World"   # Kết quả là "Hello World"
+    "Python" * 3              # Kết quả là "PythonPythonPython"
+
+e. Biểu thức với hàm
+Hàm trong Python cũng là một biểu thức vì chúng trả về giá trị khi được gọi.
+
+    Ví dụ:
+
+    len("Hello")      # Kết quả là 5
+    abs(-10)          # Kết quả là 10
+    max(1, 3, 5, 2)   # Kết quả là 5
+
+4. Cách Python xử lý ưu tiên trong biểu thức
+Python sẽ tính toán biểu thức từ trái qua phải (hoặc theo thứ tự ưu tiên của các toán tử). Dưới đây là một số ví dụ minh họa
+
+
+a. Thứ tự ưu tiên của các toán tử
+Python có thứ tự ưu tiên để đánh giá các biểu thức.
+
+    Phép toán nhân (*), chia (/), và lũy thừa (**) có ưu tiên cao hơn phép cộng (+) và phép trừ (-).
+    Phép toán so sánh (==, >, <,...) có ưu tiên thấp hơn phép toán cộng/trừ.
+
+Ví dụ:
+
+result = 3 + 5 * 2   # Kết quả là 13 vì Python tính 5 * 2 trước, sau đó cộng với 3.
+
+b. Sử dụng dấu ngoặc để thay đổi thứ tự
+Bạn có thể sử dụng dấu ngoặc để thay đổi thứ tự đánh giá của các phép toán.
+
+result = (3 + 5) * 2   # Kết quả là 16 vì Python tính 3 + 5 trước, rồi nhân với 2.
+
+5. Biểu thức phức tạp
+Biểu thức có thể kết hợp nhiều thành phần để tạo ra các biểu thức phức tạp.
+
+Ví dụ:
+
+x = 5
+y = 10
+z = 2
+result = (x + y) * z - 4 / (x - 1)  # Kết quả là 52.0
+
+
+Trong biểu thức này:
+    (x + y) được tính trước.
+    Sau đó, nhân với z.
+    Cuối cùng, thực hiện phép chia và phép trừ.
+
+
+6. Biểu thức trong điều kiện (if)
+Các điều kiện trong if cũng là biểu thức, vì chúng được đánh giá thành True hoặc False để quyết định khối mã nào sẽ được thực thi.
+
+x = 10
+if x > 5:  # Biểu thức x > 5 được đánh giá thành True
+    print("x lớn hơn 5")
+
+
+Biểu thức trong Python là một đoạn mã mà Python có thể "đánh giá" để trả về một giá trị. Chúng có thể đơn giản như số học, hoặc phức tạp hơn với các toán tử, hàm, và các cấu trúc logic. Biểu thức có thể được sử dụng trong mọi ngữ cảnh trong Python: từ tính toán đơn giản cho đến kiểm tra điều kiện và thậm chí xử lý chuỗi.
+Câu lệnh if trong Python
+ Biểu thức trong Python
+ Vòng lặp Python
+Trong Python, hàm if được sử dụng để kiểm tra một điều kiện và thực hiện một khối mã nếu điều kiện đó là True.
+Cấu trúc cơ bản của if trong python
+Sử dụng if và else trong python
+Cấu trúc if...elif...else
+Video thực hành câu lệnh if trong python
+Bài tập lớn về câu lệnh if trong python
+Cấu trúc cơ bản của câu lệnh if trong Python như sau
+
+Câu lệnh if trong Python
+
+Giải thích
+
+Đi xem phim:
+
+* Nếu vé=có vào xem phim.
+* Sau đó Về nhà
+
+ve = "có"
+if ve=="có":
+    print("Đi xem phim")
+print("Về nhà") 
+In ra Đi xem phim, Về nhà
+
+* Hành động vào xem phim diễn ra khi có vé.
+* Hành động Về nhà là hành động luôn luôn xả ra dù ta có vé hay không có vé, trong lập trình gọi là kết thúc chương trình.
+
+ve = "không"
+if ve=="có":
+    print("Đi xem phim")
+print("Về nhà") 
+In ra Về nhà
+
+Mô tả cho hình ảnh xem phim qua lệnh lập trình python như sau:
+(1) Vé = Có   * Đi mua vé, nếu còn thì Vé = Có, hết vé thì Vé=Không
+(2) Nếu Vé = Có   * Quay quày soát vé
+    Vào xem phim
+(3) Về nhà  * Dù có vé hay không thì vẫn về nhà
+
+
+1. Cấu trúc cơ bản của if trong python
+if điều_kiện:
+    # Khối mã sẽ được thực thi nếu điều kiện là True
+
+điều_kiện: Là một biểu thức trả về giá trị True hoặc False.
+
+điều_kiện có thể là một phép so sánh, một phép toán logic, hoặc bất kỳ biểu thức nào có thể đánh giá thành True hoặc False.
+
+Ví dụ if đơn giản nhất python:
+
+Code 1:
+
+if True:
+  print('Hi')
+In ra là Hi
+
+Code 2:
+
+if False:
+  print('Hi')
+Không in ra gì ngoài màn hình, vì sau if là False 
+
+Suy ra: code sau if được gọi là Điều Kiện là mà điều kiện thì có thể là True / False tùy vào biểu thức.
+
+Câu hỏi về lệnh if:
+
+* Câu hỏi: 1==1 có phải là biểu thức so sánh hay không ?
+* Trả lời: chính là biểu thức so sánh, nó là một trong những điều kiện, trả về True
+
+# Khối mã Sẽ được thực thi nếu điều kiện là True, khối mã ở đây là 1 hay nhiều dòng lệnh python.
+
+Ví dụ 1: Câu lệnh if đơn giản
+
+x = 5
+if x > 0:
+    print("x là số dương")
+
+
+Output: x là số dương
+Ví dụ 2: So sánh 2 số
+
+a = 5
+b = 10
+
+if a < b:
+    print("a nhỏ hơn b")
+Câu hỏi: sau if là khối lệnh, vậy khối lệnh chỉ có 1 dòng lệnh hay nhiều dòng lệnh ?
+
+Hãy cùng xem ví dụ sau đây:
+
+so = 1
+if so == 1:
+    print("Số a")
+    print("là số 1")
+* Như vậy khối mã là nhiều dòng lệnh kết hợp với nhau.
+
+Ví dụ if python:
+
+so = 1
+if so == 1:
+    print("Số a")
+    print("là số 1")
+print("Chào các bạn")
+Câu lệnh print("Chào các bạn") có thuộc khối lệnh của if hay không ? trả lời: không, vì print đặt cùng cấp với if
+
+Nếu muốn thuộc khối lệnh của if hãy thuộc dòng vào cho cùng cấp với 2 lệnh print phía trên.
+
+Sơ đồ câu lệnh if trong Python
+
+
+ 
+
+
+2. Sử dụng if và else trong python
+x = -3
+if x > 0:
+    print("x là số dương")
+else:
+    print("x là số không dương")
+
+
+Output: x là số không dương
+
+3. Cấu trúc if...elif...else
+Nếu bạn cần kiểm tra nhiều điều kiện khác nhau, bạn có thể sử dụng elif (viết tắt của "else if") để kiểm tra thêm các điều kiện khác ngoài if.
+
+
+x = 0
+if x > 0:
+    print("x là số dương")
+elif x == 0:
+    print("x bằng 0")
+else:
+    print("x là số âm")
+
+
+Output: x bằng 0
+Ví dụ 4: Sử dụng với nhiều điều kiện
+
+Bạn có thể kết hợp nhiều điều kiện bằng các toán tử logic như and, or.
+
+x = 5
+y = 10
+if x > 0 and y > 0:
+    print("Cả x và y đều là số dương")
+else:
+    print("Một trong các giá trị không phải là số dương") 
+
+
+Output: Cả x và y đều là số dương
+ 
+Điều khác giữa python với các ngôn ngữ lập trình khác như C#
+
+Nếu sau if cần xử lý nhiều dòng lệnh
+
+if(a>10)
+{
+...
+}
+
+* Thì trong python không sử dụng các ký hiệu, chỉ cần thụt vào giống nhau:
+
+x = 3
+if x > 5:
+    print("x lớn hơn 5")
+    x = x + 2
+    print("Giá trị mới của x:", x)
+elif x == 3:
+    print("x bằng 3")
+else:
+    print("x nhỏ hơn hoặc bằng 5")
+Câu lệnh if trong python
+
+ 
+
+
+4. Video thực hành câu lệnh if trong python
+Vòng lặp Python
+ Câu lệnh if trong Python
+ Một số hàm toán học trong python
+Trong Python, vòng lặp cho phép bạn thực hiện một khối mã nhiều lần. Python hỗ trợ hai loại vòng lặp chính: vòng lặp for và vòng lặp while.
+Vòng lặp for Python
+Vòng lặp while Python
+Các câu lệnh điều khiển vòng lặp
+Chia sẽ kinh nghiệm về vòng lặp trong python
+Video về vòng lặp Python
+
+1. Vòng lặp for Python
+Vòng lặp for được sử dụng để lặp qua một dãy đối tượng, chẳng hạn như danh sách, chuỗi, hoặc phạm vi số.
+
+Cấu trúc vòng lặp for
+
+for biến in dãy số:
+    # Khối mã sẽ được thực thi cho mỗi phần tử trong dãy
+
+Các khối mã này sẽ chạy tưng ứng với số lần của tổng số các phần tử trong dãy số
+
+Ví dụ 1: Sử dụng range() để lặp qua một dãy số
+
+Hàm range() tạo ra một dãy số mà bạn có thể sử dụng trong vòng lặp for.
+
+for i in range(5):  # Lặp từ 0 đến 4
+    print(i)
+Output:
+
+0
+1
+2
+3
+4
+
+
+Vậy range là gì trong Python
+
+range là 1 hàm để tạo ra 1 dãy số
+
+range(10) thì tạo ra 1 dẫy số từ từ 0,1,2,3,4,5,6,7,8,9
+
+
+Bạn cũng có thể chỉ định điểm bắt đầu, điểm kết thúc, và bước nhảy của range() 
+
+range(0,10,2) tạo dãy số từ 0,2,4,6,8
+
+Ví dụ: print( list( range(0,10,2) ))  in ra 0,2,4,6,8
+
+for i in range(1, 10, 2):  # Lặp từ 1 đến 9 với bước nhảy là 2
+    print(i) 
+Output:
+
+1
+3
+5
+7
+9
+
+Tóm lại vòng lặp for: for sử dụng để duyệt qua các thành phần trong 1 dãy số cho trước.
+
+Ví dụ 2: Duyệt qua một danh sách
+
+monhoc = ["C#", "Python", "Java"]
+for mh in monhoc :
+    print(mh) 
+Kết quả:
+C#
+Python
+Java
+
+Ví dụ 3: Duyệt qua một chuỗi
+
+word = "iif"
+for letter in word:
+    print(letter)
+Output:
+i
+i
+f
+
+ 
+
+
+2. Vòng lặp while Python
+Vòng lặp while lặp lại một khối mã miễn là điều kiện được chỉ định là True. Nếu điều kiện là False, vòng lặp sẽ dừng lại.
+Cấu trúc vòng lặp while:
+
+while điều_kiện:
+    # Khối mã sẽ được thực thi miễn là điều kiện là True
+
+Ví dụ 1: Lặp cho đến khi điều kiện không còn đúng
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1  # Tăng giá trị của i mỗi lần lặp 
+Output:
+
+0
+1
+2
+3
+4
+
+Ví dụ 2: Lặp vô hạn (dừng bằng break)
+
+Bạn có thể tạo một vòng lặp vô hạn và sử dụng câu lệnh break để thoát khỏi vòng lặp.
+
+while True:
+    response = input("Nhập 'exit' để thoát: ")
+    if response == "exit":
+        print("Thoát khỏi vòng lặp!")
+        break  # Thoát khỏi vòng lặp khi nhập 'exit'
+    else:
+        print("Bạn nhập:", response)
+
+3. Các câu lệnh điều khiển vòng lặp
+    break: Dùng để thoát khỏi vòng lặp sớm.
+
+    Ví dụ:
+
+for i in range(10):
+    if i == 5:
+        break  # Thoát khỏi vòng lặp khi i = 5
+    print(i) 
+Output:
+
+0
+1
+2
+3
+4
+
+continue: Dùng để bỏ qua phần còn lại của vòng lặp hiện tại và tiếp tục với lần lặp tiếp theo.
+
+Ví dụ:
+
+for i in range(5):
+    if i == 3:
+        continue  # Bỏ qua bước in khi i = 3
+    print(i) 
+Output:
+
+0
+1
+2
+4
+
+else: Có thể sử dụng với vòng lặp for hoặc while. Khối mã trong else chỉ được thực thi khi vòng lặp hoàn thành mà không bị dừng bởi break.
+
+Ví dụ:
+
+for i in range(5):
+    print(i)
+else:
+    print("Vòng lặp đã hoàn thành")
+Output:
+
+0
+1
+2
+3
+4
+
+Vòng lặp đã hoàn thành
+
+Ví dụ sử dụng với break:
+
+for i in range(5):
+    if i == 3:
+        print("Dừng tại i = 3")
+        break
+else:
+    print("Vòng lặp hoàn thành mà không bị dừng") 
+Output:
+
+    Dừng tại i = 3
+
+
+4. Chia sẽ kinh nghiệm về vòng lặp trong python
+    Vòng lặp for thường được sử dụng khi bạn biết trước số lần cần lặp hoặc khi duyệt qua một dãy đối tượng (danh sách, chuỗi, hoặc dãy số).
+    Vòng lặp while thường được sử dụng khi bạn không biết trước số lần lặp và muốn vòng lặp tiếp tục cho đến khi một điều kiện trở thành False.
+    Câu lệnh break giúp thoát khỏi vòng lặp, continue giúp bỏ qua phần còn lại của vòng lặp trong một lần lặp, và else sẽ thực thi nếu vòng lặp không bị dừng bởi break.
+
+
+5. Video về vòng lặp Python
+Một số hàm toán học trong python
+ Vòng lặp Python
+ Các hàm xử lý chuỗi trong Python
+Hàm toán học trong Python từ thư viện math và cách sử dụng chúng qua ví dụ dễ hiểu và đơn giản nhất
+math.abs(x)
+math.ceil(x)
+math.floor(x)
+math.sqrt(x)
+math.pow(x, y)
+math.sin(x), math.cos(x), math.tan(x)
+math.log(x, base)
+math.exp(x)
+math.factorial(x)
+math.gcd(x, y)
+math.radians(x)
+math.degrees(x)
+math.isqrt(x)
+math.prod(iterable)
+math.dist(p, q)
+
+1. math.abs(x)
+    Mô tả: Trả về giá trị tuyệt đối của số x, tức là loại bỏ dấu âm nếu có.
+    Cú pháp:
+
+math.abs(x)
+
+Ví dụ:
+
+    import math
+    print(math.fabs(-3.5))  # Kết quả: 3.5
+    print(math.fabs(5))     # Kết quả: 5.0
+
+    Lưu ý: math.fabs() là cách gọi chính xác cho hàm abs() trong thư viện math, nó trả về kết quả dưới dạng số thực.
+
+
+2. math.ceil(x)
+    Mô tả: Trả về số nguyên nhỏ nhất mà không nhỏ hơn x. Nói cách khác, hàm này sẽ làm tròn số x lên tới số nguyên gần nhất.
+    Cú pháp:
+
+math.ceil(x)
+
+Ví dụ:
+
+    import math
+    print(math.ceil(3.2))  # Kết quả: 4
+    print(math.ceil(5.7))  # Kết quả: 6
+
+
+3. math.floor(x)
+    Mô tả: Trả về số nguyên lớn nhất mà không lớn hơn x. Nói cách khác, hàm này sẽ làm tròn số x xuống tới số nguyên gần nhất.
+    Cú pháp:
+
+math.floor(x)
+
+Ví dụ:
+
+    import math
+    print(math.floor(3.7))  # Kết quả: 3
+    print(math.floor(-3.2))  # Kết quả: -4
+
+
+4. math.sqrt(x)
+    Mô tả: Trả về căn bậc hai của số x. Nếu x là một số âm, hàm này sẽ gây ra lỗi ValueError.
+    Cú pháp:
+
+math.sqrt(x)
+
+Ví dụ:
+
+    import math
+    print(math.sqrt(16))  # Kết quả: 4.0
+    print(math.sqrt(25))  # Kết quả: 5.0
+
+
+5. math.pow(x, y)
+    Mô tả: Trả về x mũ y, tức là tính x^y.
+    Cú pháp:
+
+math.pow(x, y)
+
+Ví dụ:
+
+    import math
+    print(math.pow(2, 3))  # Kết quả: 8.0 (2^3)
+    print(math.pow(5, 2))  # Kết quả: 25.0 (5^2)
+
+
+6. math.sin(x), math.cos(x), math.tan(x)
+    Mô tả: Các hàm này trả về giá trị của các hàm lượng giác sin, cos và tan của một góc được cho bằng radian.
+    Cú pháp:
+
+math.sin(x)
+math.cos(x)
+math.tan(x)
+
+Ví dụ:
+
+    import math
+    print(math.sin(math.pi / 2))  # Kết quả: 1.0 (sin(90°) = 1)
+    print(math.cos(math.pi))      # Kết quả: -1.0 (cos(180°) = -1)
+    print(math.tan(math.pi / 4)) # Kết quả: 1.0 (tan(45°) = 1)
+
+
+7. math.log(x, base)
+    Mô tả: Trả về logarithm của x với cơ số là base. Nếu không chỉ định cơ số, mặc định là logarithm tự nhiên (cơ số e).
+    Cú pháp:
+
+math.log(x, base)
+
+Ví dụ:
+
+    import math
+    print(math.log(8, 2))  # Kết quả: 3.0 (log2(8) = 3)
+    print(math.log(10))    # Kết quả: 2.302585092994046 (log tự nhiên của 10)
+
+
+8. math.exp(x)
+    Mô tả: Trả về giá trị của e mũ x (exponential).
+    Cú pháp:
+
+math.exp(x)
+
+Ví dụ:
+
+    import math
+    print(math.exp(2))  # Kết quả: 7.3890560989306495 (e^2)
+
+
+9. math.factorial(x)
+    Mô tả: Trả về giai thừa của x (tính x!), nghĩa là tích của tất cả các số từ 1 đến x.
+    Cú pháp:
+
+math.factorial(x)
+
+Ví dụ:
+
+    import math
+    print(math.factorial(5))  # Kết quả: 120 (5! = 5*4*3*2*1)
+
+
+10. math.gcd(x, y)
+    Mô tả: Trả về ước chung lớn nhất (GCD) của hai số x và y.
+    Cú pháp:
+
+math.gcd(x, y)
+
+Ví dụ:
+
+    import math
+    print(math.gcd(24, 36))  # Kết quả: 12
+
+
+11. math.radians(x)
+    Mô tả: Chuyển đổi góc từ độ sang radian.
+    Cú pháp:
+
+math.radians(x)
+
+Ví dụ:
+
+    import math
+    print(math.radians(180))  # Kết quả: 3.141592653589793 (180° = π radian)
+
+
+12. math.degrees(x)
+    Mô tả: Chuyển đổi góc từ radian sang độ.
+    Cú pháp:
+
+math.degrees(x)
+
+Ví dụ:
+
+    import math
+    print(math.degrees(math.pi))  # Kết quả: 180.0 (π radian = 180°)
+
+
+13. math.isqrt(x)
+    Mô tả: Trả về căn bậc hai của số x dưới dạng số nguyên, không làm tròn lên hoặc xuống.
+    Cú pháp:
+
+math.isqrt(x)
+
+Ví dụ:
+
+    import math
+    print(math.isqrt(16))  # Kết quả: 4
+    print(math.isqrt(17))  # Kết quả: 4 (làm tròn xuống)
+
+
+14. math.prod(iterable)
+    Mô tả: Trả về tích của tất cả các phần tử trong một iterable (danh sách, tuple, v.v.).
+    Cú pháp:
+
+math.prod(iterable)
+
+Ví dụ:
+
+    import math
+    print(math.prod([1, 2, 3, 4]))  # Kết quả: 24 (1*2*3*4 = 24)
+
+
+15. math.dist(p, q)
+    Mô tả: Tính khoảng cách Euclid giữa hai điểm p và q trong không gian n chiều, nơi p và q là các tuple hoặc danh sách.
+    Cú pháp:
+
+math.dist(p, q)
+
+Ví dụ:
+
+    import math
+    print(math.dist((1, 2), (4, 6)))  # Kết quả: 5.0
+Các hàm xử lý chuỗi trong Python
+ Một số hàm toán học trong python
+ Hàm trong Python
+Trong Python, các thao tác với chuỗi (strings) là rất phổ biến, và Python cung cấp một loạt các hàm để xử lý chuỗi. Dưới đây là một số hàm và phương thức chuỗi cơ bản mà bạn có thể sử dụng trong Python.
+len(s)
+lower()
+upper()
+strip()
+replace(old, new)
+split(separator)
+find(substring)
+count(substring)
+startswith(prefix)
+endswith(suffix)
+isdigit()
+isalpha()
+join(iterable)
+islower()
+isupper()
+Các hàm chuỗi trong Python giúp bạn thao tác và xử lý chuỗi một cách hiệu quả, từ việc thay thế ký tự, kiểm tra điều kiện, đến việc chia tách và nối các chuỗi. Bạn có thể sử dụng các phương thức này để làm việc với chuỗi trong các tình huống thực tế trong lập trình, giúp làm sạch và biến đổi dữ liệu chuỗi dễ dàng hơn.
+
+
+1. len(s)
+    Mô tả: Trả về độ dài của chuỗi s.
+    Cú pháp:
+
+len(s)
+
+Ví dụ:
+
+    s = "Hello, World!"
+    print(len(s))  # Kết quả: 13
+
+
+2. lower()
+    Mô tả: Trả về một bản sao của chuỗi s với tất cả các ký tự chuyển thành chữ thường.
+    Cú pháp:
+
+s.lower()
+
+Ví dụ:
+
+    s = "HELLO"
+    print(s.lower())  # Kết quả: "hello"
+
+
+3. upper()
+    Mô tả: Trả về một bản sao của chuỗi s với tất cả các ký tự chuyển thành chữ hoa.
+    Cú pháp:
+
+s.upper()
+
+Ví dụ:
+
+    s = "hello"
+    print(s.upper())  # Kết quả: "HELLO"
+
+
+4. strip()
+    Mô tả: Loại bỏ các ký tự khoảng trắng (hoặc các ký tự khác) ở đầu và cuối chuỗi s.
+    Cú pháp:
+
+s.strip()
+
+Ví dụ:
+
+    s = "   Hello, World!   "
+    print(s.strip())  # Kết quả: "Hello, World!"
+
+
+5. replace(old, new)
+    Mô tả: Thay thế tất cả các lần xuất hiện của chuỗi old trong chuỗi s bằng chuỗi new.
+    Cú pháp:
+
+s.replace(old, new)
+
+Ví dụ:
+
+    s = "Hello, World!"
+    print(s.replace("World", "Python"))  # Kết quả: "Hello, Python!"
+
+
+6. split(separator)
+    Mô tả: Chia chuỗi s thành một danh sách các chuỗi con, sử dụng ký tự phân cách separator. Nếu không chỉ định phân cách, mặc định sẽ chia theo khoảng trắng.
+    Cú pháp:
+
+s.split(separator)
+
+Ví dụ:
+
+    s = "apple,orange,banana"
+    print(s.split(","))  # Kết quả: ['apple', 'orange', 'banana']
+
+
+7. find(substring)
+    Mô tả: Trả về chỉ số (index) đầu tiên của chuỗi con substring trong chuỗi s. Nếu không tìm thấy, trả về -1.
+    Cú pháp:
+
+s.find(substring)
+
+Ví dụ:
+
+    s = "Hello, World!"
+    print(s.find("World"))  # Kết quả: 7
+    print(s.find("Python")) # Kết quả: -1
+
+
+8. count(substring)
+    Mô tả: Trả về số lần xuất hiện của chuỗi con substring trong chuỗi s.
+    Cú pháp:
+
+s.count(substring)
+
+Ví dụ:
+
+    s = "Hello, Hello, World!"
+    print(s.count("Hello"))  # Kết quả: 2
+
+
+9. startswith(prefix)
+    Mô tả: Kiểm tra xem chuỗi s có bắt đầu bằng chuỗi prefix không.
+    Cú pháp:
+
+s.startswith(prefix)
+
+Ví dụ:
+
+    s = "Hello, World!"
+    print(s.startswith("Hello"))  # Kết quả: True
+    print(s.startswith("World"))  # Kết quả: False
+
+
+10. endswith(suffix)
+    Mô tả: Kiểm tra xem chuỗi s có kết thúc bằng chuỗi suffix không.
+    Cú pháp:
+
+s.endswith(suffix)
+
+Ví dụ:
+
+    s = "Hello, World!"
+    print(s.endswith("World!"))  # Kết quả: True
+    print(s.endswith("hello"))   # Kết quả: False
+
+
+11. isdigit()
+    Mô tả: Kiểm tra xem chuỗi s có phải là một chuỗi số (chứa các chữ số) hay không.
+    Cú pháp:
+
+s.isdigit()
+
+Ví dụ:
+
+    s = "12345"
+    print(s.isdigit())  # Kết quả: True
+
+    s = "abc123"
+    print(s.isdigit())  # Kết quả: False
+
+
+12. isalpha()
+    Mô tả: Kiểm tra xem chuỗi s có phải là chuỗi chỉ chứa các ký tự chữ cái (không chứa số hoặc ký tự đặc biệt) hay không.
+    Cú pháp:
+
+s.isalpha()
+
+Ví dụ:
+
+    s = "Hello"
+    print(s.isalpha())  # Kết quả: True
+
+    s = "Hello123"
+    print(s.isalpha())  # Kết quả: False
+
+
+13. join(iterable)
+    Mô tả: Nối các chuỗi trong một iterable (ví dụ: danh sách hoặc tuple) lại với nhau, sử dụng chuỗi s làm phân cách giữa các phần tử.
+    Cú pháp:
+
+s.join(iterable)
+
+Ví dụ:
+
+    s = "-"
+    print(s.join(["apple", "banana", "cherry"]))  # Kết quả: "apple-banana-cherry"
+
+
+14. islower()
+    Mô tả: Kiểm tra xem tất cả các ký tự trong chuỗi s có phải là chữ thường không.
+    Cú pháp:
+
+s.islower()
+
+Ví dụ:
+
+    s = "hello"
+    print(s.islower())  # Kết quả: True
+
+    s = "Hello"
+    print(s.islower())  # Kết quả: False
+
+
+15. isupper()
+    Mô tả: Kiểm tra xem tất cả các ký tự trong chuỗi s có phải là chữ hoa không.
+    Cú pháp:
+
+s.isupper()
+
+Ví dụ:
+
+    s = "HELLO"
+    print(s.isupper())  # Kết quả: True
+
+    s = "Hello"
+    print(s.isupper())  # Kết quả: False
+
+Hàm trong Python
+ Các hàm xử lý chuỗi trong Python
+ Phân biệt hai kiểu hàm trong python để hiểu bản chất
+Trong Python, hàm là một khối mã được thiết kế để thực hiện một nhiệm vụ cụ thể.
+Cách định nghĩa hàm trong Python
+Cú pháp cơ bản tạo hàm python
+Ví dụ tạo hàm trong python
+Các đặc điểm khác của hàm trong Python
+(1) Hàm không có tham số trong python
+(2) Hàm không trả về giá trị trong python
+(3) Hàm có tham số mặc định
+(4) Hàm có số lượng tham số không cố định
+Ứng dụng hàm trong thực tế
+Video thực hành về hàm trong Python
+Hàm giúp bạn tái sử dụng mã, giúp chương trình dễ dàng đọc, bảo trì và tổ chức. Hàm có thể nhận vào các giá trị đầu vào (gọi là đối số hoặc tham số) và có thể trả về một giá trị (hoặc không).
+
+
+1. Cách định nghĩa hàm trong Python
+Để định nghĩa một hàm trong Python, bạn sử dụng từ khóa def theo sau là tên hàm, dấu ngoặc đơn (có thể chứa tham số) và dấu hai chấm.
+
+
+Cú pháp cơ bản tạo hàm python
+def ten_ham(tham_so1, tham_so2,tham_soN):
+    # Các câu lệnh thực hiện trong hàm
+    ket_qua = tham_so1 + tham_so2
+    return ket_qua  # Trả về kết quả
+
+
+Ví dụ tạo hàm trong python
+Ví dụ về hàm tính tổng hai số trong python
+def tinh_tong(a, b):
+    return a + b
+# Gọi hàm với các đối số cụ thể
+result = tinh_tong(3, 5)
+print(result)  # In ra 8
+Giải thích code tạo hàm ví dụ trên:
+
+    def là từ khóa dùng để định nghĩa hàm.
+    tinh_tong là tên hàm.
+    (a, b) là các tham số của hàm.
+    return a + b trả về giá trị tổng của a và b.
+
+Hàm xác định số chẵn lẻ trong python
+def kiem_tra_chan_le(number):
+    if number % 2 == 0:
+        return "Chẵn"
+    else:
+        return "Lẻ"
+result = kiem_tra_chan_le(4)
+print(result)  # In ra "Chẵn"
+
+# Gọi hàm với số 7
+result = kiem_tra_chan_le(7)
+print(result)  # In ra "Lẻ"
+
+
+2. Các đặc điểm khác của hàm trong Python
+
+(1) Hàm không có tham số trong python
+Bạn có thể định nghĩa hàm không có tham số:
+
+def say_hello():
+    print("Hello, World!")
+
+say_hello()  # In ra "Hello, World!"
+
+
+(2) Hàm không trả về giá trị trong python
+Hàm cũng có thể không trả về giá trị gì (hoặc trả về None mặc định).
+
+
+def print_hello():
+    print("Hello, World!")
+result = print_hello()  # In ra "Hello, World!" và result sẽ là None 
+
+(3) Hàm có tham số mặc định
+Bạn có thể định nghĩa tham số với giá trị mặc định:
+
+
+def greet(name="Guest"):
+    print(f"Hello, {name}!")
+
+greet("Alice")  # In ra "Hello, Alice!"
+greet()         # In ra "Hello, Guest!"
+
+(4) Hàm có số lượng tham số không cố định
+Bạn có thể sử dụng *args và **kwargs để cho phép hàm nhận số lượng tham số không cố định:
+
+    *args dùng để nhận số lượng tham số dạng tuple (đối số không xác định số lượng).
+    **kwargs dùng để nhận số lượng tham số dạng dictionary (đối số với tên).
+
+
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3, 4))  # In ra 10
+
+def print_details(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_details(name="Alice", age=25)  # In ra "name: Alice" và "age: 25"
+
+3. Ứng dụng hàm trong thực tế
+    Hàm giúp tổ chức và tái sử dụng mã dễ dàng hơn.
+    Hàm có thể nhận đầu vào (tham số), thực hiện các phép toán và trả về kết quả.
+    Hàm trong Python dễ định nghĩa và sử dụng với cú pháp rõ ràng và dễ hiểu.
+
+
+4. Video thực hành về hàm trong Python
+Hàm tính tổng trong python
+
+Hàm giải phương trình bậc 1 trong python
+Phân biệt hai kiểu hàm trong python để hiểu bản chất
+ Hàm trong Python
+ Mảng trong Python
+Khi lập trình ứng dụng python, bạn cần phân biệt rõ 2 loại hàm sau đây.
+1. Trong Python, có hai loại hàm chính
+    Hàm tự viết (User-defined functions): Đây là các hàm mà bạn, người lập trình, tự tạo ra để thực hiện một tác vụ cụ thể nào đó.
+
+    Hàm có sẵn (Built-in functions): Đây là các hàm đã được định nghĩa sẵn trong Python, bạn có thể sử dụng chúng ngay mà không cần phải khai báo hay định nghĩa lại.
+
+2. Giải thích từng loại hàm trong Python
+Hàm có sẵn trong Python
+Đặc điểm
+
+    Đã được định nghĩa sẵn trong Python: Bạn không cần phải viết mã nguồn cho những hàm này. Python cung cấp rất nhiều hàm có sẵn để hỗ trợ bạn trong các tác vụ thường gặp.
+    Có thể sử dụng ngay lập tức: Những hàm này có thể gọi và sử dụng trực tiếp mà không cần phải định nghĩa lại.
+    Phong phú: Python cung cấp rất nhiều hàm có sẵn cho nhiều loại thao tác, từ toán học, chuỗi, danh sách đến xử lý I/O.
+
+Một số hàm có sẵn phổ biến
+
+    print() — in ra giá trị
+    len() — trả về độ dài của một chuỗi, danh sách, v.v.
+    sum() — tính tổng các phần tử trong một iterable.
+    max() — trả về giá trị lớn nhất trong một iterable.
+    sorted() — sắp xếp một iterable.
+
+Ví dụ sử dụng hàm có sẵn
+
+# Hàm có sẵn: len()
+s = "Hello, World!"
+print(len(s))  # Kết quả: 13
+
+
+Giải thích:
+
+    len() là một hàm có sẵn trong Python, dùng để tính độ dài của chuỗi s.
+Hàm tự viết (User-defined functions)
+Đặc điểm hàm tự viết
+
+    Được người lập trình tạo ra: Bạn tự viết mã nguồn để định nghĩa các hàm này.
+    Cấu trúc: Bạn có thể chỉ định tên hàm, các tham số (arguments), và phần thân hàm (body) để thực hiện các tác vụ cụ thể.
+    Linh hoạt: Bạn có thể xác định các tham số mặc định, giá trị trả về, và các kiểu xử lý phức tạp trong hàm này.
+
+Cách định nghĩa hàm
+
+Sử dụng từ khóa def để khai báo một hàm tự viết. Sau đó là tên hàm và các tham số.
+
+Cú pháp tạo hàm tự định nghĩa trong python
+
+def function_name(parameters):
+    # Phần thân hàm
+    return value
+
+
+Ví dụ:
+
+# Hàm tính tổng hai số
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(5, 3)  # Gọi hàm và in kết quả
+print(result)  # Kết quả: 8
+
+
+Giải thích:
+
+    add_numbers là một hàm tự viết.
+    Nó nhận hai tham số a và b, sau đó trả về giá trị tổng của chúng.
+3. Một số kiểu hàm khi lập trình python hay sử dụng
+* Hàm không có tham số truyền vào, không có giá trị trả về
+
+def TenHam():
+   #lệnh tính toán ...
+   print('Nội dung')
+TenHam()
+
+
+* Hàm có tham số truyền vào, không có giá trị trả về
+def TenHam(ts1,ts2):
+   #lệnh tính toán ...
+   print('Nội dung',ts1,ts2)
+TenHam("a","b")
+* Hàm có tham số truyền vào, có giá trị trả về
+
+def TenHam(ts1,ts2):
+   #lệnh tính toán ...
+   return ts1+ts2
+ kq=TenHam("a","b")
+3. Phân biệt giữa hàm tự viết và hàm có sẵn trong python
+Tiêu chí	Hàm tự viết	Hàm có sẵn
+Cách sử dụng	Cần tự định nghĩa trước khi sử dụng.	Sử dụng trực tiếp mà không cần định nghĩa lại.
+Định nghĩa	Được định nghĩa bởi người lập trình.	Được định nghĩa sẵn trong Python.
+Linh hoạt	Có thể tùy chỉnh hoàn toàn để phục vụ mục đích riêng.	Không thể thay đổi, chỉ sử dụng với chức năng đã được định nghĩa.
+Ví dụ	def add_numbers(a, b): return a + b	len(), print(), sum(), sorted()
+Khả năng tùy biến	Có thể tự do tạo các tham số, giá trị trả về, và cấu trúc bên trong.	Giới hạn trong các tác vụ đã được cài sẵn.
+Mảng trong Python
+ Phân biệt hai kiểu hàm trong python để hiểu bản chất
+ Dictionary trong Python
+Trong Python, mảng không phải là một kiểu dữ liệu riêng biệt như trong các ngôn ngữ khác (như C hay Java).
+Danh sách (list) trong Python
+Cấu trúc cơ bản của danh sách (list)
+Các thao tác phổ biến trên danh sách (list)
+Truy cập phần tử
+Cắt danh sách (slicing)
+Thêm phần tử
+Dùng insert() để thêm phần tử tại một vị trí cụ thể
+Xóa phần tử
+Sắp xếp danh sách
+Tìm số lớn nhất, nhỏ nhất
+Tỉnh tổng
+Đếm số phần tử trong list python
+Tuple trong Python
+Ví dụ về Tuple
+Các thao tác với Tuple
+Mảng với NumPy
+Cài đặt NumPy
+Sử dụng mảng NumPy
+Một số thao tác với NumPy
+List hai chiều trong python
+List 2 chiều với các con số đơn giản
+List 2 chiều với dữ liệu bài toán quản lý
+Một số hàm thống kê tính toán với List 2 chiều
+Kinh nghiệm về mảng trong Python
+Tuy nhiên, Python cung cấp nhiều cách để làm việc với các dãy hoặc tập hợp dữ liệu giống như mảng thông qua danh sách (list), tuple, hoặc thông qua thư viện NumPy
+
+
+1. Danh sách (list) trong Python
+    Danh sách (list) là một kiểu dữ liệu trong Python dùng để lưu trữ một tập hợp các phần tử có thể thay đổi (mutable). Bạn có thể chứa bất kỳ kiểu dữ liệu nào trong danh sách (số, chuỗi, danh sách con, v.v.).
+
+
+Cấu trúc cơ bản của danh sách (list)
+my_list = [element1, element2, element3, ...]
+
+
+Ví dụ 1: Khởi tạo và thao tác với danh sách
+
+# Tạo một danh sách các số nguyên
+numbers = [1, 2, 3, 4, 5]
+# Truy cập phần tử trong danh sách
+print(numbers[0])  # In ra 1 (phần tử đầu tiên)
+print(numbers[-1])  # In ra 5 (phần tử cuối cùng)
+# Thêm phần tử vào danh sách
+numbers.append(6)  # Thêm 6 vào cuối danh sách
+# Thay đổi phần tử trong danh sách
+numbers[2] = 10  # Đổi phần tử tại chỉ mục 2 thành 10
+# Loại bỏ phần tử trong danh sách
+numbers.remove(10)  # Xóa phần tử có giá trị 10
+# In ra danh sách đã thay đổi
+print(numbers) 
+Output:
+1
+5
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5, 6]
+
+Video tạo mảng đơn giản python
+
+
+ 
+
+
+Các thao tác phổ biến trên danh sách (list)
+
+Truy cập phần tử
+Dùng chỉ mục, với chỉ mục bắt đầu từ 0. Chỉ mục âm sẽ truy cập từ cuối danh sách.
+
+
+lst = [10, 20, 30, 40]
+print(lst[0])  # 10
+print(lst[-1])  # 40
+
+Cắt danh sách (slicing)
+lst = [10, 20, 30, 40, 50]
+print(lst[1:4])  # [20, 30, 40] (từ chỉ mục 1 đến 3) 
+
+Thêm phần tử
+    Dùng append() để thêm phần tử vào cuối danh sách:
+
+   lst.append(60)
+
+
+Dùng insert() để thêm phần tử tại một vị trí cụ thể
+    lst.insert(1, 15)  # Thêm 15 tại chỉ mục 1
+
+
+Xóa phần tử
+    * Dùng remove() để xóa phần tử theo giá trị:
+
+lst.remove(30)  # Xóa phần tử có giá trị 30
+
+    * Dùng pop() để xóa phần tử theo chỉ mục (hoặc xóa phần tử cuối nếu không chỉ định chỉ mục):
+
+    lst.pop(2)  # Xóa phần tử tại chỉ mục 2
+
+
+Sắp xếp danh sách
+    lst = [3, 1, 4, 5, 2]
+    lst.sort()  # Sắp xếp theo thứ tự tăng dần
+    print(lst)  # [1, 2, 3, 4, 5]
+
+    lst.sort(reverse=True)
+    print(lst)  # [5, 4, 3, 2, 1]
+
+
+Tìm số lớn nhất và nhỏ nhất trong array
+my_list = [5,1,2,8]
+# Tìm số lớn nhất và nhỏ nhất
+max_num = max(my_list)
+min_num = min(my_list)
+# In kết quả
+print("Số lớn nhất:", max_num)
+print("Số nhỏ nhất:", min_num)
+Tính tổng các phần tử trong danh sách
+my_list = [6,1,2,8]
+tong = sum(my_list)
+# In kết quả
+print("Tổng:", tong)
+
+Danh sách có thể chứa các kiểu dữ liệu khác nhau
+
+my_list = [1, "Hello", 3.14, True]
+print(my_list)
+
+
+Đếm số phần từ trong list Python
+data = ["Python","C#","Java"]
+
+# Đếm số dòng (số danh sách con)
+print("Số dòng trong danh sách:", len(data))
+# kết quả trả về 3
+ 
+
+
+2. Tuple trong Python
+    Tuple là một kiểu dữ liệu trong Python rất giống với danh sách (list), nhưng khác ở chỗ là nó không thể thay đổi (immutable) sau khi được tạo ra.
+
+
+Ví dụ về Tuple
+my_tuple = (1, 2, 3, "Hello", 3.14)
+print(my_tuple[0])  # Truy cập phần tử đầu tiên 
+
+Các thao tác với Tuple
+    Bạn có thể truy cập các phần tử trong Tuple bằng cách sử dụng chỉ mục, nhưng không thể thay đổi (thêm, xóa, sửa) phần tử sau khi Tuple đã được tạo ra.
+
+
+3. Mảng với NumPy
+Nếu bạn cần sử dụng các mảng để xử lý dữ liệu hiệu quả (như trong các bài toán khoa học dữ liệu, học máy, v.v.), bạn có thể sử dụng thư viện NumPy. NumPy cung cấp kiểu dữ liệu ndarray (mảng đa chiều) và các hàm toán học mạnh mẽ.
+
+
+Cài đặt NumPy
+pip install numpy
+
+
+Sử dụng mảng NumPy
+import numpy as np
+
+# Tạo mảng NumPy một chiều
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+
+# Tạo mảng NumPy hai chiều (ma trận)
+arr_2d = np.array([[1, 2], [3, 4], [5, 6]])
+print(arr_2d)
+
+# Các phép toán trên mảng NumPy
+arr_sum = arr + 5  # Thêm 5 vào tất cả phần tử trong mảng
+print(arr_sum) 
+
+Một số thao tác với NumPy
+* Khởi tạo mảng NumPy:
+
+np.zeros(5)   # Mảng toàn số 0 có 5 phần tử
+np.ones(3)    # Mảng toàn số 1 có 3 phần tử
+np.arange(0, 10, 2)  # Mảng với các giá trị từ 0 đến 9 với bước nhảy là 2
+np.linspace(0, 1, 5)  # Mảng với 5 giá trị đều từ 0 đến 1
+
+* Các phép toán mảng NumPy:
+
+    Phép cộng, trừ, nhân, chia giữa các mảng:
+
+    arr1 = np.array([1, 2, 3])
+    arr2 = np.array([4, 5, 6])
+    print(arr1 + arr2)  # [5, 7, 9]
+
+    Cắt mảng:
+
+    arr = np.array([1, 2, 3, 4, 5])
+    print(arr[1:4])  # [2, 3, 4]
+
+
+5. List 2 chiều trong python
+List 2 chiều thực chất là một list lồng list.
+
+
+List 2 chiều với các con số đơn giản
+Có dữ liệu số sau đây, hãy thể hiện thành biến kiểu List 2 chiều
+
+1  2  3
+4  5  6
+7  8  9
+
+# Khai báo mảng 2 chiều (ma trận 3x3)
+arr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# Truy cập phần tử dòng 1, cột 2 (chỉ số bắt đầu từ 0)
+print(arr[0][1])  # Output: 2
+# Thêm một hàng mới vào cuối
+arr.append([10, 11, 12])
+
+ 
+
+List 2 chiều với dữ liệu bài toán quản lý
+Có dữ liệu số sau đây, hãy thể hiện thành biến kiểu List 2 chiều
+
+TT     Tên          Điểm
+1       Trân A       8
+2       Lê B          7
+3       Thị Nâu     10
+
+data = [
+    [1, "Trần A", 8],
+    [2, "Lê B", 7],
+    [3, "Thị Nâu", 10]
+]
+
+Một số hàm thống kê tính toán với List 2 chiều
+Min và Max cho cột chỉ định trong List
+
+data = [
+    [1, "Trần A", 8],
+    [2, "Lê B", 7],
+    [3, "Thị Nâu", 10]
+]
+max_value = max(data, key=lambda x: x[2])
+print("Học sinh điểm cao nhất:", max_value)
+min_value = min(data, key=lambda x: x[2])
+print("Học sinh điểm thấp nhất:",min_value)
+Tính tổng điểm / SUM
+
+# Tính tổng điểm
+total = sum(row[2] for row in data)
+print("Tổng điểm:", total)
+
+ 
+
+6. Kinh nghiệm về mảng trong Python
+    Danh sách (list) là cấu trúc dữ liệu linh hoạt và phổ biến nhất trong Python để lưu trữ một tập hợp các phần tử, có thể thay đổi và hỗ trợ nhiều thao tác như thêm, xóa, sắp xếp, truy cập, v.v.
+    Tuple giống với danh sách nhưng không thể thay đổi sau khi tạo ra.
+    NumPy cung cấp các mảng hiệu quả và các phép toán toán học mạnh mẽ, đặc biệt hữu ích cho việc xử lý dữ liệu khoa học hoặc học máy.
+Dictionary trong Python
+ Mảng trong Python
+ Quản lý file và thư mục trong Python
+Dictionary trong Python là một cấu trúc dữ liệu lưu trữ cặp key-value, Key là duy nhất, có thể truy cập nhanh các giá trị bằng key., ỗ trợ thêm, sửa, xoá dữ liệu linh hoạt
+Từ điển (Dictionaries) trong Python là gì?
+Thêm hoặc cập nhật giá trị
+Xóa phần tử Dictionary trong Python
+Duyệt qua Dictionary
+Kiểm tra sự tồn tại của key
+Lấy danh sách keys và values
+Các thao tác cơ bản với Dictionary
+
+1. Từ điển (Dictionaries) trong Python là gì?
+Trong Python, Dictionary (dict) là một kiểu dữ liệu có cấu trúc dạng key-value (khóa - giá trị). Nó cho phép lưu trữ và truy xuất dữ liệu nhanh chóng dựa trên key thay vì chỉ số như trong danh sách (list).
+Cú pháp Dictionary trong Python
+
+
+dictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+} 
+Ứng dụng thực tế về kiểu Dictionaries trong python
+
+Ví dụ 01:
+
+
+# Khai báo từ điển chứa thông tin một khách hàng
+khach_hang = {
+    "ten": "Nguyễn Văn A",
+    "tuoi": 30,
+    "email": "a@example.com"
+}
+
+# Truy xuất dữ liệu
+print(khach_hang["ten"])   # Output: Nguyễn Văn A
+print(khach_hang["tuoi"])  # Output: 30
+print(khach_hang["email"]) # Output: a@example.com 
+
+
+Ví dụ 02
+# Danh sách sản phẩm dưới dạng Dictionary
+san_pham = {
+    "SP001": {"ten": "Đồng hồ Casio", "gia": 1500000, "so_luong": 10},
+    "SP002": {"ten": "Đồng hồ Seiko", "gia": 3500000, "so_luong": 5},
+    "SP003": {"ten": "Đồng hồ Citizen", "gia": 2800000, "so_luong": 8},
+}
+
+# 1. In danh sách sản phẩm
+print("Danh sách sản phẩm:")
+for ma_sp, thong_tin in san_pham.items():
+    print(f"Mã: {ma_sp}, Tên: {thong_tin['ten']}, Giá: {thong_tin['gia']}, Số lượng: {thong_tin['so_luong']}")
+
+# 2. Truy cập thông tin sản phẩm cụ thể
+ma_san_pham = "SP002"
+if ma_san_pham in san_pham:
+    print("\nThông tin sản phẩm cần tìm:")
+    print(san_pham[ma_san_pham])
+
+# 3. Cập nhật số lượng sản phẩm
+san_pham["SP001"]["so_luong"] -= 2  # Bán 2 chiếc đồng hồ Casio
+print("\nSau khi bán 2 chiếc Casio:")
+print(san_pham["SP001"])
+
+# 4. Thêm sản phẩm mới vào danh sách
+san_pham["SP004"] = {"ten": "Đồng hồ Rolex", "gia": 15000000, "so_luong": 2}
+print("\nDanh sách sản phẩm sau khi thêm Rolex:")
+for ma_sp, thong_tin in san_pham.items():
+    print(f"Mã: {ma_sp}, Tên: {thong_tin['ten']}, Giá: {thong_tin['gia']}, Số lượng: {thong_tin['so_luong']}")
+
+# 5. Xóa sản phẩm hết hàng
+san_pham.pop("SP003")  # Xóa sản phẩm Citizen khỏi danh sách
+print("\nDanh sách sản phẩm sau khi xóa Citizen:")
+for ma_sp, thong_tin in san_pham.items():
+    print(f"Mã: {ma_sp}, Tên: {thong_tin['ten']}, Giá: {thong_tin['gia']}, Số lượng: {thong_tin['so_luong']}") 
+
+2. Các thao tác cơ bản với Dictionary
+
+Thêm hoặc cập nhật giá trị
+khach_hang["dia_chi"] = "Hà Nội"  # Thêm key mới
+khach_hang["email"] = "new_email@example.com"  # Cập nhật giá trị
+print(khach_hang)
+
+
+Xóa phần tử Dictionary trong Python
+del khach_hang["tuoi"]  # Xóa key "tuoi"
+khach_hang.pop("email")  # Xóa key "email"
+print(khach_hang)
+
+
+Duyệt qua Dictionary
+for key, value in khach_hang.items():
+    print(f"{key}: {value}")
+
+
+Kiểm tra sự tồn tại của key
+if "ten" in khach_hang:
+    print("Khách hàng có tên:", khach_hang["ten"])
+
+
+Lấy danh sách keys và values
+print(khach_hang.keys())   # Lấy danh sách keys
+print(khach_hang.values()) # Lấy danh sách values
+Quản lý file và thư mục trong Python
+ Dictionary trong Python
+ Lập trình hướng đối tượng trong Python
+Trong Python, việc quản lý file và thư mục có thể thực hiện rất dễ dàng nhờ vào thư viện os, shutil và pathlib.
+Quản lý file trong Python
+Mở và đọc file
+Ghi vào file
+Thêm dữ liệu vào file (append)
+Đọc từng dòng trong file
+Quản lý thư mục trong Python
+Kiểm tra thư mục có tồn tại không
+Liệt kê các file và thư mục trong thư mục
+Xoá thư mục
+Quản lý file với shutil
+Sao chép file
+Di chuyển file
+Xoá file
+Quản lý file và thư mục với pathlib
+Tạo đối tượng Path và kiểm tra file tồn tại
+Tạo thư mục
+Di chuyển và sao chép file
+Video thực hành về quản lý file, thư mục trong python
+Dưới đây là các ví dụ cơ bản về cách thao tác với file và thư mục.
+
+
+1. Quản lý file trong Python
+
+1.1 Mở và đọc file
+# Mở file để đọc
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+    "r": Mở file ở chế độ đọc.
+    with open() là cách tốt để đảm bảo file được đóng tự động sau khi hoàn thành.
+
+Quản lý file và thư mục trong Python
+
+
+1.2 Ghi vào file
+# Mở file để ghi
+with open("example.txt", "w") as file:
+    file.write("Hello, Python!")
+
+    "w": Mở file ở chế độ ghi. Nếu file không tồn tại, nó sẽ được tạo mới.
+
+
+1.3 Thêm dữ liệu vào file (append)
+# Mở file để thêm dữ liệu vào cuối file
+with open("example.txt", "a") as file:
+    file.write("\nAppended text.")
+
+    "a": Mở file ở chế độ append, tức là thêm dữ liệu vào cuối file mà không làm mất dữ liệu cũ.
+
+
+1.4 Đọc từng dòng trong file
+# Đọc từng dòng trong file
+with open("example.txt", "r") as file:
+    for line in file:
+        print(line.strip())  # strip() để loại bỏ dấu newline
+
+
+2. Quản lý thư mục trong Python
+
+2.1 Kiểm tra thư mục có tồn tại không
+import os
+
+# Kiểm tra thư mục có tồn tại không
+if not os.path.exists("my_folder"):
+    os.mkdir("my_folder")  # Tạo thư mục nếu không tồn tại
+    print("Thư mục đã được tạo!")
+else:
+    print("Thư mục đã tồn tại.")
+
+
+2.2 Liệt kê các file và thư mục trong thư mục
+import os
+
+# Liệt kê các file và thư mục trong thư mục
+files_and_dirs = os.listdir("my_folder")
+print(files_and_dirs)
+
+
+2.3 Xoá thư mục
+import os
+
+# Xoá thư mục rỗng
+if os.path.exists("my_folder"):
+    os.rmdir("my_folder")  # Xoá thư mục rỗng
+    print("Thư mục đã bị xoá.")
+else:
+    print("Thư mục không tồn tại.")
+
+
+3. Quản lý file với shutil
+shutil là thư viện mạnh mẽ để sao chép, di chuyển, xóa file và thư mục.
+
+
+3.1 Sao chép file
+import shutil
+
+# Sao chép file
+shutil.copy("example.txt", "copy_example.txt")
+print("File đã được sao chép.")
+
+ 
+
+
+3.2 Di chuyển file
+import shutil
+
+# Di chuyển file
+shutil.move("example.txt", "my_folder/example.txt")
+print("File đã được di chuyển.")
+
+
+3.3 Xoá file
+import os
+
+# Xoá file
+if os.path.exists("example.txt"):
+    os.remove("example.txt")
+    print("File đã bị xoá.")
+else:
+    print("File không tồn tại.")
+
+
+4. Quản lý file và thư mục với pathlib
+pathlib là một thư viện hiện đại hơn, cung cấp các cách thức quản lý file và thư mục dễ dàng hơn.
+
+
+4.1 Tạo đối tượng Path và kiểm tra file tồn tại
+from pathlib import Path
+
+# Tạo đối tượng Path
+file_path = Path("example.txt")
+
+# Kiểm tra file tồn tại
+if file_path.exists():
+    print(f"File {file_path} tồn tại.")
+else:
+    print(f"File {file_path} không tồn tại.")
+
+ 
+
+
+4.2 Tạo thư mục
+from pathlib import Path
+
+# Tạo thư mục
+folder = Path("my_folder")
+folder.mkdir(exist_ok=True)  # exist_ok=True để tránh lỗi nếu thư mục đã tồn tại
+print("Thư mục đã được tạo.")
+
+
+4.3 Di chuyển và sao chép file
+from pathlib import Path
+import shutil
+
+# Di chuyển file
+source = Path("example.txt")
+destination = Path("my_folder/example.txt")
+shutil.move(source, destination)
+print(f"File {source} đã được di chuyển đến {destination}.")
+
+# Sao chép file
+shutil.copy(source, destination)
+print(f"File {source} đã được sao chép đến {destination}.")
+
+
+5. Video thực hành về quản lý file, thư mục trong python
+Lập trình hướng đối tượng trong Python
+ Quản lý file và thư mục trong Python
+ Quản lý lỗi trong Python
+Lập trình hướng đối tượng (OOP) là một phương pháp lập trình dựa trên việc sử dụng các đối tượng và lớp. Python hỗ trợ OOP và có thể sử dụng các khái niệm như lớp, đối tượng, kế thừa, đa hình, và đóng gói.
+Lớp (Class) và Đối tượng (Object)
+Lớp (Class)
+Đối tượng (Object)
+Ví dụ cơ bản về lớp và đối tượng
+self là gì
+Phương thức khởi tạo (__init__)
+Kế thừa (Inheritance)
+Đa hình (Polymorphism)
+Đóng gói (Encapsulation)
+Tóm tắt các khái niệm chính trong OOP
+Video thực hành về lập trình hướng đối tượng
+Dưới đây là một hướng dẫn chi tiết về lập trình hướng đối tượng trong Python.
+
+Lập trình hướng đối tượng trong Python
+
+
+1. Lớp (Class) và Đối tượng (Object)
+
+Lớp (Class)
+Lớp là một bản thiết kế (template) cho các đối tượng. Nó định nghĩa các thuộc tính (attributes) và phương thức (methods) mà đối tượng của lớp đó sẽ có.
+
+
+Đối tượng (Object)
+Đối tượng là một thực thể cụ thể của một lớp. Một lớp có thể tạo ra nhiều đối tượng khác nhau.
+Cú pháp tạo lớp trong Python:
+
+
+class ClassName:
+    def __init__(self, param1, param2):
+        # Khởi tạo các thuộc tính của đối tượng
+        self.param1 = param1
+        self.param2 = param2
+
+    def method_name(self):
+        # Các phương thức (hành vi) của đối tượng
+        print("Đây là một phương thức trong lớp.")
+
+ 
+
+
+Ví dụ cơ bản về lớp và đối tượng
+# Định nghĩa lớp
+class Person:
+    def __init__(self, name, age):
+        self.name = name  # Thuộc tính tên
+        self.age = age    # Thuộc tính tuổi
+
+    def introduce(self):
+        print(f"Chào, tôi là {self.name} và tôi {self.age} tuổi.")
+
+# Tạo đối tượng từ lớp Person
+person1 = Person("Alice", 25)
+person2 = Person("Bob", 30)
+
+# Gọi phương thức của đối tượng
+person1.introduce()
+person2.introduce()
+
+
+Kết quả:
+
+Chào, tôi là Alice và tôi 25 tuổi.
+Chào, tôi là Bob và tôi 30 tuổi.
+Ví dụ giải phương trình bậc 1 theo hướng đối tượng Python
+
+# đối tượng có tên GPTB1
+# có 2 thuộc tính a,b
+# __int__ là phương thức khởi tạo
+class GPTB1:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+
+    def giai(self):
+        if self.a == 0:
+            print("Nhập số a khác 0")
+        else:
+            x= - self.b / self.a
+            print("Nghiệm x là:" + str(x))
+            
+gpt_lan1 = GPTB1(4,2)       
+gpt_lan1.giai();
+
+
+self là gì ?
+    Tham chiếu đến đối tượng hiện tại:
+        Khi bạn tạo một đối tượng (object) từ một lớp
+
+   ví dụ:
+doi_tuong = TenLop()
+
+    self sẽ tham chiếu đến chính đối tượng doi_tuong đó.
+    Bên trong các phương thức của lớp, bạn sử dụng self để truy cập và thay đổi các thuộc tính (attribute) của đối tượng.
+
+
+2. Phương thức khởi tạo (__init__)
+Phương thức __init__ trong Python là phương thức đặc biệt, được gọi tự động khi bạn tạo đối tượng từ lớp. Nó được dùng để khởi tạo các thuộc tính của đối tượng.
+
+Ví dụ:
+
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print(f"{self.year} {self.brand} {self.model}")
+
+# Tạo đối tượng từ lớp Car
+car1 = Car("Toyota", "Corolla", 2020)
+car1.display_info()
+Kết quả:
+
+2020 Toyota Corolla
+
+
+3. Kế thừa (Inheritance)
+Kế thừa là một tính năng trong OOP cho phép một lớp con (child class) kế thừa các thuộc tính và phương thức của lớp cha (parent class). Kế thừa giúp tái sử dụng mã nguồn và giảm thiểu sự lặp lại.
+Cú pháp kế thừa trong Python:
+
+
+class ChildClass(ParentClass):
+    def __init__(self, param1, param2):
+        super().__init__(param1, param2)  # Gọi phương thức khởi tạo của lớp cha
+        # Các thuộc tính và phương thức riêng của lớp con
+
+
+Ví dụ kế thừa:
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f"{self.name} makes a sound")
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)  # Gọi phương thức khởi tạo của lớp cha
+        self.breed = breed
+
+    def speak(self):
+        print(f"{self.name} barks")
+
+# Tạo đối tượng từ lớp Dog
+dog1 = Dog("Buddy", "Golden Retriever")
+dog1.speak()
+
+
+Kết quả:
+
+Buddy barks
+
+Ở đây, lớp Dog kế thừa từ lớp Animal và có phương thức speak() riêng của mình.
+
+4. Đa hình (Polymorphism)
+Đa hình cho phép một đối tượng của lớp con có thể thay thế đối tượng của lớp cha mà không làm thay đổi hành vi của chương trình. Thực tế, đa hình trong OOP chủ yếu thông qua việc ghi đè phương thức (method overriding).
+Ví dụ về đa hình:
+
+
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+class Cat(Animal):
+    def speak(self):
+        print("Cat meows")
+
+# Tạo các đối tượng
+animals = [Dog(), Cat()]
+
+# Gọi phương thức speak() trên mỗi đối tượng
+for animal in animals:
+    animal.speak()
+
+
+Kết quả:
+
+Dog barks
+Cat meows
+
+Ở đây, phương thức speak() được ghi đè trong cả lớp Dog và Cat, nhưng khi gọi phương thức speak() qua danh sách animals, mỗi đối tượng sử dụng phương thức riêng của nó.
+
+5. Đóng gói (Encapsulation)
+Đóng gói là một nguyên lý trong OOP, trong đó các thuộc tính và phương thức của lớp được bảo vệ khỏi sự truy cập trực tiếp từ bên ngoài. Điều này giúp ẩn thông tin (information hiding), chỉ cho phép truy cập thông qua các phương thức công khai.
+Ví dụ về đóng gói:
+
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance  # __balance là thuộc tính private, không thể truy cập từ bên ngoài
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"Đã gửi {amount}. Số dư hiện tại là {self.__balance}")
+        else:
+            print("Số tiền gửi phải lớn hơn 0.")
+
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.__balance:
+            self.__balance -= amount
+            print(f"Đã rút {amount}. Số dư hiện tại là {self.__balance}")
+        else:
+            print("Không đủ số dư hoặc số tiền rút không hợp lệ.")
+
+    def get_balance(self):
+        return self.__balance
+
+# Tạo đối tượng BankAccount
+account = BankAccount("Alice", 1000)
+account.deposit(500)
+account.withdraw(200)
+
+# Truy cập thông qua phương thức công khai
+print(f"Số dư tài khoản là: {account.get_balance()}")
+
+
+Kết quả:
+
+Đã gửi 500. Số dư hiện tại là 1500
+Đã rút 200. Số dư hiện tại là 1300
+Số dư tài khoản là: 1300
+
+Ở đây, thuộc tính __balance là thuộc tính private và không thể truy cập trực tiếp từ bên ngoài lớp. Tuy nhiên, ta có thể thay đổi hoặc lấy giá trị của nó thông qua các phương thức công khai như deposit(), withdraw(), và get_balance().
+
+6. Tóm tắt các khái niệm chính trong OOP
+    Lớp (Class): Bản thiết kế cho đối tượng.
+    Đối tượng (Object): Thực thể cụ thể của lớp.
+    Kế thừa (Inheritance): Cho phép lớp con kế thừa thuộc tính và phương thức từ lớp cha.
+    Đa hình (Polymorphism): Cho phép lớp con thay đổi hành vi của phương thức lớp cha.
+    Đóng gói (Encapsulation): Ẩn thông tin và cho phép truy cập thông qua các phương thức công khai.
+
+
+7. Video thực hành về lập trình hướng đối tượng
+Quản lý lỗi trong Python
+ Lập trình hướng đối tượng trong Python
+ Trí tuệ nhân tạo với Python
+Quản lý lỗi (hay còn gọi là Xử lý ngoại lệ - Exception Handling) trong Python là một kỹ thuật quan trọng giúp bạn xử lý các tình huống bất ngờ mà chương trình có thể gặp phải trong quá trình thực thi, giúp chương trình không bị dừng đột ngột.
+Các loại lỗi trong Python
+Trong Python, lỗi thường được chia thành hai loại chính
+Các lỗi thông dụng trong Python
+Câu lệnh try-except
+Cú pháp cơ bản
+Ví dụ về xử lý ngoại lệ đơn giản
+Xử lý nhiều loại lỗi
+Khối else trong try-except
+Khối finally trong try-except
+Tạo lỗi tùy chỉnh try-except
+Một số ngoại lệ thông dụng trong Python
+Tóm tắt về xử lý ngoại lệ trong Python
+Một số ví dụ thực tế
+Quản lý tệp
+Quản lý tài khoản ngân hàng
+
+1. Các loại lỗi trong Python
+
+Trong Python, lỗi thường được chia thành hai loại chính
+    Lỗi biên dịch (Syntax Errors): Là những lỗi xảy ra khi cú pháp của chương trình không đúng. Python sẽ báo lỗi ngay khi biên dịch chương trình.
+    Lỗi thực thi (Runtime Errors): Xảy ra khi chương trình đang chạy, có thể là do chia cho 0, truy cập chỉ số ngoài phạm vi, v.v.
+
+
+Các lỗi thông dụng trong Python
+    ZeroDivisionError: Lỗi chia cho 0.
+    IndexError: Lỗi khi truy cập phần tử ngoài phạm vi của danh sách.
+    TypeError: Lỗi khi sử dụng kiểu dữ liệu không hợp lệ.
+    ValueError: Lỗi khi truyền giá trị không hợp lệ cho hàm.
+
+
+2. Câu lệnh try-except
+Câu lệnh try-except trong Python giúp bạn bắt và xử lý lỗi khi chúng xảy ra. Nếu có lỗi trong khối try, Python sẽ chuyển sang khối except để xử lý lỗi.
+
+
+Cú pháp cơ bản
+try:
+    # Đoạn mã có thể gây ra lỗi
+    risky_code()
+except SomeException as e:
+    # Xử lý khi có lỗi
+    print(f"Đã xảy ra lỗi: {e}")
+
+3. Ví dụ về xử lý ngoại lệ đơn giản
+try:
+    # Cố gắng chia cho 0
+    x = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Lỗi: {e}")  # In ra thông báo lỗi
+
+
+Kết quả:
+
+Lỗi: division by zero
+
+Trong ví dụ này, khi chương trình gặp lỗi chia cho 0, nó sẽ bắt lỗi đó và in ra thông báo lỗi thay vì dừng chương trình đột ngột.
+
+4. Xử lý nhiều loại lỗi
+Bạn có thể xử lý nhiều loại lỗi khác nhau bằng cách sử dụng nhiều khối except:
+
+
+try:
+    # Có thể gây lỗi kiểu dữ liệu không hợp lệ
+    value = int(input("Nhập một số: "))
+    result = 10 / value
+except ZeroDivisionError:
+    print("Lỗi: Không thể chia cho 0!")
+except ValueError:
+    print("Lỗi: Vui lòng nhập một số hợp lệ!")
+except Exception as e:
+    print(f"Lỗi không xác định: {e}")
+
+
+Kết quả:
+
+    Nếu bạn nhập một chuỗi không phải số, chương trình sẽ in ra "Lỗi: Vui lòng nhập một số hợp lệ!".
+    Nếu bạn nhập 0, chương trình sẽ in ra "Lỗi: Không thể chia cho 0!".
+
+5. Khối else trong try-except
+Khối else sẽ được thực thi khi không có lỗi xảy ra trong khối try. Điều này giúp bạn thực hiện các hành động khi mã trong try chạy thành công.
+
+
+try:
+    value = int(input("Nhập một số: "))
+    result = 10 / value
+except ZeroDivisionError:
+    print("Lỗi: Không thể chia cho 0!")
+except ValueError:
+    print("Lỗi: Vui lòng nhập một số hợp lệ!")
+else:
+    print(f"Kết quả là: {result}")
+
+
+Nếu không có lỗi, chương trình sẽ in ra kết quả của phép chia.
+
+6. Khối finally trong try-except
+Khối finally sẽ luôn được thực thi, dù cho có lỗi hay không. Điều này rất hữu ích khi bạn cần làm một số công việc dọn dẹp (như đóng tệp hoặc giải phóng tài nguyên) sau khi thực thi một đoạn mã.
+
+
+try:
+    file = open("sample.txt", "r")
+    # Đọc nội dung tệp
+except FileNotFoundError:
+    print("Tệp không tồn tại.")
+finally:
+    print("Đóng tệp.")
+    file.close()  # Đảm bảo đóng tệp nếu nó được mở
+
+7. Tạo lỗi tùy chỉnh try-except
+Trong Python, bạn có thể tự tạo ra ngoại lệ (exceptions) của riêng mình bằng cách sử dụng raise. Điều này rất hữu ích khi bạn muốn tạo các lỗi đặc biệt trong chương trình của mình.
+
+
+def check_positive_number(value):
+    if value < 0:
+        raise ValueError("Giá trị phải là số dương!")
+    return value
+
+try:
+    result = check_positive_number(-5)
+except ValueError as e:
+    print(f"Lỗi: {e}")
+
+
+Kết quả:
+
+Lỗi: Giá trị phải là số dương!
+
+8. Một số ngoại lệ thông dụng trong Python
+Dưới đây là một số loại lỗi mà bạn có thể gặp phải trong Python và cách xử lý chúng:
+
+    ZeroDivisionError: Lỗi khi chia cho 0.
+    IndexError: Lỗi khi truy cập phần tử ngoài phạm vi của danh sách hoặc chuỗi.
+    ValueError: Lỗi khi truyền giá trị không hợp lệ cho một hàm.
+    KeyError: Lỗi khi truy cập khóa không tồn tại trong từ điển.
+    FileNotFoundError: Lỗi khi tệp không tồn tại.
+
+
+9. Tóm tắt về xử lý ngoại lệ trong Python
+    try: Đoạn mã có thể gây lỗi.
+    except: Bắt và xử lý lỗi.
+    else: Thực thi nếu không có lỗi xảy ra.
+    finally: Thực thi mã dọn dẹp bất kể có lỗi hay không.
+    Tạo lỗi tùy chỉnh: Sử dụng raise để tạo lỗi riêng.
+
+Quản lý lỗi giúp chương trình của bạn trở nên ổn định hơn, dễ bảo trì và dễ debug khi có sự cố xảy ra.
+
+
+10. Một số ví dụ thực tế
+
+Quản lý tệp
+Dưới đây là một ví dụ về quản lý tệp trong Python với xử lý lỗi để đảm bảo tệp được mở và đọc một cách an toàn.
+
+
+try:
+    # Mở tệp để đọc
+    with open("test.txt", "r") as file:
+        content = file.read()
+    print(content)
+except FileNotFoundError:
+    print("Tệp không tồn tại!")
+except PermissionError:
+    print("Không có quyền truy cập vào tệp!")
+except Exception as e:
+    print(f"Đã xảy ra lỗi: {e}") 
+
+Quản lý tài khoản ngân hàng
+class BankAccount:
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        try:
+            if amount <= 0:
+                raise ValueError("Số tiền gửi phải lớn hơn 0.")
+            self.balance += amount
+            print(f"Đã gửi {amount}. Số dư hiện tại là: {self.balance}")
+        except ValueError as e:
+            print(f"Lỗi: {e}")
+    
+    def withdraw(self, amount):
+        try:
+            if amount <= 0:
+                raise ValueError("Số tiền rút phải lớn hơn 0.")
+            if amount > self.balance:
+                raise ValueError("Không đủ số dư để rút.")
+            self.balance -= amount
+            print(f"Đã rút {amount}. Số dư hiện tại là: {self.balance}")
+        except ValueError as e:
+            print(f"Lỗi: {e}")
+    
+    def check_balance(self):
+        print(f"Số dư tài khoản của {self.owner} là: {self.balance}")
+
+
+# Tạo tài khoản ngân hàng
+account = BankAccount("Alice", 1000)
+
+# Các hành động của người dùng
+while True:
+    print("\n1. Nạp tiền")
+    print("2. Rút tiền")
+    print("3. Kiểm tra số dư")
+    print("4. Thoát")
+
+    choice = input("Chọn hành động: ")
+
+    if choice == "1":
+        try:
+            amount = float(input("Nhập số tiền muốn gửi: "))
+            account.deposit(amount)
+        except ValueError:
+            print("Lỗi: Vui lòng nhập một số hợp lệ.")
+    
+    elif choice == "2":
+        try:
+            amount = float(input("Nhập số tiền muốn rút: "))
+            account.withdraw(amount)
+        except ValueError:
+            print("Lỗi: Vui lòng nhập một số hợp lệ.")
+    
+    elif choice == "3":
+        account.check_balance()
+    
+    elif choice == "4":
+        print("Thoát chương trình.")
+        break
+    
+    else:
+        print("Lựa chọn không hợp lệ. Vui lòng chọn lại.")
+Giải thích chương trình:
+
+    Lớp BankAccount:
+        Phương thức __init__ khởi tạo tài khoản với tên chủ sở hữu và số dư (mặc định là 0).
+        Phương thức deposit dùng để nạp tiền vào tài khoản. Nếu số tiền nạp vào không hợp lệ (<= 0), chương trình sẽ raise một ngoại lệ ValueError để thông báo cho người dùng.
+        Phương thức withdraw dùng để rút tiền từ tài khoản. Nó kiểm tra số tiền rút có hợp lệ hay không (số tiền phải lớn hơn 0 và không vượt quá số dư tài khoản).
+        Phương thức check_balance in ra số dư hiện tại của tài khoản.
+
+    Xử lý ngoại lệ:
+        Trong phương thức deposit và withdraw, chúng ta sử dụng try-except để bắt các lỗi liên quan đến giá trị không hợp lệ như số tiền rút hoặc gửi không hợp lệ.
+        Trong vòng lặp chính, khi người dùng nhập số tiền gửi hoặc rút, chúng ta kiểm tra xem người dùng có nhập đúng kiểu dữ liệu không (sử dụng float để chuyển đổi). Nếu không, chương trình sẽ bắt ngoại lệ ValueError và thông báo lỗi.
+Trí tuệ nhân tạo với Python
+ Quản lý lỗi trong Python
+ Lập trình Web với Python
+Python là một trong những ngôn ngữ lập trình phổ biến nhất trong lĩnh vực trí tuệ nhân tạo (AI). Với cú pháp đơn giản, dễ học cùng hệ sinh thái thư viện phong phú
+Python đã trở thành lựa chọn hàng đầu cho các nhà nghiên cứu và phát triển AI.
+
+Trí tuệ nhân tạo với Python
+
+Tại sao Python được ưa chuộng trong AI?
+Cú pháp đơn giản, dễ học: Python có cú pháp rõ ràng, dễ đọc và dễ hiểu, giúp người mới bắt đầu dễ dàng tiếp cận và làm quen với lập trình.
+Hệ sinh thái thư viện phong phú: Python cung cấp một loạt các thư viện mạnh mẽ, được thiết kế đặc biệt cho các tác vụ AI như:
+NumPy: Hỗ trợ các phép toán trên mảng và ma trận, là nền tảng cho nhiều thư viện khác.
+Pandas: Cung cấp cấu trúc dữ liệu và công cụ để làm việc với dữ liệu dạng bảng.
+Scikit-learn: Chứa các thuật toán học máy phổ biến, giúp bạn dễ dàng xây dựng và đánh giá mô hình.
+TensorFlow và Keras: Hỗ trợ xây dựng và huấn luyện mạng nơ-ron sâu (deep learning).
+PyTorch: Một thư viện deep learning khác, nổi tiếng với tính linh hoạt và dễ sử dụng.
+NLTK: Hỗ trợ xử lý ngôn ngữ tự nhiên (NLP).
+OpenCV: Hỗ trợ xử lý ảnh và video.
+Cộng đồng lớn mạnh: Python có một cộng đồng người dùng lớn và tích cực, sẵn sàng hỗ trợ và chia sẻ kiến thức.
+Tính linh hoạt: Python có thể được sử dụng trên nhiều nền tảng và hệ điều hành khác nhau.
+Các ứng dụng của AI với Python
+Học máy (Machine Learning): Xây dựng các mô hình có khả năng học hỏi từ dữ liệu và đưa ra dự đoán.
+Học sâu (Deep Learning): Sử dụng mạng nơ-ron sâu để giải quyết các bài toán phức tạp như nhận dạng ảnh, xử lý ngôn ngữ tự nhiên.
+Xử lý ngôn ngữ tự nhiên (NLP): Phân tích, hiểu và tạo ra ngôn ngữ tự nhiên của con người.
+Nhận dạng ảnh và video: Phát hiện và phân loại đối tượng trong ảnh và video.
+Robot học: Điều khiển robot và lập trình các hành động cho robot.
+Các bước để bắt đầu với AI và Python
+Học lập trình Python cơ bản: Nắm vững các kiến thức về biến, kiểu dữ liệu, vòng lặp, hàm, ...
+Tìm hiểu về các thư viện AI: Làm quen với NumPy, Pandas, Scikit-learn, TensorFlow/Keras/PyTorch, ...
+Học về các thuật toán AI: Tìm hiểu về các thuật toán học máy, học sâu, ...
+Thực hành: Bắt đầu với các dự án nhỏ và dần dần nâng cao độ phức tạp.
+Lập trình Web với Python
+ Trí tuệ nhân tạo với Python
+ Hồi quy tuyến tính trong Python là gì ?
+Lập trình web với Python có thể thực hiện bằng cách sử dụng các framework web mạnh mẽ như Flask và Django.
+Framework nên dùng tạo web với Python
+Framework Flask
+Framework Django
+Sự khác biệt giữa Flask và Django
+Một số khái niệm cần nắm khi làm web với Python
+Hiểu rõ HTTP và các khái niệm cơ bản về Web
+Hosting
+Templates
+Git
+Quản lý cơ sở dữ liệu
+Chuẩn bị môi trường cho máy tính
+Cách tạo ứng dụng web với python
+Nếu bạn đang cần thiết kế web / web app với python thì dưới đây là cái nhìn tổng quan về hai framework python phổ biến này giúp bạn làm được điều đó.
+
+Lập trình Web với Python
+
+1. Framework tạo web Python nên dùng
+
+(01). Framework Flask
+Flask là một framework nhẹ (micro-framework) cho Python, giúp xây dựng các ứng dụng web đơn giản và linh hoạt. Flask rất phổ biến với các lập trình viên muốn xây dựng một ứng dụng web nhanh chóng mà không cần quá nhiều cấu hình.
+
+
+(02). Framework Django
+Django là một framework web đầy đủ tính năng và mạnh mẽ, phù hợp cho những ứng dụng phức tạp hơn. Django giúp bạn tiết kiệm thời gian với các công cụ và thư viện tích hợp sẵn, như hệ thống quản trị, bảo mật, xác thực người dùng, và ORM (Object-Relational Mapping).
+
+
+Sự khác biệt giữa Flask và Django
+    Flask là framework nhẹ, dễ học và linh hoạt, thích hợp cho những ứng dụng nhỏ hoặc khi bạn muốn kiểm soát toàn bộ quá trình phát triển.
+    Django là framework toàn diện, hỗ trợ nhiều tính năng tích hợp sẵn, thích hợp cho các ứng dụng phức tạp và quy mô lớn.
+
+Nếu bạn mới bắt đầu lập trình web với Python, Flask sẽ là sự lựa chọn dễ dàng hơn. Nếu bạn muốn xây dựng một dự án lớn hơn với nhiều tính năng, Django sẽ là lựa chọn phù hợp.
+
+
+2. Một số khái niệm cần nắm khi làm web với Python
+
+Hiểu rõ HTTP và các khái niệm cơ bản về Web
+Khi lập trình web, bạn sẽ làm việc trực tiếp với giao thức HTTP (Hypertext Transfer Protocol). Việc hiểu cách hoạt động của HTTP sẽ giúp bạn dễ dàng làm việc với các request, response, status codes, headers, v.v.
+
+ GET và POST: Hai phương thức chính trong HTTP mà bạn sẽ sử dụng trong các ứng dụng web.
+
+ Status Codes: Các mã trạng thái HTTP như 200 OK, 404 Not Found, 500 Internal Server Error sẽ giúp bạn xử lý lỗi và quản lý phản hồi từ server.
+
+ Headers: Thông tin gửi qua HTTP request và response, bao gồm các thông tin về loại nội dung (Content-Type), cookies, v.v.
+
+
+Hosting
+Là 1 máy chủ còn gọi là server để lưu trữ mã nguồn của web python
+
+
+Tìm hiểu về Templates và Static Files
+Một phần quan trọng trong phát triển web là tạo giao diện người dùng (UI). Flask và Django đều hỗ trợ việc sử dụng các templates (tệp HTML động) để hiển thị dữ liệu từ phía server.
+
+Jinja2 (Flask): Flask sử dụng Jinja2 làm engine template mặc định, giúp bạn dễ dàng chèn các biểu thức Python vào HTML.
+Django Templates: Django cũng có hệ thống template riêng để tạo ra HTML động.
+Bên cạnh templates, bạn cũng cần phải quản lý các static files (CSS, JavaScript, hình ảnh, v.v.) để cải thiện giao diện và trải nghiệm người dùng.
+
+Lời khuyên: Tìm hiểu cách sử dụng template engine (Jinja2 hoặc Django templates) để tạo ra các trang web động, và nhớ tách biệt rõ ràng mã HTML và logic xử lý phía server. 
+
+
+Sử dụng Git để quản lý mã nguồn
+Git là một công cụ không thể thiếu trong quá trình phát triển phần mềm. Khi làm việc trong nhóm hoặc chỉ một mình, việc sử dụng Git để theo dõi các thay đổi trong mã nguồn giúp bạn dễ dàng quản lý phiên bản và hợp tác với người khác. 
+
+
+Quản lý cơ sở dữ liệu
+Hầu hết các ứng dụng web cần sử dụng cơ sở dữ liệu để lưu trữ và truy xuất dữ liệu. Python có nhiều cách để làm việc với cơ sở dữ liệu, ví dụ:
+
+    SQLAlchemy: Một thư viện ORM (Object-Relational Mapping) phổ biến cho Flask. Nó giúp bạn làm việc với cơ sở dữ liệu mà không phải viết SQL thủ công.
+    Django ORM: Django cũng đi kèm với một ORM mạnh mẽ, giúp bạn làm việc với cơ sở dữ liệu trực tiếp từ Python mà không cần viết SQL. 
+
+
+3. Chuẩn bị môi trường để chạy web python
+Điều kiện để chạy web với Python
+
+- Kiểm tra có python hay chưa: python --version
+
+Nếu đã có Python hãy tiếp tục các bước sau
+
+B1: Chuẩn bị thư mục web C:\MyWeb
+
+        MyWeb có thể đổi lại tên khác theo dự án web
+
+B2: Dùng CMD chuyển đến cd C:\MyWeb
+
+- Kích hoạt môi trường ảo, để quản lý nhiểu dự án web trên 1 máy tính.
+
+python -m venv venv
+venv\Scripts\activate
+   -> venv có thể đổi thành tên khác cho phù hợp ý nghĩa.
+   -> Khi thấy (venv) đầu dòng → đang ở môi trường ảo
+
+B3: Cài Flask vào môi trường ảo
+
+ pip install flask
+
+** Xóa: pip uninstall flask
+** Kiểm tra còn hay không : pip show flask    
+
+B4: Tạo file app.py vào thư mục C:\MyWeb với nội dung
+
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def home():
+    return ", xxxxxxxx!"
+if __name__ == "__main__":
+    app.run(debug=True)
+  Mặc định là cổng 5000 có thể thay đổi bằng lệnh:  app.run(debug=True, port=5000)
+
+B5: thưc thi
+
+  Từ CMD gõ python app.py
+
+   * Phải cd đến thư mục trước khi gõ nhé !
+
+Xem cổng xuất hiện bên dưới
+
+   Vào trình duyệt gõ đúng đường dẫn xem kết quả.
+
+
+
+4. Cách để viết ứng dụng Python chạy trên web
+Để chạy giao diện trên web bằng Python, bạn cần sử dụng một số framework hoặc công cụ hỗ trợ, phổ biến nhất là Flask và Django.
+
+Cách cài đặt Flask
+Đầu tiên, bạn cần cài đặt Flask. Mở terminal (hoặc command prompt) và chạy lệnh sau:
+
+pip install flask
+
+Tạo ứng dụng Flask cơ bản
+Tạo một file Python, ví dụ app.py, và viết mã như sau:
+
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True) 
+Trong ví dụ python web trên:
+
+    Flask(__name__) khởi tạo một ứng dụng Flask.
+    @app.route('/') xác định URL cho trang chủ.
+    render_template('index.html') sử dụng Flask để hiển thị một file HTML (ở đây là index.html) khi người dùng truy cập trang chủ.
+
+Tạo file HTML
+Tạo một thư mục có tên templates trong cùng thư mục với file app.py. Sau đó, trong thư mục templates, tạo một file HTML ví dụ index.html với nội dung cơ bản
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <h1>Chào mừng đến với Flask!</h1>
+    <p>Đây là giao diện web đơn giản với Flask.</p>
+</body>
+</html>
+Chạy ứng dụng web python
+Sau khi đã tạo xong file Python và file HTML, bạn có thể chạy ứng dụng bằng cách mở terminal trong thư mục chứa app.py và gõ lệnh:
+
+python app.py
+
+Ứng dụng Flask sẽ chạy trên http://127.0.0.1:5000/ trong trình duyệt của bạn. Bạn có thể mở trình duyệt và nhập địa chỉ này để xem giao diện web.
+
+Tùy chỉnh và mở rộng
+    Bạn có thể thêm các route khác để xử lý nhiều trang hơn.
+    Flask hỗ trợ việc xử lý dữ liệu từ biểu mẫu, API và nhiều tính năng khác giúp bạn phát triển ứng dụng web phức tạp hơn.
+
+Ngoài Flask, Django là một lựa chọn phổ biến khác khi bạn cần một framework mạnh mẽ hơn với nhiều tính năng có sẵn (như quản lý cơ sở dữ liệu, xác thực người dùng, v.v.). Tuy nhiên, Flask nhẹ và dễ học, rất phù hợp với các dự án nhỏ và trung bình.
+Hồi quy tuyến tính trong Python là gì ?
+ Lập trình Web với Python
+ Số thực và số nguyên trong Python
+Hồi quy tuyến tính (Linear Regression) là một kỹ thuật học máy (machine learning) cơ bản được sử dụng để dự đoán giá trị của một biến phụ thuộc (dependent variable) dựa trên một hoặc nhiều biến độc lập (independent variables).
+Hồi Quy Tuyến Tính là gì ?
+Công thức hồi quy tuyến tính
+Bài toán dễ hiểu nhất về hồi quy tuyến tính
+Sử dụng hồi quy tuyến tính để dự đoán chiều cao trẻ em
+Hồi quy tuyến tính với Python và scikit-learn
+Scikit-lear là gì ?
+Các tính năng chính của scikit-learn
+Ví dụ đơn giản về hồi quy tuyến tính với thư viện scikit-learn trong Python
+Ứng dụng thực tế
+Video thực hành sử dụng hồi quy tuyến tính
+Hồi quy tuyến tính tìm ra một hàm số tuyến tính, trong đó mối quan hệ giữa các biến được mô tả bằng một đường thẳng.
+
+
+1. Hồi Quy Tuyến Tính là gì ?
+
+Công thức hồi quy tuyến tính
+Công thức chung của hồi quy tuyến tính đơn giản với một biến độc lập là:
+
+y
+=
+β
+0
++
+β
+1
+⋅
+x
++
+ϵ
+y=β0​+β1​⋅x+ϵ
+
+Trong đó:
+
+y
+ là biến phụ thuộc (output),
+x
+ là biến độc lập (input),
+β
+0
+​ là hằng số (intercept),
+β
+1
+​ là hệ số (coefficient),
+ϵ
+ là sai số (error).
+Hồi quy tuyến tính trong Python là gì ?
+
+Giải thích hồi quy tuyến tính
+
+Hệ số góc
+
+Hệ số góc Hồi Quy Tuyến Tính
+
+Ứng dụng hàm hồi quy tuyến tính trong lập trình nhất là python rất hiệu quả sử dụng để thống kê, dự đoán kết quả.
+
+
+Bài toán dễ hiểu nhất về hồi quy tuyến tính
+Hồi quy tuyến tính trong Excel
+
+
+Dự đoán chiều cao dựa trên tuổi của trẻ em
+
+Giả sử bạn là bác sĩ nhi khoa và bạn muốn dự đoán chiều cao của trẻ em dựa vào độ tuổi. Bạn biết rằng, theo kinh nghiệm, chiều cao của trẻ em có xu hướng tăng dần theo độ tuổi, nhưng không phải là một cách ngẫu nhiên mà có một mối quan hệ gần như tuyến tính (đi lên dần dần theo độ tuổi).
+
+Mô tả tình huống
+
+Bạn có dữ liệu các trẻ em đến khám bênh sổ tuổi và chiều cao như sau:
+
+Tuổi (năm)	Chiều cao (cm)
+3	90
+4	95
+5	100
+6	105
+7	110
+Dữ liệu này cho thấy rằng, chiều cao có mối quan hệ trực tiếp với tuổi, và có thể vẽ ra một đường thẳng gần như đi qua tất cả các điểm dữ liệu.
+
+Khi có liên quan thì tính hồi quy tuyến tính mới khả năng ứng dụng.
+
+Câu hỏi: vậy trẻ em 8,9,10 tuổi chiều cao như thế nào ? cách dự đoán ? (cách code python)
+
+
+Sử dụng hồi quy tuyến tính để dự đoán chiều cao trẻ em
+Hồi quy tuyến tính giúp bạn tìm ra một đường thẳng mà bạn có thể sử dụng để dự đoán chiều cao của một đứa trẻ bất kỳ khi biết tuổi của chúng.
+
+X là biến độc lập, trong trường hợp này là tuổi của trẻ em.
+Y là biến phụ thuộc, trong trường hợp này là chiều cao của trẻ em.
+Mô hình hồi quy tuyến tính sẽ tìm ra một đường thẳng có dạng:
+y
+=
+m
+x
++
+b
+y=mx+b
+
+Trong đó:
+
+y
+ là chiều cao dự đoán (cm),
+x
+ là tuổi (năm),
+m
+ là độ dốc của đường thẳng (tỷ lệ thay đổi giữa tuổi và chiều cao),
+b
+ là điểm giao của đường thẳng với trục y (chiều cao khi tuổi là 0, có thể là điểm tham chiếu).
+Kết quả:
+
+Giả sử sau khi tính toán, bạn có được một công thức hồi quy tuyến tính:
+
+Chi
+e
+ˆ
+ˋ
+u cao
+=
+5
+×
+Tuổi
++
+75
+Chiều cao= 5×Tuổi+75
+
+Ý nghĩa của công thức:
+
+5 là hệ số góc m, có nghĩa là mỗi năm tuổi, chiều cao sẽ tăng thêm 5 cm.
+75 là hằng số 
+b, có thể hiểu là chiều cao của trẻ em khi mới sinh (tuổi 0), tuy nhiên, trong thực tế, chiều cao của trẻ sơ sinh thường khác, và số liệu này chỉ mang tính chất lý thuyết.
+Dự đoán chiều cao:
+
+Giờ bạn có thể dự đoán chiều cao của một đứa trẻ dựa trên độ tuổi của nó.
+
+Ví dụ:
+
+Nếu bạn muốn biết chiều cao của một đứa trẻ 8 tuổi, bạn thay 
+x=8 vào công thức:
+Chi
+e
+ˆ
+ˋ
+u cao
+=
+5
+×
+8
++
+75
+=
+40
++
+75
+=
+115
+ cm
+Chiều cao =5×8+75=40+75=115 cm
+
+Vậy, đứa trẻ 8 tuổi này dự đoán sẽ có chiều cao khoảng 115 cm.
+
+Tóm lại: trên chỉ là giả thuyết, thực tế thì còn nhiều biến để ra kết quả.   
+
+
+2. Hồi quy tuyến tính với Python và scikit-learn
+
+Scikit-lear là gì ? 
+scikit-learn (hay còn gọi là sklearn) là một thư viện học máy (machine learning) mã nguồn mở được viết bằng Python. Nó cung cấp các công cụ và thuật toán để xây dựng, huấn luyện và đánh giá các mô hình học máy. scikit-learn được thiết kế dễ sử dụng và phù hợp với các tác vụ như phân loại, hồi quy, phân cụm, giảm chiều dữ liệu, và đánh giá mô hình.
+
+
+Các tính năng chính của scikit-learn
+    Các thuật toán học máy: scikit-learn cung cấp một loạt các thuật toán học máy như:
+        Hồi quy tuyến tính (Linear Regression)
+        Phân loại (Classification) như K-Nearest Neighbors, Logistic Regression, Support Vector Machines (SVM), v.v.
+        Phân cụm (Clustering) như K-Means, DBSCAN.
+        Giảm chiều dữ liệu (Dimensionality reduction) như PCA (Principal Component Analysis).
+
+
+Ví dụ đơn giản về hồi quy tuyến tính với thư viện scikit-learn trong Python
+Cài đặt thư viện scikit-learn
+
+Trước tiên, bạn cần cài đặt thư viện scikit-learn nếu chưa cài: pip install scikit-learn
+
+Code ví dụ hồi quy tuyến tính đơn giản
+
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+
+# Dữ liệu: Tuổi và Chiều cao
+X = np.array([1, 2, 3, 4, 5, 6, 7]).reshape(-1, 1)  # Tuổi (một chiều)
+y = np.array([50, 60, 90, 95, 100, 105, 110])  # Chiều cao (cm)
+
+# Khởi tạo mô hình hồi quy tuyến tính
+model = LinearRegression()
+
+# Huấn luyện mô hình với dữ liệu
+model.fit(X, y)
+
+# Dự đoán chiều cao cho một số độ tuổi mới
+new_ages = np.array([8, 9, 10]).reshape(-1, 1)  # Các độ tuổi mới cần dự đoán
+predicted_heights = model.predict(new_ages)
+
+# In kết quả dự đoán
+for age, height in zip(new_ages.flatten(), predicted_heights):
+    print(f"Dự đoán chiều cao cho trẻ {age} tuổi: {height:.2f} cm")
+
+# Vẽ đồ thị thể hiện mối quan hệ giữa tuổi và chiều cao
+plt.scatter(X, y, color='blue')  # Dữ liệu gốc
+plt.plot(X, model.predict(X), color='red')  # Đường hồi quy
+plt.xlabel("Tuổi (năm)")
+plt.ylabel("Chiều cao (cm)")
+plt.title("Hồi quy tuyến tính: Tuổi vs Chiều cao")
+plt.show()
+Giải thích đoạn code python trên
+
+Dữ liệu: X là độ tuổi của trẻ em và y là chiều cao tương ứng. Vì scikit-learn yêu cầu mảng hai chiều cho các đặc trưng (features), nên chúng ta phải chuyển đổi X thành mảng 2 chiều với reshape(-1, 1).
+Mô hình hồi quy tuyến tính: Chúng ta sử dụng LinearRegression() để tạo một mô hình hồi quy tuyến tính.
+Huấn luyện mô hình: Sử dụng fit(X, y) để huấn luyện mô hình với dữ liệu.
+Dự đoán chiều cao: Sau khi huấn luyện, mô hình có thể dự đoán chiều cao cho các độ tuổi mới (8, 9, 10).
+Vẽ đồ thị: Để trực quan hóa, chúng ta vẽ đồ thị với các điểm dữ liệu gốc (diện tích và giá nhà) và đường hồi quy (được mô hình tạo ra).
+Kết quả khi thực thi code
+
+Khi chạy chương trình, bạn sẽ nhận được kết quả dự đoán chiều cao của trẻ ở độ tuổi 8, 9 và 10, cùng với đồ thị minh họa.
+
+Dự đoán chiều cao cho trẻ 8 tuổi: 115.00 cm
+Dự đoán chiều cao cho trẻ 9 tuổi: 120.00 cm
+Dự đoán chiều cao cho trẻ 10 tuổi: 125.00 cm
+
+ 
+
+[Dự đoán giá thịt heo với hồi quy tuyến tính Python]
+
+
+3. Ứng dụng thực tế
+Hồi quy tuyến tính có thể được áp dụng trong rất nhiều bài toán thực tế như:
+
+Dự đoán giá nhà dựa trên diện tích.
+Dự đoán doanh thu dựa trên chi phí quảng cáo.
+Dự đoán tốc độ của một phương tiện dựa trên thời gian di chuyển.
+
+4. Video thực hành sử dụng hồi quy tuyến tính
+Số thực và số nguyên trong Python
+ Hồi quy tuyến tính trong Python là gì ?
+ Sai lệch số thực trong Python
+Trong Python, số nguyên và số thực là hai kiểu dữ liệu số học cơ bản, và chúng có những đặc điểm khác nhau
+Số nguyên (Integer)
+Ví dụ số nguyên
+Đặc điểm nhận dạng số nguyên
+Số thực (Floating-Point Number)
+Ví dụ số thực
+Đặc điểm nhận dạng số thực
+
+1. Số nguyên (Integer)
+    Định nghĩa: Số nguyên là những số không có phần thập phân, có thể là số âm, số dương hoặc số 0.
+    Kiểu dữ liệu: Trong Python, số nguyên có kiểu dữ liệu là int.
+
+
+Ví dụ số nguyên
+x = 10    # Số nguyên dương
+y = -3    # Số nguyên âm
+z = 0     # Số nguyên bằng 0
+
+
+Đặc điểm nhận dạng số nguyên
+    Không có phần thập phân.
+    Các phép toán trên số nguyên cho kết quả là số nguyên (trừ phép chia thực).
+    Kích thước của số nguyên trong Python là không giới hạn, miễn là bộ nhớ hệ thống đủ lớn.
+
+
+2. Số thực (Floating-Point Number)
+    Định nghĩa: Số thực là những số có phần thập phân hoặc có thể có dạng khoa học (ví dụ: 3.14, -0.001).
+    Kiểu dữ liệu: Trong Python, số thực có kiểu dữ liệu là float.
+
+
+Ví dụ số thực
+a = 3.14    # Số thực dương
+b = -0.001  # Số thực âm
+c = 2.0     # Số thực có phần thập phân mặc dù giá trị là số nguyên
+
+
+Đặc điểm nhận dạng số thực
+    Có phần thập phân.
+    Các phép toán trên số thực sẽ cho kết quả là số thực (ví dụ: phép chia).
+    Kích thước của số thực trong Python có giới hạn, nhưng vẫn rất lớn (bộ nhớ hệ thống quyết định).
+Sai lệch số thực trong Python
+ Số thực và số nguyên trong Python
+ Khi nào dùng from datetime import datetime , khi nào import datetime trong python
+Khi bạn làm việc với các phép toán số thực trong Python, đôi khi bạn sẽ gặp phải những kết quả không chính xác hoàn toàn.
+1. Ví dụ về sai lệch số thực trong Python
+Sai lệch số thực trong Python
+
+Đây là một ví dụ rất rõ ràng:
+
+a = 0.1
+b = 0.2
+c = a + b
+
+# In kết quả của phép cộng
+print(c)  # Kết quả sẽ không phải 0.3 mà sẽ là 0.30000000000000004
+
+Giải thích:
+
+    Kết quả không chính xác: Mặc dù trong toán học, 0.1 + 0.2 chắc chắn bằng 0.3, nhưng máy tính không thể lưu trữ số thực một cách chính xác tuyệt đối. Khi máy tính cố gắng lưu trữ 0.1 và 0.2 trong bộ nhớ theo chuẩn IEEE 754 (chuẩn cho số thực), nó sẽ gặp phải sai lệch làm tròn nhỏ và không thể biểu diễn chính xác các giá trị đó. Kết quả là:
+
+    0.1 + 0.2 = 0.30000000000000004
+
+    Điều này xảy ra do các số thực không thể được biểu diễn chính xác dưới dạng nhị phân trong bộ nhớ máy tính. Python sử dụng kiểu float (số thực đơn chính xác) cho phép tính toán, và khi cộng các số như 0.1 và 0.2, máy tính không thể lưu trữ chúng một cách chính xác.
+
+2. Chứng mình sự khác biệt
+# So sánh kết quả với 0.3
+print(c == 0.3)  # Kết quả là False, vì 0.1 + 0.2 không chính xác bằng 0.3
+
+3. Cách khắc phục sai lệch số thực
+Để giải quyết vấn đề này, bạn có thể sử dụng thư viện decimal của Python, giúp cải thiện độ chính xác khi làm việc với số thực. Decimal có độ chính xác cao hơn và giảm thiểu sai số làm tròn.
+Sử dụng Decimal để có kết quả chính xác:
+
+from decimal import Decimal
+
+a = Decimal('0.1')
+b = Decimal('0.2')
+c = a + b
+
+# Kết quả sẽ chính xác
+print(c)  # Kết quả chính xác: 0.3
+
+4. Kinh nghiêm lập trình số thực với Python
+    Sai lệch số thực là điều rất thường gặp khi làm việc với số thực trong Python và các ngôn ngữ lập trình khác, do giới hạn của cách biểu diễn số thực trong bộ nhớ.
+    Sự sai lệch nhỏ có thể xuất hiện trong các phép toán như 0.1 + 0.2, và kết quả không chính xác hoàn toàn là một ví dụ rõ ràng.
+    Để tránh sai số này, bạn có thể sử dụng thư viện decimal khi cần độ chính xác cao.
+
+5. Kinh nghiệp lập trình phần mềm tài chính với số thực trong Python
+Bạn hoàn toàn có lý khi lo lắng về độ chính xác khi sử dụng kiểu số thực (float) trong các phép toán, nhất là khi yêu cầu độ chính xác cao. Tuy nhiên, số thực vẫn được sử dụng rộng rãi trong hầu hết các ứng dụng lập trình, vì chúng đáp ứng nhu cầu tính toán rất lớn và chỉ có một số trường hợp đặc biệt mới cần lo lắng về sai lệch số học nhỏ này.
+
+Trong rất nhiều ứng dụng (như khoa học, kỹ thuật, đồ họa máy tính, v.v.), sai số rất nhỏ này không ảnh hưởng đáng kể đến kết quả tính toán cuối cùng. Đối với hầu hết các phép toán với số thực, mức độ sai lệch này là không đáng kể so với kết quả cuối cùng.
+
+Khi nào cần không nền sử dụng kiểu float
+Khi làm việc với tiền tệ: Các phép toán tính toán với tiền đòi hỏi sự chính xác cao, vì sai lệch nhỏ có thể gây lỗi lớn. Trong trường hợp này, bạn nên sử dụng kiểu Decimal trong Python, vì nó cung cấp độ chính xác cao hơn so với float.
+Khi cần độ chính xác cực cao: Ví dụ, trong các phép tính khoa học chính xác, bạn có thể cần sử dụng các thư viện chuyên biệt như decimal hoặc thậm chí các phần mềm tính toán khoa học như MATLAB hay NumPy cho phép điều chỉnh độ chính xác theo yêu cầu.
+Python cung cấp thư viện decimal và fractions giúp bạn giải quyết vấn đề sai lệch số thực nếu cần. Decimal có thể xử lý các phép toán số học với độ chính xác rất cao, và có thể được sử dụng trong các trường hợp đặc biệt khi bạn cần không sai số trong phép toán số học.
+
+Trong lập trình tài chính nên sử dụng kiểu nào phù hợp
+Trong các ứng dụng tài chính (ví dụ như tính toán giá trị tiền tệ, thuế, v.v.), sai lệch nhỏ có thể dẫn đến các sai sót lớn. Vì vậy, Decimal là lựa chọn tốt hơn khi làm việc với số tiền và các phép toán tài chính.
+Khi nào dùng from datetime import datetime , khi nào import datetime trong python
+ Sai lệch số thực trong Python
+ So sánh del và pop() trong biển kiểu danh sách Python
+Nếu mới nghiên cứu đối tượng ngày chúng ta sẽ rất rối, thấy code lúc thì ít lúc thì nhiều với đối tượng ngày
+Trong python, khi nào dùng from datetime import datetime , khi nào chỉ import datetime
+Để hiểu ta cần nắm rõ cấu trúc trong module datetime có lớp (thành phần)
+Tóm lại khi nào nên sử dụng
+Khi nào dùng from datetime import datetime , khi nào import datetime trong python
+
+
+1. Trong python, khi nào dùng from datetime import datetime , khi nào chỉ import datetime
+Ví dụ 2 đoạn code dưới minh họa cho vấn đề này
+
+Code python 01
+
+from datetime import datetime
+# Sử dụng trực tiếp datetime mà không cần khai báo module trước
+now = datetime.now()
+print(now)
+Code python 02
+
+import datetime
+# Sử dụng datetime qua tên module
+now = datetime.datetime.now()
+print(now)
+Đoạn code có ý nghĩa:
+
+from datetime import datetime
+
+Bạn chỉ import thành phần datetime từ module datetime
+
+
+2. Để hiểu ta cần nắm rõ cấu trúc trong module datetime có lớp (thành phần)
+  Các lớp trong datetime trong Python
+
+    date: Đại diện cho ngày (ngày, tháng, năm).
+    time: Đại diện cho thời gian (giờ, phút, giây, micro giây).
+    datetime: Kết hợp cả ngày và thời gian (ngày, tháng, năm, giờ, phút, giây, micro giây).
+    timedelta: Đại diện cho sự khác biệt giữa hai ngày/giờ.
+
+Giống như
+
+VietNam
+VietNam.HCM 
+VietNam.HaNoi
+VietNam.DaNang
+
+Với đối tượng python thì
+
+datetime
+  datetime.date
+  datetime.time
+  datetime.datetime
+  datetime.timedelta
+
+Phần trước datetime là module về ngày thàng của python
+
+Phần sau dấu . chính là các lớp (thành phần) - ta sẽ được nghiên cứu kỹ trong phần module của python.  
+
+Có 1 vấn đề Python đặt tên trùng phần datetime.datetime làm chúng ta dễ hiểu nhầm.
+
+
+3. Tóm lại khi nào nên sử dụng
+- Dùng cách code 01 thì việc gọi tên lớp (đối tượng) dễ dàng, code sẽ không dài dòng.
+
+from datetime import datetime
+# Sử dụng trực tiếp datetime mà không cần khai báo module trước
+now = datetime.now()
+print(now)
+from datetime import date
+now = date.today()
+print(now)
+- Cách code dưới thì code dài dòng hơn, nếu code nhiều
+
+import datetime
+# Sử dụng datetime qua tên module
+now = datetime.datetime.now()
+ngay = datetime.datetime.day
+thang = datetime.datetime.month
+nam = datetime.datetime.year
+Thay vì gọi nhiều lần datetime.datetime
+
+from datetime import datetime
+# Sử dụng datetime qua tên module
+ngay = datetime.now().day
+thang = datetime.now().month
+nam = datetime.now().year
+So sánh del và pop() trong biển kiểu danh sách Python
+ Khi nào dùng from datetime import datetime , khi nào import datetime trong python
+ Tạo ứng dụng nhận diện khuôn mặt bằng Python
+Hiểu rõ del và pop() trong biển kiểu danh sách Python, giúp làm phần mềm nhanh hơn.
+Giống nhau giữa del và pop() trong kiểu biến danh sách Python
+Khác nhau giữa del và pop() trong kiểu biến danh sách Python
+Ví dụ del trong trong biển kiểu danh sách Python
+Ví dụ sử dụng pop() trong biển kiểu danh sách Python
+
+1. Giống nhau giữa del và pop() trong kiểu biến danh sách Python
+Đều là chức năng python tạo ra để tương tác với biến kiểu danh sách (list) trong python
+
+Cả del và pop() đều có thể xóa phần tử khỏi danh sách trong Python.
+
+
+2. Khác nhau giữa del và pop() trong kiểu biến danh sách Python
+
+Ví dụ del trong trong biển kiểu danh sách Python
+lst = [1, 2, 3, 4]
+del lst[1]  # Xóa phần tử có chỉ mục 1
+print(lst)  # Output: [1, 3, 4]
+
+Trong câu lệnh del lst[1], del là một câu lệnh (statement) trong Python, không phải là một hàm hay phương thức.
+
+Giải thích:
+
+    del là một từ khóa (keyword) của Python, dùng để xóa một biến hoặc một phần tử trong danh sách, từ điển, v.v.
+    Nó hoạt động trực tiếp trên đối tượng mà không trả về giá trị nào.
+
+ 
+
+
+Ví dụ sử dụng pop() trong biển kiểu danh sách Python
+lst = [1, 2, 3, 4]
+x = lst.pop(1)  # Xóa phần tử có chỉ mục 1 và trả về giá trị của nó
+print(lst)  # Output: [1, 3, 4]
+print(x)    # Output: 2
+
+    🔹 del không trả về giá trị đã xóa, trong khi pop() có thể trả về giá trị bị xóa.
+Tạo ứng dụng nhận diện khuôn mặt bằng Python
+ So sánh del và pop() trong biển kiểu danh sách Python
+ Tạo ứng dụng Chatbot bằng Python
+Tạo ứng dụng nhận diện khuôn mặt bằng Python
+Đoạn code nhận diện khuôn mặt trong pthon
+
+import cv2
+
+# Kiểm tra ảnh có tồn tại không
+image_path = r"D:\a1.jpg"
+image = cv2.imread(image_path)
+
+if image is None:
+    print(f"Lỗi: Không tìm thấy ảnh tại {image_path}")
+    exit()
+
+# Chuyển ảnh sang ảnh xám
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Tải mô hình nhận diện khuôn mặt
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+
+# Nhận diện khuôn mặt
+faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+
+# Kiểm tra có tìm thấy khuôn mặt không
+if len(faces) == 0:
+    print("Không tìm thấy khuôn mặt trong ảnh.")
+else:
+    for (x, y, w, h) in faces:
+        cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 3)
+
+# Hiển thị ảnh
+cv2.imshow("Detected Face", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+Tạo ứng dụng Chatbot bằng Python
+ Tạo ứng dụng nhận diện khuôn mặt bằng Python
+ Tuples và Sets trong Python
+Hướng dẫn xây dựng hệ thống Chatbot bằng Python
+Bước 1: chuẩn bị môi trường
+Đang cập nhật
+
+Bước 2: Code nhận diện khuôn mặt
+from flask import Flask, request, jsonify
+import openai
+
+app = Flask(__name__)
+
+# Thay thế bằng API key của bạn
+openai.api_key = "YOUR_OPENAI_API_KEY"
+
+@app.route("/chatbot", methods=["POST"])
+def chatbot():
+    user_message = request.json.get("message")
+
+    # Gửi tin nhắn đến GPT-4
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": user_message}]
+    )
+
+    bot_reply = response["choices"][0]["message"]["content"]
+    return jsonify({"reply": bot_reply})
+
+if __name__ == "__main__":
+    app.run(debug=True)
+Tuples và Sets trong Python
+ Tạo ứng dụng Chatbot bằng Python
+ Mẹo học Python hiệu quả
+Kiểu dữ liệu Tuples và Sets trong Python được ứng dụng rất nhiều khi lập trình ứng dụng
+Tuple trong Python
+Cú pháp khai báo Tuple
+Tính chất của Tuple
+Trường hợp đặc biệt
+Set trong Python
+Cú pháp khai báo Set
+Tính chất của Set
+So sánh Tuple và Set
+
+1. Tuple trong Python
+    Tuple là một cấu trúc dữ liệu bất biến (immutable), tức là không thể thay đổi sau khi khai báo.
+    Dùng khi cần lưu trữ dữ liệu cố định.
+
+
+Cú pháp khai báo Tuple
+# Khai báo tuple
+my_tuple = (1, 2, 3, "Hello", True)
+
+# Truy cập phần tử bằng chỉ mục (index)
+print(my_tuple[0])  # Output: 1
+print(my_tuple[-1]) # Output: True
+
+# Tuple có thể chứa tuple khác (nested tuple)
+nested_tuple = ((1, 2), (3, 4))
+print(nested_tuple[0])  # Output: (1, 2)
+
+# Độ dài Tuple
+print(len(my_tuple))  # Output: 5
+
+
+Tính chất của Tuple
+    Không thể thay đổi (immutable):
+
+    my_tuple[1] = 100  # ❌ Lỗi: Tuple không thể thay đổi
+
+    Có thể chứa nhiều kiểu dữ liệu khác nhau.
+    Có thể chứa phần tử trùng lặp.
+
+
+Trường hợp đặc biệt
+    Nếu chỉ có một phần tử, cần thêm dấu , để tránh nhầm với kiểu khác:
+
+    single_tuple = (5,)  # Đây là tuple
+    not_a_tuple = (5)    # Đây chỉ là số 5, không phải tuple
+
+
+2. Set trong Python
+    Set là một tập hợp không có thứ tự (unordered) và không chứa phần tử trùng lặp.
+    Dùng khi cần lưu trữ danh sách nhưng không quan tâm đến thứ tự và muốn loại bỏ phần tử trùng.
+
+
+Cú pháp khai báo Set
+# Khai báo set
+my_set = {1, 2, 3, "Hello", True}
+
+# Thêm phần tử vào set
+my_set.add(4)
+
+# Xóa phần tử khỏi set
+my_set.remove(2)  # Nếu không có phần tử sẽ báo lỗi
+my_set.discard(10) # Không báo lỗi nếu phần tử không tồn tại
+
+# Duyệt qua set
+for item in my_set:
+    print(item)
+
+# Kiểm tra phần tử có trong set không
+print(1 in my_set)  # True hoặc False
+
+
+Tính chất của Set
+    Không có thứ tự (unordered).
+    Không chứa phần tử trùng lặp:
+
+    my_set = {1, 2, 2, 3, 3, 3}
+    print(my_set)  # Output: {1, 2, 3}
+
+    Có thể thay đổi (mutable).
+
+
+3. So sánh Tuple và Set
+Đặc điểm	Tuple	Set
+Có thứ tự?	✅ Có	❌ Không
+Truy cập theo index?	✅ Có	❌ Không
+Chứa phần tử trùng?	✅ Có	❌ Không
+Có thể thay đổi?	❌ Không	✅ Có
+Mẹo học Python hiệu quả
+ Tuples và Sets trong Python
+ Xử lý ngoại lệ (Exception Handling) trong Python
+Học Python hiệu quả đòi hỏi sự kết hợp giữa lý thuyết và thực hành. Dưới đây là một số mẹo học Python nhanh và hiệu quả
+Bắt đầu với những kiến thức nền tảng
+Học qua dự án nhỏ
+Học theo lộ trình chuẩn
+Code mỗi ngày & luyện tập trên nền tảng online
+Debug & Đọc lỗi nhanh hơn
+Học lập trình hướng đối tượng (OOP)
+Tìm hiểu thư viện phổ biến
+Tham gia khóa học nâng cao về Python
+
+1. Bắt đầu với những kiến thức nền tảng
+🔹 Hiểu cú pháp cơ bản: biến, kiểu dữ liệu, toán tử, vòng lặp, điều kiện.
+🔹 Nắm vững cấu trúc dữ liệu: list, tuple, dict, set.
+🔹 Làm quen với hàm và module: def, import, lambda.
+🔹 Hiểu về xử lý ngoại lệ (try-except) để tránh lỗi khi chạy chương trình.
+
+💡 Mẹo: Học bằng cách viết code thay vì chỉ đọc lý thuyết.
+
+
+2. Học qua dự án nhỏ
+    Viết chương trình máy tính đơn giản.
+    Tạo ứng dụng quản lý danh bạ, quản lý kho hàng.
+    Làm game đơn giản bằng Pygame.
+    Viết script tự động hóa (tải file, xử lý dữ liệu, gửi email).
+
+💡 Mẹo: Học bằng cách tạo sản phẩm thực tế thay vì chỉ làm bài tập.
+
+
+3. Học theo lộ trình chuẩn
+📖 Học và luyện tập coder theo đúng nghĩa.
+
+Bạn xem video và hiểu sẽ khác hoàn toàn với việc bạn tự gõ 1 đoạn code.
+
+Bạn có thể tham gia trại coder bên dưới, bạn sẽ được huấn luyện gõ từng dòng code.
+
+
+
+
+4. Code mỗi ngày & luyện tập trên nền tảng online
+    LeetCode, CodeWars, HackerRank để rèn tư duy thuật toán.
+    Project Euler để giải bài toán thực tế.
+    Thử thách 100 ngày code Python để duy trì thói quen.
+
+💡 Mẹo: Ít nhất 1 giờ/ngày để duy trì kỹ năng.
+
+
+5. Debug & Đọc lỗi nhanh hơn
+    Dùng print() hoặc pdb để debug.
+    Đọc và hiểu lỗi thay vì chỉ copy-paste sửa lỗi.
+    Dùng try-except để xử lý lỗi tránh crash chương trình.
+
+💡 Mẹo: Tự tìm lỗi giúp bạn hiểu code sâu hơn.
+
+
+6. Học lập trình hướng đối tượng (OOP)
+    Hiểu về class, object, kế thừa, đa hình, đóng gói.
+    Tạo ứng dụng theo mô hình OOP để dễ mở rộng.
+    Làm việc với Decorator, Static Method, Abstract Class.
+
+💡 Mẹo: OOP giúp code chuyên nghiệp & dễ bảo trì.
+
+
+7. Tìm hiểu thư viện phổ biến
+✅ Data Science & AI: numpy, pandas, matplotlib, scikit-learn.
+✅ Web Development: Flask, Django.
+✅ Automation: selenium, requests, beautifulsoup4.
+✅ Machine Learning: TensorFlow, PyTorch.
+
+💡 Mẹo: Học thư viện phù hợp với mục tiêu của bạn.
+
+
+8. Tham gia khóa học nâng cao về Python
+
+
+💡 Mẹo: Học hỏi từ người khác giúp bạn tiến bộ nhanh hơn.
+Xử lý ngoại lệ (Exception Handling) trong Python
+ Mẹo học Python hiệu quả
+ Khóa học Python miễn phí
+Trong quá trình phát triển phần mềm, lỗi là điều không thể tránh khỏi. Để đảm bảo chương trình hoạt động ổn định và tránh bị gián đoạn khi gặp lỗi, Python cung cấp cơ chế xử lý ngoại lệ (Exception Handling) thông qua khối lệnh try-except, giúp phát hiện và xử lý các tình huống bất thường một cách linh hoạt.
+🎯 Xử lý ngoại lệ (Exception Handling) trong Python
+
+1️⃣ Ngoại lệ (Exception) là gì?
+    Ngoại lệ xảy ra khi một lỗi xuất hiện trong quá trình thực thi chương trình, ví dụ: chia cho 0, truy cập tệp không tồn tại, hoặc lỗi cú pháp.
+    Python cung cấp cơ chế xử lý ngoại lệ để chương trình không bị dừng đột ngột khi gặp lỗi.
+
+Xử lý ngoại lệ (Exception Handling) trong Python
+
+✅ 2. Cú pháp cơ bản của try-except
+try:
+    # Code có thể gây ra lỗi
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Lỗi: Không thể chia cho 0.")
+
+📌 Giải thích:
+
+    try:: Chứa code có khả năng gây lỗi.
+    except:: Bắt lỗi cụ thể (ở đây là ZeroDivisionError).
+
+✅ 3. Bắt nhiều loại ngoại lệ
+try:
+    x = int("abc")
+except ValueError:
+    print("Lỗi chuyển đổi dữ liệu!")
+except ZeroDivisionError:
+    print("Lỗi chia cho 0!")
+
+✅ 4. Sử dụng else và finally
+try:
+    x = 5 / 1
+except ZeroDivisionError:
+    print("Lỗi chia cho 0!")
+else:
+    print("Không có lỗi xảy ra.")
+finally:
+    print("Luôn luôn thực hiện khối lệnh này.")
+
+🔎 Kết quả:
+
+Không có lỗi xảy ra.
+Luôn luôn thực hiện khối lệnh này.
+
+    else:: Thực thi khi không có lỗi xảy ra.
+    finally:: Luôn được thực thi, dù có lỗi hay không (dùng để đóng file, kết nối database...).
+
+✅ 5. Bắt tất cả các ngoại lệ
+try:
+    x = 10 / 0
+except Exception as e:
+    print(f"Có lỗi xảy ra: {e}")
+
+✅ 6. Tự tạo ngoại lệ bằng raise
+age = -5
+if age < 0:
+    raise ValueError("Tuổi không thể âm!")
+
+✅ 7. Ví dụ thực tế: Đọc file
+try:
+    with open("data.txt", "r") as file:
+        content = file.read()
+except FileNotFoundError:
+    print("Lỗi: File không tồn tại!")
+
+✅ 8. Các loại ngoại lệ phổ biến trong Python
+Ngoại lệ                     Mô tả
+ZeroDivisionError       Chia cho 0
+ValueError                  Giá trị không hợp lệ
+FileNotFoundError    Tệp không tồn tại
+TypeError                  Sai kiểu dữ liệu
+IndexError                 Truy cập chỉ mục ngoài phạm vi
+MicroPython là gì ?
+ Khóa học Python miễn phí
+ Cấu hình IIS với python
+Bạn muốn lập trình điều khiển trên các vi điều khiển, thì MicroPython là một lựa chọn tối ưu nhất
+Đặc điểm chính của MicroPython
+Các board phổ biến chạy MicroPython
+Cài đặt MicroPython
+Flash firmware vào board
+Kết nối với board
+Ví dụ code MicroPython
+Nháy LED trên ESP32
+Kết nối Wi-Fi trên ESP32
+Học MicroPython ở đâu
+Cơ hội nghề nghiệp MicroPython
+Lập trình nhúng & IoT
+Robot và tự động hóa
+MicroPython là một phiên bản tối giản của Python được thiết kế để chạy trên các vi điều khiển và hệ thống nhúng với tài nguyên hạn chế. Nó hỗ trợ nhiều loại board như ESP32, ESP8266, STM32, Raspberry Pi Pico, v.v.
+
+MicroPython là gì
+
+
+1. Đặc điểm chính của MicroPython
+    Nhẹ & tối ưu: Được thiết kế để chạy trên thiết bị có RAM chỉ từ 256KB trở lên.
+    Giao tiếp phần cứng: Hỗ trợ các giao thức I2C, SPI, UART, PWM, ADC, GPIO.
+    Tương thích với Python 3: Hỗ trợ cú pháp Python chuẩn, nhưng có một số tính năng bị lược bỏ để tiết kiệm tài nguyên.
+    REPL (Read-Eval-Print Loop): Cho phép lập trình tương tác trực tiếp với board.
+    Hỗ trợ module MicroPython: Chẳng hạn như machine (điều khiển phần cứng), network (kết nối Wi-Fi), urequests (gửi HTTP request), v.v.
+
+
+2. Các board phổ biến chạy MicroPython
+    ESP8266: Giá rẻ, có Wi-Fi, RAM nhỏ (~80KB).
+    ESP32: Mạnh hơn ESP8266, có Wi-Fi & Bluetooth.
+    Raspberry Pi Pico: Dùng chip RP2040, không có Wi-Fi nhưng mạnh về GPIO.
+    STM32: Dòng vi điều khiển mạnh mẽ của STMicroelectronics.
+    nRF52: Hỗ trợ Bluetooth Low Energy (BLE).
+
+
+3. Cài đặt MicroPython
+
+    Flash firmware vào board
+       Tải firmware từ micropython.org/download
+        Dùng esptool.py (ESP8266/ESP32) hoặc uf2 (RP2040) để nạp firmware.
+
+
+    Kết nối với board:
+        Dùng rshell, mpy-cross, hoặc Thonny IDE.
+        Dùng screen hoặc PuTTY để giao tiếp REPL.
+
+
+4. Ví dụ code MicroPython
+
+Nháy LED trên ESP32
+from machine import Pin
+import time
+
+led = Pin(2, Pin.OUT)  # GPIO2 trên ESP32
+
+while True:
+    led.value(1)  # Bật LED
+    time.sleep(1)
+    led.value(0)  # Tắt LED
+    time.sleep(1)
+
+
+Kết nối Wi-Fi trên ESP32
+import network
+
+wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+wifi.connect('Tên WiFi', 'Mật khẩu')
+
+while not wifi.isconnected():
+    pass
+
+print('Đã kết nối Wi-Fi:', wifi.ifconfig())
+
+
+5. Học MicroPython ở đâu
+Bạn có thể học trực tiếp tại các trung tâm nếu có quá nhiều thời gian.
+Bạn có thể học online tại các web học trực tuyến như [Trại huấn luyện Coder], theo 1 lộ trình khoa học giúp bạn tiếp cận MicroPython dễ nhất.
+
+
+6. Cơ hội nghề nghiệp MicroPython
+MicroPython có nhiều ứng dụng thực tế trong các lĩnh vực liên quan đến nhúng, IoT và tự động hóa, tạo ra nhiều cơ hội nghề nghiệp hấp dẫn. Dưới đây là một số hướng đi tiềm năng
+
+
+Lập trình nhúng & IoT
+    Thiết kế và phát triển firmware cho vi điều khiển (ESP32, STM32, Raspberry Pi Pico, v.v.).
+    Lập trình cảm biến, điều khiển thiết bị trong hệ thống IoT.
+    Xây dựng các thiết bị thông minh như nhà thông minh, cảm biến môi trường, hệ thống giám sát.
+    Lập trình giao tiếp với các module như RFID, GPS, LoRa, Zigbee, Bluetooth.
+
+
+Robot và tự động hóa
+    Viết phần mềm điều khiển robot, xe tự hành bằng MicroPython.
+    Ứng dụng trong các hệ thống tự động hóa công nghiệp.
+    Điều khiển cánh tay robot, máy in 3D, máy CNC giá rẻ.
+
+Cấu hình IIS với python
+ MicroPython là gì ?
+ Pseudocode - Thuật toán mã giả trong Python
+Cấu hình IIS với python
+Pseudocode - Thuật toán mã giả trong Python
+ Cấu hình IIS với python
+Pseudocode - Thuật toán mã giả trong Python, hướng dẫn ứng dụng vào lập trình
+Pseudocode là gì ?
+Tại sao lại có Pseudocode
+Cách giải quyết bài toán Pseudocode trong Python
+Giải bài toán tìm số lớn nhất trong Python
+Giải bài toán tìm số nhỏ nhất trong Python
+Video thực hành Pseudocode
+
+1. Pseudocode là gì ?
+Mã giả là một code giả sử một vấn đề nào đó là đúng, mặc dù nó chưa đúng.
+
+Ví dụ: có 3 số
+
+Số thứ 1	Số thứ 2	Số thứ 3
+7	16	5
+Có bài toán đi tìm số nào lớn nhất, hỏi 1 em học sinh lớp 1 đã nhìn thấy.
+
+Nhưng khi giao nhiệm vụ cho máy tính làm sao nó biết, thì đó là câu chuyên ta cần phân tích kỹ.
+
+Đề giải quyết thì ta phải dùng phương pháp Pseudocode (mã giả).
+
+
+2. Tại sao lại có Pseudocode
+Khi mới bắt đầu, việc quan trọng nhất là làm quen với thuật toán – cách dùng code để giải quyết các vấn đề thực tế. Tuy nhiên, việc chuyển từ ý tưởng sang những dòng code khô khan ngay lập tức thường rất khó khăn. Để thu hẹp khoảng cách này, chúng ta có một công cụ đắc lực: Pseudocode (Mã giả).
+
+Vậy Mã giả (Pseudocode) là gì?
+
+Hiểu đơn giản, Mã giả là một bản phác thảo các bước thực hiện chương trình bằng ngôn ngữ tự nhiên.
+
+    Không quy tắc: Bạn không cần lo lắng về cú pháp (dấu chấm phẩy, ngoặc đơn...).
+    Dành cho con người: Mã giả viết ra để người đọc hiểu, nên máy tính không thể chạy được nó.
+    Cầu nối thông tin: Nó đóng vai trò như một "bản vẽ kỹ thuật" giúp các nhà thiết kế hệ thống truyền đạt ý tưởng cho lập trình viên một cách nhanh chóng và chính xác.
+
+    Tóm lại: Mã giả giống như một bản nháp giúp bạn định hình tư duy trước khi bắt tay vào gõ code thật sự.
+
+
+3. Cách giải quyết bài toán Pseudocode trong Python
+Ví dụ: có 3 số
+
+Số thứ 1	Số thứ 2	Số thứ 3
+7	16	5
+Các bước tìm số lớn nhất trong 3 số:
+
+Bước 1:
+
+Giả sử số lớn nhất là số thứ 1 = 7  (mặc dù nó đang bị sai trong trường hợp này)
+
+Bước 2:
+
+Nếu Số thứ 2 > số lớn nhất thì
+
+          16          >    7   -> Đúng, nên số lớn nhất = Số thứ 2 (16)
+
+Bước 3:
+
+Nếu Số thứ 3 > số lớn nhất thì
+
+          5          >    16   -> Sai, nên số lớn nhất không thay đổi
+
+SUY RA: số lớn nhất  =  Số thứ 2 (16)
+
+
+Giải bài toán tìm số lớn nhất trong Python
+SoThu1 = 7
+SoThu2  = 16
+SoThu3  = 3
+SoLonNhat = SoThu1
+if SoThu2   > SoLonNhat:
+    SoLonNhat= SoThu2
+if SoThu3   > SoLonNhat:
+    SoLonNhat= SoThu3
+print("Lớn nhất là:", SoLonNhat)
+ 
+
+Giải bài toán tìm số nhỏ nhất trong Python
+SoThu1 = 7
+SoThu2  = 16
+SoThu3  = 3
+SoNhoNhat = SoThu1
+if SoThu2  < SoNhoNhat :
+    SoNhoNhat = SoThu2
+if SoThu3  < SoNhoNhat :
+    SoNhoNhat  = SoThu3
+print("Nhỏ nhất là:", SoNhoNhat )
+
+4. Video thực hành Pseudocode

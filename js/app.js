@@ -324,38 +324,6 @@
     // NOTES FUNCTIONS
     // =====================
 
-    function getNotesKey(chapterId) {
-        return 'python_notes_ch_' + chapterId;
-    }
-
-    function getNotes(chapterId) {
-        const raw = localStorage.getItem(getNotesKey(chapterId));
-        if (!raw) return [];
-        try {
-            const parsed = JSON.parse(raw);
-            if (Array.isArray(parsed)) return parsed;
-            // Migrate old single-string format
-            if (typeof parsed === 'string' && parsed.trim()) {
-                const migrated = [{ id: Date.now(), text: parsed, createdAt: new Date().toISOString() }];
-                localStorage.setItem(getNotesKey(chapterId), JSON.stringify(migrated));
-                return migrated;
-            }
-            return [];
-        } catch {
-            // Old format was plain string (not JSON)
-            if (raw.trim()) {
-                const migrated = [{ id: Date.now(), text: raw, createdAt: new Date().toISOString() }];
-                localStorage.setItem(getNotesKey(chapterId), JSON.stringify(migrated));
-                return migrated;
-            }
-            return [];
-        }
-    }
-
-    function saveNotes(chapterId, notes) {
-        localStorage.setItem(getNotesKey(chapterId), JSON.stringify(notes));
-    }
-
     function formatNoteTime(isoString) {
         const d = new Date(isoString);
         const pad = n => String(n).padStart(2, '0');
@@ -367,11 +335,20 @@
         return `${day}/${month}/${year} lúc ${hours}:${mins}`;
     }
 
-    function renderNotesList(chapterId) {
+    async function fetchNotes(chapterId) {
+        try {
+            const res = await fetch(`/api/notes/${chapterId}`);
+            if (!res.ok) throw new Error('API error');
+            return await res.json();
+        } catch (err) {
+            console.error('Fetch notes error:', err);
+            return [];
+        }
+    }
+
+    function renderNotesCards(notes) {
         const container = document.getElementById('notesList');
         if (!container) return;
-
-        const notes = getNotes(chapterId);
 
         if (notes.length === 0) {
             container.innerHTML = '<div class="notes-list__empty">📋 Chưa có ghi chú nào. Hãy thêm ghi chú đầu tiên!</div>';
@@ -382,10 +359,9 @@
             <span class="notes-list__count">📌 ${notes.length} ghi chú</span>
         </div>`;
 
-        // Show newest first
-        const sorted = [...notes].reverse();
-        sorted.forEach(note => {
-            const escapedText = note.text
+        // Already sorted DESC from API
+        notes.forEach(note => {
+            const escapedText = note.content
                 .replace(/&/g, '&amp;')
                 .replace(/</g, '&lt;')
                 .replace(/>/g, '&gt;');
@@ -395,7 +371,7 @@
                 <div class="note-card__header">
                     <span class="note-card__time">
                         <span class="note-card__time-icon">🕐</span>
-                        ${formatNoteTime(note.createdAt)}
+                        ${formatNoteTime(note.created_at)}
                     </span>
                     <div class="note-card__actions">
                         <button class="note-card__action-btn note-card__action-btn--edit" 
@@ -411,8 +387,9 @@
         container.innerHTML = html;
     }
 
-    function renderNotes(chapterId) {
-        renderNotesList(chapterId);
+    async function renderNotes(chapterId) {
+        const notes = await fetchNotes(chapterId);
+        renderNotesCards(notes);
     }
 
     function setupNotes(chapterId) {
@@ -434,22 +411,21 @@
         }
 
         // Add new note
-        saveBtn.addEventListener('click', () => {
+        saveBtn.addEventListener('click', async () => {
             const text = textarea.value.trim();
             if (!text) {
                 showStatus('⚠️ Vui lòng nhập nội dung ghi chú', true);
                 return;
             }
             try {
-                const notes = getNotes(chapterId);
-                notes.push({
-                    id: Date.now(),
-                    text: text,
-                    createdAt: new Date().toISOString()
+                const res = await fetch(`/api/notes/${chapterId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content: text })
                 });
-                saveNotes(chapterId, notes);
+                if (!res.ok) throw new Error('Save failed');
                 textarea.value = '';
-                renderNotesList(chapterId);
+                await renderNotes(chapterId);
                 showStatus('✅ Đã thêm ghi chú!', false);
             } catch (e) {
                 showStatus('❌ Lỗi khi lưu!', true);
@@ -458,13 +434,14 @@
 
         // Clear all notes
         if (clearAllBtn) {
-            clearAllBtn.addEventListener('click', () => {
-                const notes = getNotes(chapterId);
-                if (notes.length === 0) return;
-                if (confirm(`Bạn có chắc muốn xóa tất cả ${notes.length} ghi chú của chương này?`)) {
-                    localStorage.removeItem(getNotesKey(chapterId));
-                    renderNotesList(chapterId);
+            clearAllBtn.addEventListener('click', async () => {
+                if (!confirm('Bạn có chắc muốn xóa tất cả ghi chú của chương này?')) return;
+                try {
+                    await fetch(`/api/notes/chapter/${chapterId}`, { method: 'DELETE' });
+                    await renderNotes(chapterId);
                     showStatus('🗑️ Đã xóa tất cả ghi chú', false);
+                } catch (e) {
+                    showStatus('❌ Lỗi khi xóa!', true);
                 }
             });
         }
@@ -477,51 +454,55 @@
             }
         });
 
-        // Global edit/delete functions
-        window.deleteNote = function (noteId) {
+        // Global delete
+        window.deleteNote = async function (noteId) {
             if (!confirm('Xóa ghi chú này?')) return;
-            const notes = getNotes(chapterId);
-            const updated = notes.filter(n => n.id !== noteId);
-            saveNotes(chapterId, updated);
-            renderNotesList(chapterId);
-            showStatus('🗑️ Đã xóa ghi chú', false);
+            try {
+                await fetch(`/api/notes/${noteId}`, { method: 'DELETE' });
+                await renderNotes(chapterId);
+                showStatus('🗑️ Đã xóa ghi chú', false);
+            } catch (e) {
+                showStatus('❌ Lỗi khi xóa!', true);
+            }
         };
 
-        window.editNote = function (noteId) {
+        // Global edit
+        window.editNote = async function (noteId) {
             const card = document.querySelector(`.note-card[data-note-id="${noteId}"]`);
             if (!card) return;
-            const notes = getNotes(chapterId);
-            const note = notes.find(n => n.id === noteId);
-            if (!note) return;
+            const bodyEl = card.querySelector('.note-card__body');
+            const currentText = bodyEl.textContent;
 
-            const body = card.querySelector('.note-card__body');
-            body.innerHTML = `
-                <textarea class="note-card__edit-textarea">${note.text}</textarea>
+            bodyEl.innerHTML = `
+                <textarea class="note-card__edit-textarea">${currentText}</textarea>
                 <div class="note-card__edit-actions">
                     <button class="note-card__edit-btn note-card__edit-btn--save" onclick="saveEditNote(${noteId})">💾 Lưu</button>
-                    <button class="note-card__edit-btn note-card__edit-btn--cancel" onclick="cancelEditNote(${noteId})">Hủy</button>
+                    <button class="note-card__edit-btn note-card__edit-btn--cancel" onclick="cancelEditNote()">Hủy</button>
                 </div>`;
-            body.querySelector('textarea').focus();
+            bodyEl.querySelector('textarea').focus();
         };
 
-        window.saveEditNote = function (noteId) {
+        window.saveEditNote = async function (noteId) {
             const card = document.querySelector(`.note-card[data-note-id="${noteId}"]`);
             if (!card) return;
             const editText = card.querySelector('.note-card__edit-textarea').value.trim();
             if (!editText) return;
 
-            const notes = getNotes(chapterId);
-            const note = notes.find(n => n.id === noteId);
-            if (note) {
-                note.text = editText;
-                saveNotes(chapterId, notes);
-                renderNotesList(chapterId);
+            try {
+                await fetch(`/api/notes/${noteId}`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content: editText })
+                });
+                await renderNotes(chapterId);
                 showStatus('✅ Đã cập nhật ghi chú!', false);
+            } catch (e) {
+                showStatus('❌ Lỗi khi cập nhật!', true);
             }
         };
 
-        window.cancelEditNote = function (noteId) {
-            renderNotesList(chapterId);
+        window.cancelEditNote = function () {
+            renderNotes(chapterId);
         };
     }
 

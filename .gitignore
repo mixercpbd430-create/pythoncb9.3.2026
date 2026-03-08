@@ -2,10 +2,16 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+*.png
+"Python 1.tx t"
 
 # IDE
 .vscode/
 .idea/
+
+# Node
+node_modules/
+.env
 
 # Temp files
 *.tmp
