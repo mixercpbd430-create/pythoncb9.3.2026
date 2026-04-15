@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đăng nhập vào Giáo Trình Lập Trình Python">
+    <title>Đăng Nhập — Giáo Trình Python</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+    <style>
+        /* ===================================
+           LOGIN PAGE STYLES
+           =================================== */
+        .login-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animated background orbs */
+        .login-page::before,
+        .login-page::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+            animation: floatOrb 8s ease-in-out infinite alternate;
+        }
+
+        .login-page::before {
+            width: 500px;
+            height: 500px;
+            background: rgba(108, 99, 255, 0.12);
+            top: -150px;
+            right: -100px;
+        }
+
+        .login-page::after {
+            width: 400px;
+            height: 400px;
+            background: rgba(168, 85, 247, 0.08);
+            bottom: -100px;
+            left: -100px;
+            animation-delay: -4s;
+        }
+
+        @keyframes floatOrb {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, -30px) scale(1.1); }
+        }
+
+        /* Login card */
+        .login-card {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+            background: rgba(22, 33, 62, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-xl);
+            padding: 48px 40px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4), 0 0 80px rgba(108, 99, 255, 0.05);
+            animation: cardAppear 0.7s ease both;
+            z-index: 1;
+        }
+
+        @keyframes cardAppear {
+            from {
+                opacity: 0;
+                transform: translateY(24px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Card top gradient bar */
+        .login-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-gradient);
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        }
+
+        /* Logo area */
+        .login-logo {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .login-logo__icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            background: var(--accent-gradient);
+            border-radius: 16px;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: white;
+            box-shadow: 0 0 30px rgba(108, 99, 255, 0.4);
+            margin-bottom: 20px;
+            animation: logoPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes logoPulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(108, 99, 255, 0.4); }
+            50% { box-shadow: 0 0 50px rgba(108, 99, 255, 0.6); }
+        }
+
+        .login-logo__title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            margin-bottom: 8px;
+        }
+
+        .login-logo__subtitle {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+        }
+
+        /* Form */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group__label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 0.3px;
+        }
+
+        .form-group__input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group__icon {
+            position: absolute;
+            left: 16px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            pointer-events: none;
+            transition: color var(--transition-fast);
+            z-index: 2;
+        }
+
+        .form-group__input {
+            width: 100%;
+            padding: 14px 16px 14px 48px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-md);
+            color: var(--text-heading);
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+
+        .form-group__input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-group__input:focus {
+            border-color: var(--accent-primary);
+            background: rgba(108, 99, 255, 0.05);
+            box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
+        }
+
+        .form-group__input:focus + .form-group__icon,
+        .form-group__input:focus ~ .form-group__icon {
+            color: var(--accent-primary);
+        }
+
+        .form-group__input-wrapper:focus-within .form-group__icon {
+            color: var(--accent-primary);
+        }
+
+        /* Toggle password visibility */
+        .form-group__toggle-pw {
+            position: absolute;
+            right: 12px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 4px;
+            transition: color var(--transition-fast);
+            z-index: 2;
+        }
+
+        .form-group__toggle-pw:hover {
+            color: var(--text-primary);
+        }
+
+        /* Submit button */
+        .login-btn {
+            margin-top: 8px;
+            padding: 15px 28px;
+            background: var(--accent-gradient);
+            color: white;
+            border: none;
+            border-radius: var(--radius-md);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.3px;
+        }
+
+        .login-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            transition: left 0.5s;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(108, 99, 255, 0.4);
+        }
+
+        .login-btn:hover::before {
+            left: 100%;
+        }
+
+        .login-btn:active {
+            transform: translateY(0);
+        }
+
+        .login-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Error message */
+        .login-error {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 18px;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: var(--radius-md);
+            font-size: 0.88rem;
+            color: #fca5a5;
+            animation: shakeError 0.4s ease;
+        }
+
+        .login-error--visible {
+            display: flex;
+        }
+
+        .login-error__icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        @keyframes shakeError {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-8px); }
+            40% { transform: translateX(8px); }
+            60% { transform: translateX(-4px); }
+            80% { transform: translateX(4px); }
+        }
+
+        /* Success message */
+        .login-success {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 18px;
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: var(--radius-md);
+            font-size: 0.88rem;
+            color: #6ee7b7;
+        }
+
+        .login-success--visible {
+            display: flex;
+        }
+
+        /* Role info cards */
+        .login-roles {
+            margin-top: 28px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .login-roles__title {
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+        .login-roles__list {
+            display: flex;
+            gap: 12px;
+        }
+
+        .role-chip {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+        }
+
+        .role-chip:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .role-chip__icon {
+            font-size: 1.3rem;
+        }
+
+        .role-chip__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .role-chip__name {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-heading);
+        }
+
+        .role-chip__desc {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Particles background */
+        .login-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgba(108, 99, 255, 0.4);
+            border-radius: 50%;
+            animation: particleFade 4s ease-in-out infinite;
+        }
+
+        @keyframes particleFade {
+            0%, 100% { opacity: 0; transform: translateY(0); }
+            50% { opacity: 1; transform: translateY(-40px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .login-card {
+                padding: 36px 24px;
+            }
+
+            .login-logo__icon {
+                width: 52px;
+                height: 52px;
+                font-size: 1.5rem;
+            }
+
+            .login-logo__title {
+                font-size: 1.3rem;
+            }
+
+            .login-roles__list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div class="login-particles" id="particles"></div>
+
+    <div class="login-page">
+        <div class="login-card">
+            <!-- Logo -->
+            <div class="login-logo">
+                <div class="login-logo__icon">Py</div>
+                <h1 class="login-logo__title">Giáo Trình Python</h1>
+                <p class="login-logo__subtitle">Đăng nhập để tiếp tục học tập</p>
+            </div>
+
+            <!-- Login Form -->
+            <form class="login-form" id="loginForm" autocomplete="off">
+                <!-- Error Message -->
+                <div class="login-error" id="loginError">
+                    <span class="login-error__icon">⚠️</span>
+                    <span id="loginErrorMsg">Sai tên đăng nhập hoặc mật khẩu</span>
+                </div>
+
+                <!-- Success Message -->
+                <div class="login-success" id="loginSuccess">
+                    <span>✅</span>
+                    <span id="loginSuccessMsg">Đăng nhập thành công! Đang chuyển hướng...</span>
+                </div>
+
+                <!-- Username -->
+                <div class="form-group">
+                    <label class="form-group__label" for="loginUsername">Tên đăng nhập</label>
+                    <div class="form-group__input-wrapper">
+                        <input type="text" class="form-group__input" id="loginUsername"
+                            placeholder="Nhập tên đăng nhập..." required autocomplete="off">
+                        <span class="form-group__icon">👤</span>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label class="form-group__label" for="loginPassword">Mật khẩu</label>
+                    <div class="form-group__input-wrapper">
+                        <input type="password" class="form-group__input" id="loginPassword"
+                            placeholder="Nhập mật khẩu..." required autocomplete="off">
+                        <span class="form-group__icon">🔒</span>
+                        <button type="button" class="form-group__toggle-pw" id="togglePw" aria-label="Hiện/ẩn mật khẩu">👁️</button>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="login-btn" id="loginBtn">
+                    🚀 Đăng nhập
+                </button>
+            </form>
+
+            <!-- Roles info -->
+            <div class="login-roles">
+                <div class="login-roles__title">Vai trò hệ thống</div>
+                <div class="login-roles__list">
+                    <div class="role-chip">
+                        <span class="role-chip__icon">🛡️</span>
+                        <div class="role-chip__info">
+                            <span class="role-chip__name">Admin</span>
+                            <span class="role-chip__desc">Toàn quyền quản lý</span>
+                        </div>
+                    </div>
+                    <div class="role-chip">
+                        <span class="role-chip__icon">📖</span>
+                        <div class="role-chip__info">
+                            <span class="role-chip__name">User</span>
+                            <span class="role-chip__desc">Chỉ xem nội dung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generate floating particles
+        (function() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 20; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.animationDelay = (Math.random() * 4) + 's';
+                p.style.animationDuration = (3 + Math.random() * 3) + 's';
+                container.appendChild(p);
+            }
+        })();
+
+        // Toggle password visibility
+        document.getElementById('togglePw').addEventListener('click', function() {
+            const pwInput = document.getElementById('loginPassword');
+            const isHidden = pwInput.type === 'password';
+            pwInput.type = isHidden ? 'text' : 'password';
+            this.textContent = isHidden ? '🙈' : '👁️';
+        });
+
+        // Login form submission
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const username = document.getElementById('loginUsername').value.trim();
+            const password = document.getElementById('loginPassword').value;
+            const errorEl = document.getElementById('loginError');
+            const successEl = document.getElementById('loginSuccess');
+            const btn = document.getElementById('loginBtn');
+
+            // Reset states
+            errorEl.classList.remove('login-error--visible');
+            successEl.classList.remove('login-success--visible');
+            btn.disabled = true;
+            btn.textContent = '⏳ Đang xác thực...';
+
+            try {
+                const res = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await res.json();
+
+                if (res.ok && data.success) {
+                    successEl.classList.add('login-success--visible');
+                    document.getElementById('loginSuccessMsg').textContent =
+                        `Xin chào ${data.user.displayName}! Đang chuyển hướng...`;
+
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1000);
+                } else {
+                    errorEl.classList.add('login-error--visible');
+                    document.getElementById('loginErrorMsg').textContent =
+                        data.error || 'Sai tên đăng nhập hoặc mật khẩu';
+                    btn.disabled = false;
+                    btn.textContent = '🚀 Đăng nhập';
+                }
+            } catch (err) {
+                errorEl.classList.add('login-error--visible');
+                document.getElementById('loginErrorMsg').textContent = 'Lỗi kết nối server. Vui lòng thử lại.';
+                btn.disabled = false;
+                btn.textContent = '🚀 Đăng nhập';
+            }
+        });
+
+        // Enter key submits form
+        document.getElementById('loginPassword').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                document.getElementById('loginForm').dispatchEvent(new Event('submit'));
+            }
+        });
+
+        // Check if already logged in
+        (async function() {
+            try {
+                const res = await fetch('/api/auth/me');
+                const data = await res.json();
+                if (res.ok && data.loggedIn) {
+                    window.location.href = 'index.html';
+                }
+            } catch(e) {}
+        })();
+    </script>
+</body>
+
+</html>

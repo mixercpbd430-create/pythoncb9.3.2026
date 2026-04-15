@@ -3,18 +3,132 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const path = require('path');
+const session = require('express-session');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// =====================
+// USER ACCOUNTS
+// =====================
+const USERS = {
+    admin: {
+        username: 'Admin',
+        password: '2810',
+        role: 'admin',
+        displayName: 'Admin'
+    },
+    user: {
+        username: 'User',
+        password: '1430',
+        role: 'user',
+        displayName: 'User'
+    }
+};
+
+// =====================
+// MIDDLEWARE
+// =====================
 app.use(cors());
 app.use(express.json());
 
-// Serve static files
+// Session middleware
+app.use(session({
+    secret: process.env.SESSION_SECRET || 'giaotrinh-python-secret-2026',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        secure: false, // Set to true if using HTTPS in production
+        httpOnly: true,
+        maxAge: 24 * 60 * 60 * 1000 // 24 hours
+    }
+}));
+
+// Serve static files (login.html must be accessible without auth)
 app.use(express.static(path.join(__dirname)));
 
+// =====================
+// AUTH ROUTES (no auth required)
+// =====================
+
+// POST /api/auth/login
+app.post('/api/auth/login', (req, res) => {
+    const { username, password } = req.body;
+
+    if (!username || !password) {
+        return res.status(400).json({ success: false, error: 'Vui lòng nhập tên đăng nhập và mật khẩu' });
+    }
+
+    // Find user (case-insensitive username match)
+    const user = Object.values(USERS).find(
+        u => u.username.toLowerCase() === username.toLowerCase() && u.password === password
+    );
+
+    if (!user) {
+        return res.status(401).json({ success: false, error: 'Sai tên đăng nhập hoặc mật khẩu' });
+    }
+
+    // Save to session
+    req.session.user = {
+        username: user.username,
+        role: user.role,
+        displayName: user.displayName
+    };
+
+    res.json({
+        success: true,
+        user: {
+            username: user.username,
+            role: user.role,
+            displayName: user.displayName
+        }
+    });
+});
+
+// GET /api/auth/me - Check current login status
+app.get('/api/auth/me', (req, res) => {
+    if (req.session && req.session.user) {
+        return res.json({
+            loggedIn: true,
+            user: req.session.user
+        });
+    }
+    return res.status(401).json({ loggedIn: false });
+});
+
+// POST /api/auth/logout
+app.post('/api/auth/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            return res.status(500).json({ error: 'Lỗi khi đăng xuất' });
+        }
+        res.json({ success: true, message: 'Đã đăng xuất' });
+    });
+});
+
+// =====================
+// AUTH MIDDLEWARE
+// =====================
+
+// Require login for API routes
+function requireAuth(req, res, next) {
+    if (req.session && req.session.user) {
+        return next();
+    }
+    return res.status(401).json({ error: 'Chưa đăng nhập. Vui lòng đăng nhập trước.' });
+}
+
+// Require admin role for write operations
+function requireAdmin(req, res, next) {
+    if (req.session && req.session.user && req.session.user.role === 'admin') {
+        return next();
+    }
+    return res.status(403).json({ error: 'Bạn không có quyền thực hiện thao tác này. Chỉ Admin mới có quyền chỉnh sửa.' });
+}
+
+// =====================
 // PostgreSQL connection
+// =====================
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false }
@@ -41,11 +155,11 @@ async function initDB() {
 }
 
 // =====================
-// API ROUTES
+// API ROUTES (protected)
 // =====================
 
-// GET all notes for a chapter
-app.get('/api/notes/:chapterId', async (req, res) => {
+// GET all notes for a chapter (requires login - any role can read)
+app.get('/api/notes/:chapterId', requireAuth, async (req, res) => {
     try {
         const { chapterId } = req.params;
         const result = await pool.query(
@@ -59,8 +173,8 @@ app.get('/api/notes/:chapterId', async (req, res) => {
     }
 });
 
-// POST a new note
-app.post('/api/notes/:chapterId', async (req, res) => {
+// POST a new note (requires Admin)
+app.post('/api/notes/:chapterId', requireAuth, requireAdmin, async (req, res) => {
     try {
         const { chapterId } = req.params;
         const { content } = req.body;
@@ -78,8 +192,8 @@ app.post('/api/notes/:chapterId', async (req, res) => {
     }
 });
 
-// PUT update a note
-app.put('/api/notes/:noteId', async (req, res) => {
+// PUT update a note (requires Admin)
+app.put('/api/notes/:noteId', requireAuth, requireAdmin, async (req, res) => {
     try {
         const { noteId } = req.params;
         const { content } = req.body;
@@ -100,8 +214,8 @@ app.put('/api/notes/:noteId', async (req, res) => {
     }
 });
 
-// DELETE a single note
-app.delete('/api/notes/:noteId', async (req, res) => {
+// DELETE a single note (requires Admin)
+app.delete('/api/notes/:noteId', requireAuth, requireAdmin, async (req, res) => {
     try {
         const { noteId } = req.params;
         const result = await pool.query(
@@ -118,8 +232,8 @@ app.delete('/api/notes/:noteId', async (req, res) => {
     }
 });
 
-// DELETE all notes for a chapter
-app.delete('/api/notes/chapter/:chapterId', async (req, res) => {
+// DELETE all notes for a chapter (requires Admin)
+app.delete('/api/notes/chapter/:chapterId', requireAuth, requireAdmin, async (req, res) => {
     try {
         const { chapterId } = req.params;
         const result = await pool.query(
